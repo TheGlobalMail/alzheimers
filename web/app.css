@@ -775,3 +775,21 @@ li {
     margin-top: 4px;
   }
 }
+.modal {
+  display: none;
+  width: 90%;
+  border: 1px solid #333;
+  background-color: black;
+  margin: 0 auto;
+  padding: 20px;
+}
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}

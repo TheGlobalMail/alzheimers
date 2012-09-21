@@ -2,15 +2,18 @@ $(document).ready(function() {
 
   var maxHeight = 0, slider, $column;
 
+  // Adjust the column heights on the grid
+  // NOTE: this must be done before swipe is initiated
   $column = $('ul.grid li');
   $column.each(function() {
-      // Store the highest value
       if ($(this).height() > maxHeight) {
           maxHeight = $(this).height();;
       }
   });
-  // Set the height
   $column.height(maxHeight + (maxHeight*.15));
+
+  // Add modal support
+  $('a[rel*=modal]').leanModal({ closeButton: 'a[rel="close-modal"]' });
 
   slider = new Swipe(document.getElementById('container'), {
 
