@@ -230,7 +230,7 @@ ul,li
             &.aud a
             {
                 background-image:url(img/aud.png);
-                background-position:left 10px;
+                background-position:0 9px;
                 background-repeat:no-repeat;
                 padding-left:21px;
             }
@@ -238,7 +238,7 @@ ul,li
             &.com a
             {
                 background-image:url(img/com.png);
-                background-position:left 10px;
+                background-position:0 9px;
                 background-repeat:no-repeat;
                 padding-left:19px;
             }
@@ -671,12 +671,30 @@ ul,li
                 font-size: 12px;
 
                 a {
-                    padding-left: 20px;
-                    padding-right: 20px;
+                    padding-left: 15px;
+                    padding-right: 15px;
                 }
 
                 &.active:after{
                     top:18px;
+                }
+
+                &.vid a
+                {
+                    background-position:9px 10px;
+                    padding-left:30px;
+                }
+
+                &.aud a
+                {
+                    background-position:10px 10px;
+                    padding-left:31px;
+                }
+
+                &.com a
+                {
+                    background-position:10px 10px;
+                    padding-left:29px;
                 }
 
             }
