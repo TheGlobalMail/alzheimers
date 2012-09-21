@@ -22,14 +22,13 @@
         </div>
 			</span>
 			<span id="sub">
-				<ul>
-					<li class="active"><a href="01.html">Introduction</a></li>
-					<li class="vid"><a href="02.html">Gary and Mandy</a></li>
-					<li class="vid"><a href="02.html">Rob and Carmel</a></li>
-					<li class="vid"><a href="02.html">Tony and Paul</a></li>
-					<li class="aud"><a href="03.html">In their own words</a></li>
-					<!-- <li class=""><a href="#">Title of story</a></li> -->
-					<li class="com"><a href="04.html">Readers' stories</a></li>
+				<ul data-role="navigation">
+					<li class="active"><a data-page="0">Introduction</a></li>
+					<li class="vid"><a data-page="1">Gary and Mandy</a></li>
+					<li class="vid"><a data-page="1">Rob and Carmel</a></li>
+					<li class="vid"><a data-page="1">Tony and Paul</a></li>
+					<li class="aud"><a data-page="2">In their own words</a></li>
+					<li class="com"><a data-page="3">Readers' stories</a></li>
 				</ul>
 			</span>
 		</div>
@@ -139,14 +138,15 @@
 
     </div>
 
-			<a class="arrow left" data-action="left"></a>
-			<a class="arrow right" data-action="right"></a>
+			<a class="arrow left" data-action="prev"></a>
+			<a class="arrow right" data-action="next"></a>
   </div>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js "></script>
 	<script type="text/javascript" src="height.js "></script>
 	<script type="text/javascript" src="soundcloud.player.api.js"></script>
   <script type="text/javascript" src="sc-player.js"></script>
+  <script type="text/javascript" src="swipe.min.js"></script>
 	<script type="text/javascript" src="app.js "></script>
 
 </body>

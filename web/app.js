@@ -1,23 +1,28 @@
-(function($){
-
-  var position = 0;
-
-  window.right = function(e){
-    position++;
-    $("#sections").css("transform","translateX("+ position * -1000 + "px)");
-  }
-
-  window.left = function(e){
-    position--;
-    $("#sections").css("transform","translateX("+ position * -1000 + "px)");
-  }
-
-
-})($);
-
 $(document).ready(function() {
 
-  $('a[data-action="left"]').click(window.left);
-  $('a[data-action="right"]').click(window.right);
+  var slider = window.slider = new Swipe(document.getElementById('container'), {
+
+    callback: function(e, index, el){
+      var child = index + 1;
+      $('ul[data-role="navigation"] li:not(:nth-child(' + child + '))').removeClass('active');
+      $('ul[data-role="navigation"] li:nth-child(' + child + ')').addClass('active');
+    }
+
+  });
+
+  $('ul[data-role="navigation"] a').click(function(e){
+    e.preventDefault();
+    slider.slide($(this).data('page'));
+  });
+
+  $('a[data-action="prev"]').click(function(e){
+    e.preventDefault();
+    slider.prev();
+  });
+
+  $('a[data-action="next"]').click(function(e){
+    e.preventDefault();
+    slider.next();
+  });
 
 });

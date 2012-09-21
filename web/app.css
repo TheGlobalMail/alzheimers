@@ -203,35 +203,6 @@ li {
   text-shadow: 0 -1px 0 #000000;
   line-height: 1.6;
   margin: 0 auto;
-  overflow: hidden;
-}
-#container #sections {
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  position: absolute;
-}
-#container #sections .section {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  width: 1200px;
-  max-width: 1200px;
-  min-width: 860px;
-  height: auto;
-}
-#container #sections .section:nth-child(1) {
-  left: 0px;
-}
-#container #sections .section:nth-child(2) {
-  left: 1200px;
-}
-#container #sections .section:nth-child(3) {
-  left: 2400px;
-}
-#container #sections .section:nth-child(4) {
-  left: 3600px;
 }
 #container #sections .section.intro {
   background: #000000 url(img/intro.jpg) center top no-repeat;
