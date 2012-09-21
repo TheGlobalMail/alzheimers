@@ -792,7 +792,7 @@ li {
   box-shadow: 0 5px 20px black;
 }
 .modal h2 {
-  margin: 0 0 2%;
+  margin: 0 0 1%;
 }
 .modal p {
   margin-bottom: 2%;
@@ -805,11 +805,21 @@ li {
   padding-bottom: 7%;
   background: url(img/divider.png) center bottom no-repeat;
 }
-a[rel="close-modal"] {
+.modal a[rel="close-modal"] {
   float: right;
   font-size: 300%;
   line-height: 0;
 }
-a[rel="close-modal"]:hover {
+.modal a[rel="close-modal"]:hover {
   cursor: pointer;
+}
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
 }
