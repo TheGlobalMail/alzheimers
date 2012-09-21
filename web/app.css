@@ -130,7 +130,9 @@ li {
 }
 #header #main .icons .about:hover,
 #header #main .icons .share:hover {
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -ms-filter: progid:dximagetransform.microsoft.alpha(Opacity=60);
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
   -khtml-opacity: 0.6;

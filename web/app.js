@@ -27,6 +27,7 @@ $(document).ready(function() {
 
   $('ul[data-role="navigation"] a').click(function(e){
     e.preventDefault();
+    $('html, body').animate({scrollTop : 0}, 'fast');
     slider.slide($(this).data('page'));
   });
 
