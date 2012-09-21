@@ -1,6 +1,18 @@
 $(document).ready(function() {
 
-  var slider = window.slider = new Swipe(document.getElementById('container'), {
+  var maxHeight = 0, slider, $column;
+
+  $column = $('ul.grid li');
+  $column.each(function() {
+      // Store the highest value
+      if ($(this).height() > maxHeight) {
+          maxHeight = $(this).height();;
+      }
+  });
+  // Set the height
+  $column.height(maxHeight + (maxHeight*.15));
+
+  slider = new Swipe(document.getElementById('container'), {
 
     callback: function(e, index, el){
       var child = index + 1;
