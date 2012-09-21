@@ -13,7 +13,7 @@ $(document).ready(function() {
   $column.height(maxHeight + (maxHeight*.15));
 
   // Add modal support
-  $('a[rel*=modal]').leanModal({ closeButton: 'a[rel="close-modal"]', overlay: 0.8 });
+  $('a[rel="modal"]').leanModal({ closeButton: 'a[rel="close-modal"]', overlay: 0.8 });
 
   $('a.arrow').removeClass('hide');
   slider = new Swipe(document.getElementById('container'), {
