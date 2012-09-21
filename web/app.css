@@ -836,6 +836,9 @@ li {
 .modal a[rel="close-modal"]:hover {
   cursor: pointer;
 }
+.hide {
+  display: none !important;
+}
 #lean_overlay {
   position: fixed;
   z-index: 100;

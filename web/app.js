@@ -15,10 +15,20 @@ $(document).ready(function() {
   // Add modal support
   $('a[rel="modal"]').leanModal({ closeButton: 'a[rel="close-modal"]', overlay: 0.8 });
 
-  $('a.arrow').removeClass('hide');
+  $('a.arrow.right').removeClass('hide');
   slider = new Swipe(document.getElementById('container'), {
     callback: function(e, index, el){
       var child = index + 1;
+      if (child === 0){
+        $('a.arrow.left').addClass('hide');
+        $('a.arrow.right').removeClass('hide');
+      }else if (child === $('ul[data-role="navigation"] li').length){
+        $('a.arrow.right').addClass('hide');
+        $('a.arrow.left').removeClass('hide');
+      }else{
+        $('a.arrow').removeClass('hide');
+      }
+
       $('ul[data-role="navigation"] li:not(:nth-child(' + child + '))').removeClass('active');
       $('ul[data-role="navigation"] li:nth-child(' + child + ')').addClass('active');
       $('html, body').animate({scrollTop : 0}, 'fast');
