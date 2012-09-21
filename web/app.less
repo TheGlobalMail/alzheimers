@@ -151,6 +151,17 @@ ul,li
             background-repeat: no-repeat;
         }
 
+        .icons .about:hover,
+        .icons .share:hover {
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+            filter: alpha(opacity=60);
+            -moz-opacity: 0.6;
+            -khtml-opacity: 0.6;
+            opacity: 0.6;
+            }
+
     }
 
     // Sub header
@@ -190,7 +201,8 @@ ul,li
 
             a:hover,a:active,a:focus
             {
-                background-color:rgba(255,255,255,0.2);
+                background-color: #2b2b2b;
+                background-color:rgba(255,255,255,0.1);
             }
 
             &.active a
