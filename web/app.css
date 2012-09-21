@@ -7,10 +7,22 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: ff-meta-serif-web-pro, "Cambria", Georgia, "Times New Roman", Times, serif;
 }
 a {
   text-decoration: none;
   color: #ff9b51;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  border-color: white;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 p {
   margin: 0;
@@ -63,9 +75,11 @@ li {
   background-size: 44px;
   text-indent: -9999px;
 }
+#header #main .home:hover {
+  opacity: .6;
+}
 #header #main .brand {
   margin-left: 5px;
-  font-family: "Cambria", Georgia, "Times New Roman", Times, serif;
   color: white;
   font-weight: bold;
   line-height: 1.0;
@@ -122,7 +136,7 @@ li {
   background: rgba(27, 27, 27, 0.8);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: #FFF;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   float: left;
   z-index: 9;
   margin: 0;
@@ -141,19 +155,12 @@ li {
 #header #sub li a {
   color: #6c6c6c;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
   padding: 9px 10px;
 }
 #header #sub li a:hover,
 #header #sub li a:active,
 #header #sub li a:focus {
   background-color: rgba(255, 255, 255, 0.2);
-  color: #FFF;
-  -webkit-transition: all 150ms ease-in-out;
-  -moz-transition: all 150ms ease-in-out;
-  -ms-transition: all 150ms ease-in-out;
-  -o-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
 }
 #header #sub li.active a {
   border-bottom: 3px solid #ff9b51;
@@ -199,9 +206,8 @@ li {
   min-width: 860px;
   height: auto;
   padding-bottom: 5%;
-  font-family: "Cambria", Georgia, "Times New Roman", Times, serif;
   text-shadow: 0 -1px 0 #000000;
-  line-height: 1.6;
+  line-height: 1.4;
   margin: 0 auto;
 }
 #container #sections .section.intro {
@@ -214,7 +220,6 @@ li {
   margin: 2.5% 0;
   margin-left: 30%;
   padding-top: 10px;
-  font-family: ff-meta-serif-web-pro, "Cambria", Georgia, "Times New Roman", Times, serif;
   font-size: 280%;
   line-height: 1.1;
   clear: both;
@@ -231,6 +236,7 @@ li {
   width: 50%;
   max-width: 600px;
   margin-left: 30%;
+  margin-bottom: 2%;
 }
 #container #sections .section.intro p.author {
   margin-bottom: 2.5%;
@@ -389,7 +395,8 @@ li {
 #container ul.grid li.txt h1 {
   font-size: 170%;
   padding-top: 25%;
-  padding-bottom: 15px;
+  padding-bottom: 1.5%;
+  margin-bottom: 1.5%;
   margin-left: 10%;
   width: 80%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -404,7 +411,7 @@ li {
   font-size: 140%;
 }
 #container ul.grid li.txt p {
-  font-size: 110%;
+  font-size: 120%;
   margin-left: 10%;
   width: 80%;
 }
@@ -777,19 +784,32 @@ li {
 }
 .modal {
   display: none;
-  width: 90%;
+  width: 50%;
   border: 1px solid #333;
   background-color: black;
   margin: 0 auto;
-  padding: 20px;
+  padding: 4% 5% 5%;
+  box-shadow: 0 5px 20px black;
 }
-#lean_overlay {
-  position: fixed;
-  z-index: 100;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  background: #000;
-  display: none;
+.modal h2 {
+  margin: 0 0 2%;
+}
+.modal p {
+  margin-bottom: 2%;
+}
+.modal p.author {
+  color: #585858;
+  font-style: italic;
+  font-size: 98%;
+  margin-bottom: 2%;
+  padding-bottom: 7%;
+  background: url(img/divider.png) center bottom no-repeat;
+}
+a[rel="close-modal"] {
+  float: right;
+  font-size: 300%;
+  line-height: 0;
+}
+a[rel="close-modal"]:hover {
+  cursor: pointer;
 }
