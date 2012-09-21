@@ -203,6 +203,106 @@ li {
   text-shadow: 0 -1px 0 #000000;
   line-height: 1.6;
   margin: 0 auto;
+  overflow: hidden;
+}
+#container #sections {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  position: absolute;
+}
+#container #sections .section {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 1200px;
+  max-width: 1200px;
+  min-width: 860px;
+  height: auto;
+}
+#container #sections .section:nth-child(1) {
+  left: 0px;
+}
+#container #sections .section:nth-child(2) {
+  left: 1200px;
+}
+#container #sections .section:nth-child(3) {
+  left: 2400px;
+}
+#container #sections .section:nth-child(4) {
+  left: 3600px;
+}
+#container #sections .section.intro {
+  background: #000000 url(img/intro.jpg) center top no-repeat;
+  background-size: 76%;
+}
+#container #sections .section.intro h1 {
+  width: 50%;
+  max-width: 600px;
+  margin: 2.5% 0;
+  margin-left: 30%;
+  padding-top: 10px;
+  font-family: ff-meta-serif-web-pro, "Cambria", Georgia, "Times New Roman", Times, serif;
+  font-size: 280%;
+  line-height: 1.1;
+  clear: both;
+}
+#container #sections .section.intro h1 span {
+  font-weight: 400;
+}
+#container #sections .section.intro img {
+  width: 100%;
+  height: auto;
+  padding-top: 1%;
+}
+#container #sections .section.intro p {
+  width: 50%;
+  max-width: 600px;
+  margin-left: 30%;
+}
+#container #sections .section.intro p.author {
+  margin-bottom: 2.5%;
+  font-size: 130%;
+  font-style: italic;
+}
+#container #sections .section.intro p.intro {
+  font-size: 130%;
+}
+#container #sections .section.intro span.divider {
+  display: block;
+  height: 30px;
+  width: 100%;
+  margin: 2% 0;
+  background: url(img/divider.png) center top no-repeat;
+}
+#container #sections .section.intro .right-arrowhead-label {
+  text-transform: uppercase;
+  top: 10px;
+  left: -4px;
+  z-index: 1;
+  margin-left: 29%;
+  padding-top: 35%;
+  clear: both;
+}
+#container #sections .section.intro .right-arrowhead-label .text {
+  background-color: #000;
+  color: #FFF;
+  float: left;
+  font: bold 11px "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 3px 0 0 4px;
+  text-shadow: none;
+  padding: 2px 7px 1px 9px;
+}
+#container #sections .section.intro .right-arrowhead-label .arrowhead {
+  float: left;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent transparent #000;
+  border-style: solid none solid solid;
+  border-width: 10px;
 }
 #container .arrow {
   position: fixed;
@@ -235,77 +335,6 @@ li {
   -ms-transition: all 150ms ease-in-out;
   -o-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
-}
-#container.intro {
-  background: #000000 url(img/intro.jpg) center top no-repeat;
-  background-size: 76%;
-}
-#container.intro h1 {
-  width: 50%;
-  max-width: 600px;
-  margin: 2.5% 0;
-  margin-left: 30%;
-  padding-top: 10px;
-  font-family: ff-meta-serif-web-pro, "Cambria", Georgia, "Times New Roman", Times, serif;
-  font-size: 280%;
-  line-height: 1.1;
-  clear: both;
-}
-#container.intro h1 span {
-  font-weight: 400;
-}
-#container.intro img {
-  width: 100%;
-  height: auto;
-  padding-top: 1%;
-}
-#container.intro p {
-  width: 50%;
-  max-width: 600px;
-  margin-left: 30%;
-}
-#container.intro p.author {
-  margin-bottom: 2.5%;
-  font-size: 130%;
-  font-style: italic;
-}
-#container.intro p.intro {
-  font-size: 130%;
-}
-#container.intro span.divider {
-  display: block;
-  height: 30px;
-  width: 100%;
-  margin: 2% 0;
-  background: url(img/divider.png) center top no-repeat;
-}
-#container.intro .right-arrowhead-label {
-  text-transform: uppercase;
-  top: 10px;
-  left: -4px;
-  z-index: 1;
-  margin-left: 29%;
-  padding-top: 35%;
-  clear: both;
-}
-#container.intro .right-arrowhead-label .text {
-  background-color: #000;
-  color: #FFF;
-  float: left;
-  font: bold 11px "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 17px;
-  border-radius: 3px 0 0 4px;
-  text-shadow: none;
-  padding: 2px 7px 1px 9px;
-}
-#container.intro .right-arrowhead-label .arrowhead {
-  float: left;
-  width: 0;
-  height: 0;
-  border-color: transparent transparent transparent #000;
-  border-style: solid none solid solid;
-  border-width: 10px;
 }
 #container .video {
   height: 0;

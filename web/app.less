@@ -254,6 +254,144 @@ ul,li
     text-shadow:0 -1px 0 #000;
     line-height:1.6;
     margin:0 auto;
+    overflow: hidden;
+
+    #sections
+    {
+      -webkit-transition:all 1.0s ease-in-out;
+      -moz-transition:all 1.0s ease-in-out;
+      -o-transition:all 1.0s ease-in-out;
+      transition:all 1.0s ease-in-out;
+      position: absolute;
+
+      .section
+      {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        width:1200px;
+        max-width: 1200px;
+        min-width: 860px;
+        height:auto;
+
+        &:nth-child(1)
+        {
+          left: 0px;
+        }
+        &:nth-child(2)
+        {
+          left: 1200px;
+        }
+        &:nth-child(3)
+        {
+          left: 2400px;
+        }
+        &:nth-child(4)
+        {
+          left: 3600px
+        }
+
+        // Intro page
+
+        &.intro {
+            background:black url(img/intro.jpg) center top no-repeat;
+            background-size: 76%;
+
+            h1
+            {
+                width:50%;
+                max-width:600px;
+                margin: 2.5% 0;
+                margin-left:30%;
+                padding-top:10px;
+                font-family:ff-meta-serif-web-pro,"Cambria", Georgia,"Times New Roman",Times,serif;
+                font-size:280%;
+                line-height:1.1;
+                clear: both;
+
+                span
+                {
+                    font-weight:400;
+                }
+
+            }
+
+            img
+            {
+                width:100%;
+                height:auto;
+                padding-top:1%;
+            }
+
+
+            p
+            {
+                width:50%;
+                max-width:600px;
+                margin-left:30%;
+
+                &.author
+                {
+                    margin-bottom: 2.5%;
+                    font-size:130%;
+                    font-style:italic;
+                }
+
+                &.intro
+                {
+                    font-size:130%;
+                }
+
+            }
+
+            span.divider
+            {
+                display:block;
+                height:30px;
+                width:100%;
+                margin: 2% 0;
+                background:url(img/divider.png) center top no-repeat;
+            }
+
+            // Slug
+
+            .right-arrowhead-label
+            {
+                text-transform:uppercase;
+                top:10px;
+                left:-4px;
+                z-index:1;
+                margin-left:29%;
+                padding-top:35%;
+                clear: both;
+            }
+
+            .right-arrowhead-label .text
+            {
+                background-color:#000;
+                color:#FFF;
+                float:left;
+                font:bold 11px "Open Sans",Helvetica,Arial,sans-serif;
+                font-size:14px;
+                line-height:17px;
+                border-radius:3px 0 0 4px;
+                text-shadow:none;
+                padding:2px 7px 1px 9px;
+            }
+
+            .right-arrowhead-label .arrowhead
+            {
+                float:left;
+                width:0;
+                height:0;
+                border-color:transparent transparent transparent #000;
+                border-style:solid none solid solid;
+                border-width:10px;
+            }
+
+        }
+      }
+    }
 
     // Next and prev arrows
 
@@ -298,106 +436,6 @@ ul,li
     }
 
 
-
-    // Intro page
-
-    &.intro {
-        background:black url(img/intro.jpg) center top no-repeat;
-        background-size: 76%;
-
-        h1
-        {
-            width:50%;
-            max-width:600px;
-            margin: 2.5% 0;
-            margin-left:30%;
-            padding-top:10px;
-            font-family:ff-meta-serif-web-pro,"Cambria", Georgia,"Times New Roman",Times,serif;
-            font-size:280%;
-            line-height:1.1;
-            clear: both;
-
-            span
-            {
-                font-weight:400;
-            }
-
-        }
-
-        img
-        {
-            width:100%;
-            height:auto;
-            padding-top:1%;
-        }
-
-
-        p
-        {
-            width:50%;
-            max-width:600px;
-            margin-left:30%;
-
-            &.author
-            {
-                margin-bottom: 2.5%;
-                font-size:130%;
-                font-style:italic;
-            }
-
-            &.intro
-            {
-                font-size:130%;
-            }
-
-        }
-
-        span.divider
-        {
-            display:block;
-            height:30px;
-            width:100%;
-            margin: 2% 0;
-            background:url(img/divider.png) center top no-repeat;
-        }
-
-        // Slug
-
-        .right-arrowhead-label
-        {
-            text-transform:uppercase;
-            top:10px;
-            left:-4px;
-            z-index:1;
-            margin-left:29%;
-            padding-top:35%;
-            clear: both;
-        }
-
-        .right-arrowhead-label .text
-        {
-            background-color:#000;
-            color:#FFF;
-            float:left;
-            font:bold 11px "Open Sans",Helvetica,Arial,sans-serif;
-            font-size:14px;
-            line-height:17px;
-            border-radius:3px 0 0 4px;
-            text-shadow:none;
-            padding:2px 7px 1px 9px;
-        }
-
-        .right-arrowhead-label .arrowhead
-        {
-            float:left;
-            width:0;
-            height:0;
-            border-color:transparent transparent transparent #000;
-            border-style:solid none solid solid;
-            border-width:10px;
-        }
-
-    }
 
 
     // Video pages
