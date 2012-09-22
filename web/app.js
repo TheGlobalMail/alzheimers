@@ -16,10 +16,14 @@ $(document).ready(function() {
   $('a[rel="modal"]').leanModal({ closeButton: 'a[rel="close-modal"]', overlay: 0.8 });
 
   $('a.arrow.right').removeClass('hide');
-  slider = new Swipe(document.getElementById('container'), {
+  window.slider = slider = new Swipe(document.getElementById('container'), {
+
     callback: function(e, index, el){
-      var child = index + 1;
-      if (child === 0){
+
+      var child, $soundcloudPlayers;
+
+      child = index + 1;
+      if (child === 1){
         $('a.arrow.left').addClass('hide');
         $('a.arrow.right').removeClass('hide');
       }else if (child === $('ul[data-role="navigation"] li').length){
@@ -27,6 +31,14 @@ $(document).ready(function() {
         $('a.arrow.left').removeClass('hide');
       }else{
         $('a.arrow').removeClass('hide');
+      }
+
+      // Toggle soundcloud player
+      $soundcloudPlayers = $(el).find('.sc-player');
+      if ($soundcloudPlayers.length){
+        $soundcloudPlayers.show();
+      }else{
+        $soundcloudPlayers.hide();
       }
 
       $('ul[data-role="navigation"] li:not(:nth-child(' + child + '))').removeClass('active');

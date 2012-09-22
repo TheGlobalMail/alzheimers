@@ -801,6 +801,9 @@ li {
     width: 76%;
     margin-top: 102px;
   }
+  #container .sc-player {
+    display: none;
+  }
   #container .sc-player ol.sc-trackslist {
     margin-top: 4px;
   }
