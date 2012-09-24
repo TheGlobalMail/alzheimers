@@ -165,4 +165,19 @@ $(document).ready(function() {
     }
   });
 
+  $('a.share').click(function(e){
+    var $shareBox = $('#share-box');
+    var close = function(){ $shareBox.fadeOut().removeClass('active'); };
+    e.preventDefault();
+    e.stopPropagation();
+    if ($shareBox.hasClass('active')){
+      close();
+    }else{
+      $shareBox.fadeIn().addClass('active');
+      $('html').one('click', function(){
+        close();
+      });
+    }
+  });
+
 });
