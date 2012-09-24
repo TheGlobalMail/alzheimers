@@ -50,7 +50,7 @@ p {
     }
 }
 
-ul,li
+h1,h2,h3,ul,li
 {
     margin:0;
     padding:0;
@@ -354,6 +354,55 @@ ul,li
                 width:100%;
                 margin: 2% 0;
                 background:url(img/divider.png) center top no-repeat;
+            }
+
+            #overview {
+                width:50%;
+                max-width:600px;
+                margin-left:30%;
+
+
+                span.row {
+                    width: 100%;
+                    display: block;
+                    float: left;
+                    margin-bottom: 7%;
+
+                    h2 {
+                        line-height: 1;
+                        margin-bottom: 1%;
+                        text-transform: uppercase;
+                        font-size: 125%;
+                    }
+
+                    li {
+                        float: left;
+                        width: 29%;
+                        margin-right: 4%;
+                        list-style: none;
+
+                            h2 {
+                                margin-bottom: 2%;
+                            }
+
+                            a {
+                                h3 {
+                                    color: white;
+                                    line-height: 1.1;
+                                }
+                            }
+
+                            p.author
+                            {
+                                margin-left: 0;
+                                margin-top: 2.5%;
+                                width: auto;
+                                font-size:80%;
+                                font-style:italic;
+                                line-height: 1.1;
+                            }
+                    }
+                }
             }
 
             // Slug
