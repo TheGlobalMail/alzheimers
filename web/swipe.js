@@ -21,7 +21,7 @@ window.Swipe = function(element, options) {
   this.delay = this.options.auto || 0;
 
   // test for 3d
-  this.has3d = ('WebKitCSSMatrix' in window && 'm11' in new WebKitCSSMatrix());
+  this.has3d = Modernizr.csstransforms3d;
 
   // reference dom elements
   this.container = element;

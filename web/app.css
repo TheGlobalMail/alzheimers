@@ -181,7 +181,7 @@ li {
 #header #sub li.active a:active,
 #header #sub li.active a:focus {
   background-color: transparent;
-  //cursor: default;
+  cursor: pointer;
 }
 #header #sub li.active:after {
   content: "";
@@ -525,9 +525,6 @@ li {
   display: block;
   width: 40px;
   height: 40px;
-}
-.sc-player .sc-controls a.sc-play,
-.sc-player .sc-controls a.sc-pause {
 }
 .sc-player .sc-controls a.sc-pause {
   display: none;
