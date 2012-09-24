@@ -507,6 +507,7 @@ li {
 #container ul.grid li.reader p.quote {
   background-position-x: 4%;
   padding-top: 2%;
+  padding-left: 12%;
 }
 #container ul.grid li.reader p.author {
   color: #585858;
