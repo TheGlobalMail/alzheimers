@@ -38,7 +38,7 @@ $(document).ready(function() {
       if ($soundcloudPlayers.length){
         $soundcloudPlayers.show();
       }else{
-        $soundcloudPlayers.hide();
+        $('.sc-player').hide();
       }
 
       $('ul[data-role="navigation"] li:not(:nth-child(' + child + '))').removeClass('active');
@@ -62,5 +62,7 @@ $(document).ready(function() {
     e.preventDefault();
     slider.next();
   });
+
+  
 
 });
