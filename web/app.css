@@ -467,7 +467,7 @@ li {
   width: 80%;
 }
 #container ul.grid li.audio {
-  background: #000000 url(img/audio-pic.jpg) 0 0 no-repeat;
+  background: #000000 none 0 0 no-repeat;
   background-size: 100%;
 }
 #container ul.grid li.audio h2 {
