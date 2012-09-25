@@ -137,7 +137,9 @@ li {
 }
 #header #main .icons .about:hover,
 #header #main .icons .share:hover {
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -ms-filter: progid:dximagetransform.microsoft.alpha(Opacity=60);
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
   -khtml-opacity: 0.6;
@@ -158,6 +160,7 @@ li {
   padding: 8px 0 0 70px;
 }
 #header #sub li {
+  display: none;
   list-style: none;
   text-transform: uppercase;
   font-size: 11px;
@@ -386,7 +389,7 @@ li {
   height: 100%;
   position: absolute;
 }
-#container .video #vimeo-1 {
+#container .video .player {
   width: 76%;
   height: 76%;
   padding: 0 12%;

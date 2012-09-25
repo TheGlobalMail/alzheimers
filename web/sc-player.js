@@ -681,7 +681,7 @@
   // the default Auto-Initialization
   $(function() {
     if($.isFunction($.scPlayer.defaults.onDomReady)){
-      $.scPlayer.defaults.onDomReady();
+      //$.scPlayer.defaults.onDomReady();
     }
   });
 
