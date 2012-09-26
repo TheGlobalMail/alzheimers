@@ -69,7 +69,7 @@ $(document).ready(function() {
             '<li class="reader">' + 
               '<h2>' + story.title + '</h2>' + 
               '<p class="author">' + story.byline + '</p>' +
-              '<p>' + story.excerpt + '</p>' + 
+              '<p class="quote">' + story.excerpt + '</p>' + 
               '<a href="#more-' + story.id + '" rel="modal">Read more</a>' +
             '</li>'
           );
