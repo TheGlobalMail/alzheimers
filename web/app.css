@@ -588,7 +588,7 @@ li {
   display: block;
 }
 #container ul.grid li.reader:last-child h2 {
-  margin-top: 35%;
+  margin-top: 30%;
 }
 #container ul.grid li .btn {
   display: block;
