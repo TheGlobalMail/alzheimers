@@ -136,7 +136,7 @@ $(document).ready(function() {
 
       // Adjust the column heights on the grid
       // NOTE: this must be done before swipe is initiated
-      $column = $('ul.grid li');
+      $column = $('#readers-section ul.grid li');
       $column.each(function() {
         if ($(this).height() > maxHeight) {
           maxHeight = $(this).height();;
