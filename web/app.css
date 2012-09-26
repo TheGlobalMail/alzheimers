@@ -572,7 +572,7 @@ li {
   padding-left: 10%;
 }
 #container ul.grid li.reader p.quote {
-  background-position-x: 4%;
+  background-position-x: 5%;
   padding-top: 2%;
   padding-left: 12%;
 }
@@ -588,7 +588,7 @@ li {
   display: block;
 }
 #container ul.grid li.reader:last-child h2 {
-  margin-top: 30%;
+  margin-top: 20%;
 }
 #container ul.grid li .btn {
   display: block;
