@@ -5,4 +5,4 @@ app.configure(function(){
   app.use(express.static(__dirname + '/web'));
 });
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
