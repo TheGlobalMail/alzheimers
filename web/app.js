@@ -27,7 +27,7 @@ $(document).ready(function() {
               '<div class="video vimeo-player" data-vimeo-id="' + video.vimeo + '" >' + 
               '</div>' +
               '<div class="video-txt">' +
-              '<p>' + video.content + '</p>' + 
+              '<p>' + video.excerpt + '</p>' + 
               '<p class="quote">' + video.pull + '</p>' +
               '</div>' + 
             '</div>'
@@ -40,7 +40,7 @@ $(document).ready(function() {
       audio = _.find(posts, function(post){ return _.find(post.categories, function(cat){ return cat === 'audio'}); });
       $audioNav.find('a').html(audio.title);
       $('#audio-title').html(audio.title);
-      $('#audio-content').html(audio.content);
+      $('#audio-content').html(audio.excerpt);
 
       // Soundclouds clips
       _.chain(posts)
@@ -58,7 +58,7 @@ $(document).ready(function() {
       storiesPage = _.find(posts, function(post){ return _.find(post.categories, function(cat){ return cat === 'story'}); });
       $storiesNav.find('a').html(storiesPage.title);
       $('#stories-title').html(storiesPage.title);
-      $('#stories-content').html(storiesPage.content);
+      $('#stories-content').html(storiesPage.excerpt);
 
       // Reader stories
       _.chain(posts)
