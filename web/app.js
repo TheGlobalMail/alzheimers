@@ -1,8 +1,10 @@
 $(document).ready(function() {
 
+  var liveData = location.href.match(/live=1/i);
+
   $.ajax({
-    url: 'http://198.101.244.116/?feed=json',
-    dataType: 'jsonp',
+    url: liveData ? 'http://198.101.244.116/?feed=json' : 'data.json',
+    dataType: liveData ? 'jsonp' : 'json',
     success: function(posts){
       var videos
       var $audioNav = $('#audio-nav-item');
@@ -10,16 +12,19 @@ $(document).ready(function() {
       var maxHeight = 0, slider, $column;
       var audio;
       var $audioShare = $('#audio-share');
+      var $storiesNav = $('#stories-nav-item');
+      var storiesPage;
+      var $storiesShare = $('#stories-share');
+      var $modals = $('#modals');
 
-      _.chain(posts)
+      videos = _.chain(posts)
         .select(function(video){ return _.find(video.categories, function(cat){ return cat === 'videos'}); })
         .sortBy(function(video, index){ return video.order; })
         .map(function(video, index){
           $audioNav.before('<li class="vid"><a data-page="' + (1 + index) + '">' + _.escape(video.title) + '</a></li>');
           $sectionAfterVideos.before(
             '<div class="section">' + 
-              '<div class="video" data-vimeo-id="' + video.vimeo + '" >' + 
-                '<iframe class="player" src="http://player.vimeo.com/video/' + video.vimeo + '?api=1&player_id=player-' + video.vimeo + '" frameborder="0"></iframe>' +
+              '<div class="video vimeo-player" data-vimeo-id="' + video.vimeo + '" >' + 
               '</div>' +
               '<div class="video-txt">' +
               '<p>' + video.content + '</p>' + 
@@ -27,14 +32,15 @@ $(document).ready(function() {
               '</div>' + 
             '</div>'
           );
+          return video;
         })
         .value();
 
       // audio page
       audio = _.find(posts, function(post){ return _.find(post.categories, function(cat){ return cat === 'audio'}); });
-      $audioNav.find('a').text(audio.title);
-      $('#audio-title').text(audio.title);
-      $('#audio-content').text(audio.content);
+      $audioNav.find('a').html(audio.title);
+      $('#audio-title').html(audio.title);
+      $('#audio-content').html(audio.content);
 
       // Soundclouds clips
       _.chain(posts)
@@ -47,9 +53,40 @@ $(document).ready(function() {
           );
         })
         .value();
+        
+      // story page
+      storiesPage = _.find(posts, function(post){ return _.find(post.categories, function(cat){ return cat === 'story'}); });
+      $storiesNav.find('a').html(storiesPage.title);
+      $('#stories-title').html(storiesPage.title);
+      $('#stories-content').html(storiesPage.content);
+
+      // Reader stories
+      _.chain(posts)
+        .select(function(post){ return _.find(post.categories, function(cat){ return cat === 'stories'}); })
+        .sortBy(function(story, index){ return story.order; })
+        .map(function(story, index){
+          $storiesShare.before(
+            '<li class="reader">' + 
+              '<h2>' + story.title + '</h2>' + 
+              '<p class="author">' + story.byline + '</p>' +
+              '<p>' + story.excerpt + '</p>' + 
+              '<a href="#more-' + story.id + '" rel="modal">Read more</a>' +
+            '</li>'
+          );
+          $modals.before(
+            '<div class="modal" id="more-' + story.id + '">' +
+            '<a rel="close-modal">&times;</a>' +
+            '<h2>' + story.title + '</h2>' +
+            story.content +
+            '</div>'
+          )
+        })
+        .value();
 
       // Enable sound player
-      $('a.sc-player, div.sc-player').scPlayer();
+      if ($.isFunction($.scPlayer.defaults.onDomReady)){
+        $('a.sc-player, div.sc-player').scPlayer();
+      }
 
 
       $('a.arrow.right').removeClass('hide');
@@ -116,6 +153,15 @@ $(document).ready(function() {
         slider.slide($(this).data('page'));
       });
       $('ul[data-role="navigation"] li').show();
+
+      // Load the videos last so it doesn't hold up rendering
+      _.each(videos, function(video){
+        $('.vimeo-player[data-vimeo-id=' + video.vimeo + ']').html(
+          '<iframe class="player" src="http://player.vimeo.com/video/' + 
+            video.vimeo + '?api=1&player_id=player-' + video.vimeo + 
+            '" frameborder="0"></iframe>'
+        );
+      });
     }
   });
 

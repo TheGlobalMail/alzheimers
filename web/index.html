@@ -25,7 +25,7 @@
 				<ul data-role="navigation">
 					<li class="active"><a data-page="0">Introduction</a></li>
 					<li id="audio-nav-item" class="aud"><a data-page="4"></a></li>
-					<li class="com"><a data-page="5">Readers' stories</a></li>
+					<li id="stories-nav-item" class="com"><a data-page="5"></a></li>
 				</ul>
 			</span>
 		</div>
@@ -57,47 +57,11 @@
         <div class="section">
           <ul class="grid">
             <li class="txt">
-              <h1>Readers' stories</h1>
-              <p>Our readers share their own stories of dealing with Alzheimers</p>
+              <h1 id="stories-title"></h1>
+              <p id="stories-content"></p>
               <span class="btn"></span>
             </li>
-            <li class="reader">
-              <h2>Mike's story</h2>
-              <p class="author">by Mike Bowers, NSW</p>
-              <p class="quote">When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer."</p>
-              <a href="#more" rel="modal">Read more</a>
-            </li>
-            <li class="reader">
-              <h2>Mike's story</h2>
-              <p class="author">by Mike Bowers, NSW</p>
-              <p class="quote">Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography."</p>
-              <a href="#more" rel="modal">Read more</a>
-            </li>
-            <li class="reader">
-              <h2>Mike's story</h2>
-              <p class="author">by Mike Bowers, NSW</p>
-              <p class="quote">When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer."</p>
-              <a href="#more" rel="modal">Read more</a>
-            </li>
-            <li class="reader">
-              <h2>Mike's story</h2>
-              <p class="author">by Mike Bowers, NSW</p>
-              <p class="quote">Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography."</p>
-              <a href="#more" rel="modal">Read more</a>
-            </li>
-            <li class="reader">
-              <h2>Mike's story</h2>
-              <p class="author">by Mike Bowers, NSW</p>
-              <p class="quote">When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer."</p>
-              <a href="#more" rel="modal">Read more</a>
-            </li>
-            <li class="reader">
-              <h2>Mike's story</h2>
-              <p class="author">by Mike Bowers, NSW</p>
-              <p class="quote">Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography."</p>
-              <a href="#more" rel="modal">Read more</a>
-            </li>
-            <li class="reader txt "><h2>Would you like to share your experiences with Alzheimers, either via audio or words?</h2><span class="btn"></span></li>
+            <li id="stories-share" class="reader txt"><h2>Would you like to share your experiences with Alzheimers, either via audio or words?</h2><span class="btn"></span></li>
           </ul>
         </div>
 
@@ -108,33 +72,26 @@
 		<a class="arrow right hide" data-action="next"></a>
   </div>
 
-  <div class="modal" id="more">
-    <a rel="close-modal">&times;</a>
-    <h2>Mike's story</h2>
-    <p class="author">by Mike Bowers, NSW</p>
-
-    <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
-    <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
-    <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
-    <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
+  <div id="modals">
+    <div class="modal" id="support">
+      <a rel="close-modal">&times;</a>
+      <h2>Support groups</h2>
+      <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
+      <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
+      <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
+      <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
+    </div>
   </div>
 
-  <div class="modal" id="support">
-    <a rel="close-modal">&times;</a>
-    <h2>Support groups</h2>
-    <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
-    <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
-    <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
-    <p>When Charlie Chaplin received a letter from another old man in 1971, he secreted it in a locked drawer. Perhaps bemused by a sliver of an unknowable past, he certainly was not muted by shame. Read by the great comedian’s daughter after his death in 1977, the letter gave evidence of a Roma lineage, already asserted by Chaplin in his autobiography. But the letter’s author went further.</p>
-  </div>
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>-->
+  <script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="soundcloud.player.api.js"></script>
   <script type="text/javascript" src="sc-player.js"></script>
   <script type="text/javascript" src="modernizr.custom.32065.js"></script>
   <script type="text/javascript" src="swipe.js"></script>
   <script type="text/javascript" src="jquery.leanModal.min.js"></script>
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/0.7.0/lodash.min.js"></script>
+  <!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/0.7.0/lodash.min.js"></script> -->
+  <script type="text/javascript" src="lodash.min.js"></script>
 	<script type="text/javascript" src="app.js "></script>
 
 </body>
