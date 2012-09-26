@@ -134,6 +134,16 @@ $(document).ready(function() {
         slider.next();
       });
 
+      $(document).keydown(function(e){
+        if (e.keyCode === 37){
+          e.preventDefault();
+          slider.prev();
+        }else if (e.keyCode === 39){
+          e.preventDefault();
+          slider.next();
+        }
+      });
+
       // Adjust the column heights on the grid
       // NOTE: this must be done before swipe is initiated
       $column = $('#readers-section ul.grid li');
