@@ -1,3 +1,20 @@
+@fontAwesomePath: 'Font-Awesome/font';
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('@{fontAwesomePath}/fontawesome-webfont.eot');
+  src: url('@{fontAwesomePath}/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+    url('@{fontAwesomePath}/fontawesome-webfont.woff') format('woff'),
+    url('@{fontAwesomePath}/fontawesome-webfont.ttf') format('truetype'),
+    url('@{fontAwesomePath}/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
 body
 {
     width:100%;
@@ -265,6 +282,54 @@ h1,h2,h3,ul,li
 
         }
 
+    }
+
+    #share-box
+    {
+        position: absolute;
+        right: 20px;
+        top: 60%;
+        height: 96px;
+        width: 250px;
+        background: #1B1B1B;
+        padding: 1%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 2px 5px black;
+        text-align: center;
+
+        .popover-inner {
+
+            .addthis_toolbox {
+
+            height: 77px;
+            margin-top: 5px;
+
+            a.addthis_button_email {
+                    display: inline-block;
+                    font-size: .95em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding: 6% 4%;
+                    line-height: 1;
+                    height: 30px;
+                    width: 40px;
+                    background: white;
+                    -webkit-border-radius: 4px;
+                    border-radius: 4px;
+                    border: 1px solid #999;
+                    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+                    font-size: 12px;
+                    color: #333;
+                    }
+
+
+        a {
+            vertical-align: top;
+            display: inline-block;
+            margin: 0 2px;
+            }
+        }
+    }
     }
 
 }
@@ -700,153 +765,11 @@ h1,h2,h3,ul,li
 
 }
 
-// Sc Player
+// Sc Player, modal and responsive css
+@import "modal.less";
+@import "scplayer.less";
+@import "responsive.less";
 
-@import url("scplayer.less");
 
-// Larger screens
 
-@media only screen and (min-width : 1200px) {
 
-    body {
-        font-size: 125%;
-    }
-
-    #header {
-        height: 102px;
-        #main {
-            height: 65px;
-            .home {
-                width: 55px;
-                height: 55px;
-                background-size: 55px;
-            }
-            .brand {
-                height: 52px;
-                background-size: auto 65px;
-                padding-left: 35px;
-            }
-            .icons {
-                width: auto;
-            }
-        }
-
-        #sub {
-            height: 28px;
-            padding-left: 95px;
-
-            li {
-                font-size: 12px;
-
-                a {
-                    padding-left: 15px;
-                    padding-right: 15px;
-                }
-
-                &.active:after{
-                    top:18px;
-                }
-
-                &.vid a
-                {
-                    background-position:9px 10px;
-                    padding-left:30px;
-                }
-
-                &.aud a
-                {
-                    background-position:10px 10px;
-                    padding-left:31px;
-                }
-
-                &.com a
-                {
-                    background-position:10px 10px;
-                    padding-left:29px;
-                }
-
-            }
-        }
-    }
-
-    #container {
-        max-width:1800px;
-        &.intro p, &.intro h1, p, h1 {
-            max-width: 800px;
-        }
-        .video {
-            margin-top: 102px;
-        }
-        ul.grid {
-            width: 76%;
-            margin-top: 102px;
-            li.txt {
-                h1 {
-                }
-            }
-        }
-        .sc-player
-        {
-          display:none;
-
-          ol.sc-trackslist {
-            margin-top: 4px;
-          }
-        }
-    }
-}
-
-// Modal support
-.modal
-{
-  display: none;
-  width: 50%;
-  border: 1px solid #333;
-  background-color: black;
-  margin: 0 auto;
-  padding: 4% 5% 5%;
-  box-shadow: 0 5px 20px black;
-
-    h2 {
-        margin:0 0 1%;
-    }
-
-    p {
-
-        margin-bottom: 2%;
-
-        &.author {
-                        color: #585858;
-                        font-style: italic;
-                        font-size:98%;
-                        margin-bottom: 2%;
-                        padding-bottom: 7%;
-                        background: url(img/divider.png) center bottom no-repeat;
-                }
-                    }
-
-    a[rel="close-modal"] {
-        float: right;
-        font-size: 300%;
-        line-height: 0;
-        &:hover {
-            cursor: pointer;
-        }
-    }
-}
-
-.hide{
-  display: none !important;
-}
-
-#lean_overlay
-{
-  position: fixed;
-  z-index:100;
-  top: 0px;
-  left: 0px;
-  height:100%;
-  width:100%;
-  background: #000;
-  display: none;
-}
