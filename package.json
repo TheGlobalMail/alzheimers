@@ -1,0 +1,19 @@
+{
+  "author": "B.J. Rossiter <bj.rossiter@theglboalmail.org>",
+  "version": "0.1.2",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "analyze": false,
+  "name": "alzheimers",
+  "engines": {
+    "node": "v0.8.x"
+  },
+  "dependencies": {
+    "express": "~3.0.0rc4"
+  },
+  "subdomain": "alzheimers-deliver",
+  "domains": [
+    "alzheimers-deliver.theglobalfail.com"
+  ]
+}
