@@ -3,7 +3,7 @@ $(document).ready(function() {
   var liveData = location.href.match(/live=1/i);
 
   $.ajax({
-    url: liveData ? 'http://198.101.244.116/?feed=json' : 'data.json',
+    url: liveData ? 'http://198.101.244.116/?feed=json' : 'data/data.json',
     dataType: liveData ? 'jsonp' : 'json',
     success: function(posts){
       var videos
