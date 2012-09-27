@@ -3,24 +3,24 @@ module.exports = function(grunt) {
   grunt.initConfig({
  
     watch: {
-      files: ["web/scripts/*.js"],
+      files: ["web/scripts/app/*.js"],
       tasks: 'default'
     },
 
     concat: {
-      'web/main.js': [
-        "web/scripts/modernizr.custom.32065.js",
-        "web/scripts/lodash.js",
-        "web/scripts/soundcloud.player.api.js",
-        "web/scripts/sc-player.js",
-        "web/scripts/jquery.leanModal.js",
-        "web/scripts/swipe.js",
-        "web/scripts/app.js"
+      'web/scripts/main.js': [
+        "web/scripts/vendor/modernizr.custom.32065.js",
+        "web/scripts/vendor/lodash.js",
+        "web/scripts/vendor/soundcloud.player.api.js",
+        "web/scripts/vendor/sc-player.js",
+        "web/scripts/vendor/jquery.leanModal.js",
+        "web/scripts/vendor/swipe.js",
+        "web/scripts/app/app.js"
       ]
     },
 
     min: {
-      'web/main.js': ['web/main.js']
+      'web/scripts/main.js': ['web/scripts/main.js']
     },
 
   });
