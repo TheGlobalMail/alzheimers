@@ -25,7 +25,7 @@ body
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family:ff-meta-serif-web-pro,"Cambria", Georgia,"Times New Roman",Times,serif;
+    font-family:@serifRegFontFamily;
 }
 
 
@@ -44,11 +44,12 @@ a:hover {
 p {
     margin: 0;
     padding: 0;
+    font-family:@serifRegFontFamily;
 
     &.quote
         {
             background:url(img/quote.png) 15px 0 no-repeat;
-            font-family: "Open Sans",Helvetica,Arial,sans-serif;
+            font-family: @sansFontFamily;
             font-size:140%;
             font-weight:700;
             font-style:italic;
@@ -66,6 +67,7 @@ h1,h2,h3,ul,li
 {
     margin:0;
     padding:0;
+    font-family: @serifFontFamily;
 }
 
 
@@ -152,7 +154,7 @@ h1,h2,h3,ul,li
         .icons .comments,
         .icons .share,
         .icons .readlater {
-            font-family: "Open Sans",Helvetica,Arial,sans-serif;
+            font-family: @sansFontFamily;
             text-transform: uppercase;
             font-weight: normal;
             font-size: 11px;
@@ -199,7 +201,6 @@ h1,h2,h3,ul,li
         background:rgba(27,27,27,0.8);
         border-bottom:1px solid rgba(255,255,255,0.1);
         color:#FFF;
-        font-family: "Open Sans",Helvetica,Arial,sans-serif;
         float:left;
         z-index:9;
         margin:0;
@@ -216,6 +217,7 @@ h1,h2,h3,ul,li
             color: rgba(255,255,255,0.6);
             position:relative;
             padding:0;
+            font-family:@sansFontFamily;
 
             a
             {
@@ -317,7 +319,7 @@ h1,h2,h3,ul,li
                     -webkit-border-radius: 4px;
                     border-radius: 4px;
                     border: 1px solid #999;
-                    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+                    font-family: @sansFontFamily;
                     font-size: 12px;
                     color: #333;
                     }
@@ -483,7 +485,7 @@ h1,h2,h3,ul,li
                 background-color:#000;
                 color:#FFF;
                 float:left;
-                font:bold 11px "Open Sans",Helvetica,Arial,sans-serif;
+                font:bold 11px @sansFontFamily;
                 font-size:14px;
                 line-height:17px;
                 border-radius:3px 0 0 4px;
@@ -736,7 +738,7 @@ h1,h2,h3,ul,li
                     }
                 }
                 a {
-                    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+                    font-family: @sansFontFamily;
                     font-weight: bold;
                     margin-left:10%;
                     margin-top: 2%;
