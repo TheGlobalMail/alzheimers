@@ -2,7 +2,7 @@
   "author": "B.J. Rossiter <bj.rossiter@theglboalmail.org>",
   "version": "0.1.3",
   "scripts": {
-    "start": "node server.js"
+    "start": "node bin/server.js"
   },
   "analyze": false,
   "name": "alzheimers",
@@ -10,7 +10,8 @@
     "node": "v0.8.x"
   },
   "dependencies": {
-    "express": "~3.0.0rc4"
+    "express": "~3.0.0rc4",
+    "cloudfiles-mirror": "~0.1.7"
   },
   "devDependencies": {
     "grunt-less": "~0.1.7",
