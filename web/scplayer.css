@@ -51,7 +51,7 @@
 /* scrubber */
 .sc-scrubber {
   position: absolute;
-  left: -5000px;
+  left: -9000px;
   bottom: 10px;
   height: 40px;
   width: 95.5%;
@@ -83,10 +83,11 @@
   position: absolute;
   float: left;
   width: 92%;
-  height: 100%;
+  height: 26px;
   left: 45px;
   overflow: auto;
   margin-top: 8px;
+  line-height: 1.2;
 }
 .sc-player ol.sc-trackslist li {
   float: left;

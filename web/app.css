@@ -80,6 +80,283 @@ li {
   padding: 0;
   font-family: "ff-meta-serif-web-pro", "Cambria", Georgia, "Times New Roman", Times, serif;
 }
+#container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 860px;
+  height: auto;
+  text-shadow: 0 -1px 0 #000000;
+  line-height: 1.4;
+  margin: 0 auto;
+}
+#container #sections .section.intro {
+  background: #000000 url(img/intro.jpg) center top no-repeat;
+  background-size: 76%;
+}
+#container #sections .section.intro h1 {
+  width: 50%;
+  max-width: 600px;
+  margin: 2% 0 1%;
+  margin-left: 30%;
+  padding-top: 10px;
+  font-size: 280%;
+  line-height: 1.1;
+  clear: both;
+}
+#container #sections .section.intro h1 span {
+  font-weight: 400;
+}
+#container #sections .section.intro img {
+  width: 100%;
+  height: auto;
+  padding-top: 1%;
+}
+#container #sections .section.intro p {
+  width: 50%;
+  max-width: 600px;
+  margin-left: 30%;
+  margin-bottom: 2%;
+}
+#container #sections .section.intro p.author {
+  margin-bottom: 2.5%;
+  font-size: 130%;
+  font-style: italic;
+}
+#container #sections .section.intro p.intro {
+  font-size: 130%;
+}
+#container #sections .section.intro span.divider {
+  display: block;
+  height: 30px;
+  width: 100%;
+  margin: 2% 0;
+  background: url(img/divider.png) center top no-repeat;
+}
+#container #sections .section.intro #overview {
+  width: 50%;
+  max-width: 600px;
+  margin-left: 30%;
+}
+#container #sections .section.intro #overview span.row {
+  width: 100%;
+  display: block;
+  float: left;
+  margin-bottom: 7%;
+}
+#container #sections .section.intro #overview span.row h2 {
+  line-height: 1;
+  margin-bottom: 1%;
+  text-transform: uppercase;
+  font-size: 125%;
+}
+#container #sections .section.intro #overview span.row li {
+  float: left;
+  width: 29%;
+  margin-right: 4%;
+  list-style: none;
+}
+#container #sections .section.intro #overview span.row li h2 {
+  margin-bottom: 2%;
+}
+#container #sections .section.intro #overview span.row li a h3 {
+  color: white;
+  line-height: 1.1;
+}
+#container #sections .section.intro #overview span.row li p.author {
+  margin-left: 0;
+  margin-top: 2.5%;
+  width: auto;
+  font-size: 80%;
+  font-style: italic;
+  line-height: 1.1;
+}
+#container #sections .section.intro .right-arrowhead-label {
+  text-transform: uppercase;
+  top: 10px;
+  left: -4px;
+  z-index: 1;
+  margin-left: 29%;
+  padding-top: 35%;
+  clear: both;
+}
+#container #sections .section.intro .right-arrowhead-label .text {
+  background-color: #000;
+  color: #FFF;
+  float: left;
+  font: bold 11px "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 3px 0 0 4px;
+  text-shadow: none;
+  padding: 2px 7px 1px 9px;
+}
+#container #sections .section.intro .right-arrowhead-label .arrowhead {
+  float: left;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent transparent #000;
+  border-style: solid none solid solid;
+  border-width: 10px;
+}
+#container .video {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 56%;
+  margin-top: 90px;
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+#container .video embed,
+#container .video iframe,
+#container .video object,
+#container .video video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#container .video .player {
+  width: 76%;
+  height: 76%;
+  padding: 0 12%;
+}
+#container .video-txt {
+  width: 76%;
+  font-style: 110%;
+  margin: -12% auto 0;
+}
+#container .video-txt p {
+  float: left;
+  font-size: 110%;
+  padding-bottom: 5%;
+  margin: 0;
+  width: 50%;
+}
+#container .video-txt p.quote {
+  background: url(img/quote.png) 15px 0 no-repeat;
+  float: right;
+  width: 35%;
+  padding-left: 62px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+#container ul.grid {
+  width: 76%;
+  position: relative;
+  margin: 88px auto 0;
+  padding: 0;
+}
+#container ul.grid li {
+  display: table-cell;
+  float: left;
+  list-style: none;
+  width: 50%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+#container ul.grid li.active {
+  width: auto;
+}
+#container ul.grid li img {
+  margin: 0;
+  padding: 0;
+}
+#container ul.grid li h2 {
+  font-size: 140%;
+  padding: 2.5% 5% 0;
+}
+#container ul.grid li.txt {
+  background-image: none;
+  position: relative;
+}
+#container ul.grid li.txt h1 {
+  font-size: 170%;
+  padding-top: 20%;
+  padding-bottom: 1.5%;
+  margin-bottom: 1.5%;
+  margin-left: 10%;
+  width: 80%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#container ul.grid li.txt h2 {
+  padding: 20% 0 0;
+  margin-top: 20%;
+  margin-left: 10%;
+  width: 80%;
+  border: none;
+  line-height: 1.3;
+  font-size: 140%;
+}
+#container ul.grid li.txt p {
+  font-size: 120%;
+  margin-left: 10%;
+  width: 80%;
+}
+#container ul.grid li.audio {
+  background: #000000 none 0 0 no-repeat;
+  background-size: 100%;
+}
+#container ul.grid li.audio h2 {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 1;
+  font-size: 140%;
+  margin: 85% 0 0;
+  padding: 2% 0 .5% 2.5%;
+}
+#container ul.grid li.reader {
+  border-left: 1px solid #333333;
+  border-top: 1px solid #333333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#container ul.grid li.reader:nth-child(odd) {
+  border-left: none;
+}
+#container ul.grid li.reader:nth-child(2) {
+  border-top: none;
+}
+#container ul.grid li.reader h2 {
+  width: 80%;
+  margin-top: 2.5%;
+  margin-bottom: 1%;
+  margin-left: 10%;
+  padding: 2.5% 0 0;
+}
+#container ul.grid li.reader p {
+  padding: 0;
+  width: 80%;
+  padding-left: 10%;
+}
+#container ul.grid li.reader p.quote {
+  background-position-x: 5%;
+  padding-top: 2%;
+  padding-left: 12%;
+}
+#container ul.grid li.reader p.author {
+  color: #585858;
+  font-size: 98%;
+}
+#container ul.grid li.reader a {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 2%;
+  display: block;
+}
+#container ul.grid li.reader:last-child h2 {
+  margin-top: 20%;
+}
+#container ul.grid li .btn {
+  display: block;
+  width: 242px;
+  height: 40px;
+  margin-top: 5%;
+  margin-left: 10%;
+  background: url(img/btn-share.png) 0 0 no-repeat;
+}
 #header {
   position: fixed;
   top: 0;
@@ -291,125 +568,7 @@ li {
   display: inline-block;
   margin: 0 2px;
 }
-#container {
-  width: 100%;
-  max-width: 1200px;
-  min-width: 860px;
-  height: auto;
-  text-shadow: 0 -1px 0 #000000;
-  line-height: 1.4;
-  margin: 0 auto;
-}
-#container #sections .section.intro {
-  background: #000000 url(img/intro.jpg) center top no-repeat;
-  background-size: 76%;
-}
-#container #sections .section.intro h1 {
-  width: 50%;
-  max-width: 600px;
-  margin: 2% 0;
-  margin-left: 30%;
-  padding-top: 10px;
-  font-size: 280%;
-  line-height: 1.1;
-  clear: both;
-}
-#container #sections .section.intro h1 span {
-  font-weight: 400;
-}
-#container #sections .section.intro img {
-  width: 100%;
-  height: auto;
-  padding-top: 1%;
-}
-#container #sections .section.intro p {
-  width: 50%;
-  max-width: 600px;
-  margin-left: 30%;
-  margin-bottom: 2%;
-}
-#container #sections .section.intro p.author {
-  margin-bottom: 2.5%;
-  font-size: 130%;
-  font-style: italic;
-}
-#container #sections .section.intro p.intro {
-  font-size: 130%;
-}
-#container #sections .section.intro span.divider {
-  display: block;
-  height: 30px;
-  width: 100%;
-  margin: 2% 0;
-  background: url(img/divider.png) center top no-repeat;
-}
-#container #sections .section.intro #overview {
-  width: 50%;
-  max-width: 600px;
-  margin-left: 30%;
-}
-#container #sections .section.intro #overview span.row {
-  width: 100%;
-  display: block;
-  float: left;
-  margin-bottom: 7%;
-}
-#container #sections .section.intro #overview span.row h2 {
-  line-height: 1;
-  margin-bottom: 1%;
-  text-transform: uppercase;
-  font-size: 125%;
-}
-#container #sections .section.intro #overview span.row li {
-  float: left;
-  width: 29%;
-  margin-right: 4%;
-  list-style: none;
-}
-#container #sections .section.intro #overview span.row li h2 {
-  margin-bottom: 2%;
-}
-#container #sections .section.intro #overview span.row li a h3 {
-  color: white;
-  line-height: 1.1;
-}
-#container #sections .section.intro #overview span.row li p.author {
-  margin-left: 0;
-  margin-top: 2.5%;
-  width: auto;
-  font-size: 80%;
-  font-style: italic;
-  line-height: 1.1;
-}
-#container #sections .section.intro .right-arrowhead-label {
-  text-transform: uppercase;
-  top: 10px;
-  left: -4px;
-  z-index: 1;
-  margin-left: 29%;
-  padding-top: 35%;
-  clear: both;
-}
-#container #sections .section.intro .right-arrowhead-label .text {
-  background-color: #000;
-  color: #FFF;
-  float: left;
-  font: bold 11px "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 17px;
-  border-radius: 3px 0 0 4px;
-  text-shadow: none;
-  padding: 2px 7px 1px 9px;
-}
-#container #sections .section.intro .right-arrowhead-label .arrowhead {
-  float: left;
-  width: 0;
-  height: 0;
-  border-color: transparent transparent transparent #000;
-  border-style: solid none solid solid;
-  border-width: 10px;
-}
-#container .arrow {
+.arrow {
   position: fixed;
   float: left;
   top: 0;
@@ -418,20 +577,20 @@ li {
   height: 100%;
   opacity: .4;
 }
-#container .arrow.left {
+.arrow.left {
   position: fixed;
   left: 0;
   background: #000000 url(img/arrow.png) 50% 50% no-repeat;
 }
-#container .arrow.right {
+.arrow.right {
   position: fixed;
   right: 0;
   left: initial;
   background: #000000 url(img/arrow-right.png) 50% 50% no-repeat;
 }
-#container .arrow:hover,
-#container .arrow:active,
-#container .arrow:focus {
+.arrow:hover,
+.arrow:active,
+.arrow:focus {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
@@ -440,165 +599,6 @@ li {
   -ms-transition: all 150ms ease-in-out;
   -o-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
-}
-#container .video {
-  height: 0;
-  padding-top: 0;
-  padding-bottom: 56%;
-  margin-top: 90px;
-  margin-bottom: 0;
-  position: relative;
-  overflow: hidden;
-}
-#container .video embed,
-#container .video iframe,
-#container .video object,
-#container .video video {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-#container .video .player {
-  width: 76%;
-  height: 76%;
-  padding: 0 12%;
-}
-#container .video-txt {
-  width: 76%;
-  font-style: 110%;
-  margin: -12% auto 0;
-}
-#container .video-txt p {
-  float: left;
-  font-size: 110%;
-  padding-bottom: 5%;
-  margin: 0;
-  width: 50%;
-}
-#container .video-txt p.quote {
-  background: url(img/quote.png) 15px 0 no-repeat;
-  float: right;
-  width: 35%;
-  padding-left: 62px;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-}
-#container ul.grid {
-  width: 76%;
-  position: relative;
-  margin: 88px auto 0;
-  padding: 0;
-}
-#container ul.grid li {
-  display: table-cell;
-  float: left;
-  list-style: none;
-  width: 50%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
-#container ul.grid li.active {
-  width: auto;
-}
-#container ul.grid li img {
-  margin: 0;
-  padding: 0;
-}
-#container ul.grid li h2 {
-  font-size: 140%;
-  padding: 2.5% 5% 0;
-}
-#container ul.grid li.txt {
-  background-image: none;
-  position: relative;
-}
-#container ul.grid li.txt h1 {
-  font-size: 170%;
-  padding-top: 20%;
-  padding-bottom: 1.5%;
-  margin-bottom: 1.5%;
-  margin-left: 10%;
-  width: 80%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-#container ul.grid li.txt h2 {
-  padding: 20% 0 0;
-  margin-top: 20%;
-  margin-left: 10%;
-  width: 80%;
-  border: none;
-  line-height: 1.3;
-  font-size: 140%;
-}
-#container ul.grid li.txt p {
-  font-size: 120%;
-  margin-left: 10%;
-  width: 80%;
-}
-#container ul.grid li.audio {
-  background: #000000 none 0 0 no-repeat;
-  background-size: 100%;
-}
-#container ul.grid li.audio h2 {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  line-height: 1;
-  font-size: 140%;
-  margin: 85% 0 0;
-  padding: 2% 0 .5% 2.5%;
-}
-#container ul.grid li.reader {
-  border-left: 1px solid #333333;
-  border-top: 1px solid #333333;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-#container ul.grid li.reader:nth-child(odd) {
-  border-left: none;
-}
-#container ul.grid li.reader:nth-child(2) {
-  border-top: none;
-}
-#container ul.grid li.reader h2 {
-  width: 80%;
-  margin-top: 2.5%;
-  margin-bottom: 1%;
-  margin-left: 10%;
-  padding: 2.5% 0 0;
-}
-#container ul.grid li.reader p {
-  padding: 0;
-  width: 80%;
-  padding-left: 10%;
-}
-#container ul.grid li.reader p.quote {
-  background-position-x: 5%;
-  padding-top: 2%;
-  padding-left: 12%;
-}
-#container ul.grid li.reader p.author {
-  color: #585858;
-  font-size: 98%;
-}
-#container ul.grid li.reader a {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  margin-left: 10%;
-  margin-top: 2%;
-  display: block;
-}
-#container ul.grid li.reader:last-child h2 {
-  margin-top: 20%;
-}
-#container ul.grid li .btn {
-  display: block;
-  width: 242px;
-  height: 40px;
-  margin-top: 5%;
-  margin-left: 10%;
-  background: url(img/btn-share.png) 0 0 no-repeat;
 }
 .modal {
   display: none;
@@ -614,6 +614,7 @@ li {
 }
 .modal p {
   margin-bottom: 2%;
+  line-height: 1.6;
 }
 .modal p.author {
   color: #585858;
@@ -837,7 +838,7 @@ li {
 /* scrubber */
 .sc-scrubber {
   position: absolute;
-  left: -5000px;
+  left: -9000px;
   bottom: 10px;
   height: 40px;
   width: 95.5%;
@@ -869,10 +870,11 @@ li {
   position: absolute;
   float: left;
   width: 92%;
-  height: 100%;
+  height: 26px;
   left: 45px;
   overflow: auto;
   margin-top: 8px;
+  line-height: 1.2;
 }
 .sc-player ol.sc-trackslist li {
   float: left;
