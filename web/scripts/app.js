@@ -8,7 +8,7 @@ $(document).ready(function() {
     success: function(posts){
       var videos
       var $audioNav = $('#audio-nav-item');
-      var $sectionAfterVideos = $('#audio-section');
+      var $sectionAfterVideos = $('#own-words');
       var maxHeight = 0, slider, $column;
       var audio;
       var $audioShare = $('#audio-share');
@@ -23,7 +23,7 @@ $(document).ready(function() {
         .map(function(video, index){
           $audioNav.before('<li class="vid"><a data-page="' + (1 + index) + '">' + _.escape(video.title) + '</a></li>');
           $sectionAfterVideos.before(
-            '<div class="section">' + 
+            '<div class="section" id="' + video.slug + '-video">' + 
               '<div class="video vimeo-player" data-vimeo-id="' + video.vimeo + '" >' + 
               '</div>' +
               '<div class="video-txt">' +
@@ -88,6 +88,10 @@ $(document).ready(function() {
         $('a.sc-player, div.sc-player').scPlayer();
       }
 
+      // Set index on each section to make jumping to them easy
+      $('#sections .section').each(function(index){
+        $(this).attr('data-section-index', index);
+      });
 
       $('a.arrow.right').removeClass('hide');
       window.slider = slider = new Swipe(document.getElementById('container'), {
@@ -121,6 +125,12 @@ $(document).ready(function() {
           $('ul[data-role="navigation"] li:not(:nth-child(' + child + '))').removeClass('active');
           $('ul[data-role="navigation"] li:nth-child(' + child + ')').addClass('active');
           $('html, body').animate({scrollTop : 0}, 'fast');
+
+          if ($(el).attr('id')){
+            location.hash = '#!' + $(el).attr('id');
+          }else{
+            location.hash = '';
+          }
         }
       });
 
@@ -144,9 +154,33 @@ $(document).ready(function() {
         }
       });
 
+      $(window).bind('hashchange', function(){
+        var hash = location.hash;
+        var section = hash.replace( /^#!/, '' );
+        var $section, index;
+        if (!section){
+          // Forward to home
+          if (slider.getPos !== 0){
+            slider.slide(0);
+          }
+        }else{
+          // If we've found a matching section for the hash, slide to it
+          $section = $('#' + section + '[data-section-index]');
+          if ($section.length){
+            // Don't bother sliding if we're already on the section. This
+            // will occur when the ui triggers a slide which then triggers
+            // a hash change when the slide is complete
+            index = parseInt($section.data('section-index'));
+            if (index !== slider.getPos()){
+              slider.slide($section.data('section-index'));
+            }
+          }
+        }
+      });
+
       // Adjust the column heights on the grid
       // NOTE: this must be done before swipe is initiated
-      $column = $('#readers-section ul.grid li');
+      $column = $('ul.grid li');
       $column.each(function() {
         if ($(this).height() > maxHeight) {
           maxHeight = $(this).height();;
@@ -172,6 +206,9 @@ $(document).ready(function() {
             '" frameborder="0"></iframe>'
         );
       });
+
+      // Trigger an initial hash change to check to see if this was a link
+      $(window).trigger('hashchange');
     }
   });
 
