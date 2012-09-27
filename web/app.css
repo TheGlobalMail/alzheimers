@@ -42,6 +42,8 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Cambria", Georgia, "Times New Roman", Times, serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: geometricPrecision;
 }
 a {
   text-decoration: none;
@@ -614,6 +616,7 @@ li {
 }
 .modal p {
   margin-bottom: 2%;
+  line-height: 1.6;
 }
 .modal p.author {
   color: #585858;
@@ -837,7 +840,7 @@ li {
 /* scrubber */
 .sc-scrubber {
   position: absolute;
-  left: -5000px;
+  left: -9000px;
   bottom: 10px;
   height: 40px;
   width: 95.5%;
@@ -869,10 +872,11 @@ li {
   position: absolute;
   float: left;
   width: 92%;
-  height: 100%;
+  height: 26px;
   left: 45px;
   overflow: auto;
   margin-top: 8px;
+  line-height: 1.2;
 }
 .sc-player ol.sc-trackslist li {
   float: left;
