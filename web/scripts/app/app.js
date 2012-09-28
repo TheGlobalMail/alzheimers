@@ -29,7 +29,7 @@ $(document).ready(function() {
 
   });
 
-  // Load models and triggers 'models:loaded' on vent
+  // Load models and trigger 'models:loaded' on vent when done
   app.models.load();
 
 });

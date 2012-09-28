@@ -4,6 +4,7 @@
 
   IntroView.prototype.render = function(){
 
+    $('#backgrounds img').removeClass('hide');
     $('#backgrounds').cycle();
 
   };
