@@ -43,6 +43,14 @@ a:hover {
     border-color: white;
 }
 
+a.btn {
+    &:hover,
+    &:active,
+    &:focus {
+    .opacity(80);
+    }
+}
+
 p {
     margin: 0;
     padding: 0;
@@ -699,14 +707,11 @@ h1,h2,h3,ul,li
                     font-size:140%;
                     margin:85% 0 0;
                     padding:2% 0 .5% 2.5%;
-                    //background:url(img/btn-play.png) 4px 4px no-repeat;
-                    //height:40px;
 
                 }
             }
 
             &.reader {
-                //padding-bottom: 5%;
                 border-left: 1px solid #333333;
                 border-top: 1px solid #333333;
                 -webkit-box-sizing: border-box;
@@ -714,6 +719,20 @@ h1,h2,h3,ul,li
                 box-sizing: border-box;
                 &:nth-child(odd) {
                     border-left: none;
+                }
+                &:last-child {
+                    width: 100%;
+                    h2 {
+                        margin-top:5%;
+                        margin-left: 5%;
+                        width: 70%;
+
+                    }
+                    a.btn {
+                        width: 250px;
+                        margin-top:2%;
+                        margin-left: 5%;
+                    }
                 }
                 &:nth-child(2) {
                     border-top: none;
@@ -746,9 +765,7 @@ h1,h2,h3,ul,li
                     margin-top: 2%;
                     display: block;
                 }
-                &:last-child  h2 {
-                    margin-top:20%;
-                }
+
             }
 
             .btn
@@ -763,6 +780,7 @@ h1,h2,h3,ul,li
 
 
         }
+
 
     }
 

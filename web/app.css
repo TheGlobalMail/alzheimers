@@ -55,6 +55,15 @@ a:hover {
   color: white;
   border-color: white;
 }
+a.btn:hover,
+a.btn:active,
+a.btn:focus {
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
 p {
   margin: 0;
   padding: 0;
@@ -560,6 +569,19 @@ li {
 #container ul.grid li.reader:nth-child(odd) {
   border-left: none;
 }
+#container ul.grid li.reader:last-child {
+  width: 100%;
+}
+#container ul.grid li.reader:last-child h2 {
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 70%;
+}
+#container ul.grid li.reader:last-child a.btn {
+  width: 250px;
+  margin-top: 2%;
+  margin-left: 5%;
+}
 #container ul.grid li.reader:nth-child(2) {
   border-top: none;
 }
@@ -590,9 +612,6 @@ li {
   margin-left: 10%;
   margin-top: 2%;
   display: block;
-}
-#container ul.grid li.reader:last-child h2 {
-  margin-top: 20%;
 }
 #container ul.grid li .btn {
   display: block;
