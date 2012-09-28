@@ -313,14 +313,14 @@ li {
 }
 #container #sections .section.intro {
   background: #000000 url(img/intro.jpg) center top no-repeat;
-  background-size: 76%;
+  background-size: 100%;
 }
 #container #sections .section.intro h1 {
-  width: 50%;
-  max-width: 600px;
-  margin: 2% 0;
+  width: 60%;
+  max-width: 500px;
+  margin: 1% 0;
   margin-left: 30%;
-  padding-top: 10px;
+  padding-top: 2%;
   font-size: 280%;
   line-height: 1.1;
   clear: both;
@@ -334,8 +334,8 @@ li {
   padding-top: 1%;
 }
 #container #sections .section.intro p {
-  width: 50%;
-  max-width: 600px;
+  width: 60%;
+  max-width: 500px;
   margin-left: 30%;
   margin-bottom: 2%;
 }
@@ -398,7 +398,7 @@ li {
   left: -4px;
   z-index: 1;
   margin-left: 29%;
-  padding-top: 35%;
+  padding-top: 45%;
   clear: both;
 }
 #container #sections .section.intro .right-arrowhead-label .text {
@@ -427,18 +427,18 @@ li {
   display: block;
   width: 12%;
   height: 100%;
-  opacity: .4;
+  opacity: .6;
 }
 #container .arrow.left {
   position: fixed;
   left: 0;
-  background: #000000 url(img/arrow.png) 50% 50% no-repeat;
+  background: transparent url(img/arrow.png) 50% 50% no-repeat;
 }
 #container .arrow.right {
   position: fixed;
   right: 0;
   left: initial;
-  background: #000000 url(img/arrow-right.png) 50% 50% no-repeat;
+  background: transparent url(img/arrow-right.png) 50% 50% no-repeat;
 }
 #container .arrow:hover,
 #container .arrow:active,
