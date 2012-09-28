@@ -40,8 +40,4 @@
 
   app.views.storiesView = new StoriesView();
 
-  TGM.alzheimers.vent.on('models:loaded', function(){
-    app.views.storiesView.render();
-  });
-
 })($, _, TGM.alzheimers);

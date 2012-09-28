@@ -137,8 +137,4 @@
 
   app.views.sliderView = new SliderView();
 
-  TGM.alzheimers.vent.on('models:loaded', function(){
-    app.views.sliderView.render();
-  });
-
 })($, _, TGM.alzheimers);

@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
  
     watch: {
-      files: ["web/scripts/app/*.js"],
+      files: ["web/scripts/app/*.js", "web/scripts/vendor/*.js"],
       tasks: 'default'
     },
 
@@ -15,8 +15,11 @@ module.exports = function(grunt) {
         "web/scripts/vendor/sc-player.js",
         "web/scripts/vendor/jquery.leanModal.js",
         "web/scripts/vendor/swipe.js",
+        "web/scripts/vendor/swipe.js",
+        "web/scripts/vendor/jquery.cycle.lite.js",
         "web/scripts/app/app.js",
         "web/scripts/app/Models.js",
+        "web/scripts/app/IntroView.js",
         "web/scripts/app/ViewHelper.js",
         "web/scripts/app/VideosView.js",
         "web/scripts/app/ClipsView.js",

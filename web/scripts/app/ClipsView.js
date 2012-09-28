@@ -29,8 +29,4 @@
 
   app.views.clipsView = new ClipsView();
 
-  TGM.alzheimers.vent.on('models:loaded', function(){
-    app.views.clipsView.render();
-  });
-
 })($, _, TGM.alzheimers);

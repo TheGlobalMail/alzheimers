@@ -121,14 +121,14 @@ Swipe.prototype = {
         duration = this.speed;
     }
 
-    // set duration speed (0 represents 1-to-1 scrolling)
-    style.webkitTransitionDuration = style.MozTransitionDuration = style.msTransitionDuration = style.OTransitionDuration = style.transitionDuration = duration + 'ms';
+    if (this.has3d){
+      // set duration speed (0 represents 1-to-1 scrolling)
+      style.webkitTransitionDuration = style.MozTransitionDuration = style.msTransitionDuration = style.OTransitionDuration = style.transitionDuration = duration + 'ms';
 
-    // translate to given index position
-    style.MozTransform = style.webkitTransform = 'translate3d(' + -(index * this.width) + 'px,0,0)';
-    style.msTransform = style.OTransform = 'translateX(' + -(index * this.width) + 'px)';
-
-    if (!this.has3d){
+      // translate to given index position
+      style.MozTransform = style.webkitTransform = 'translate3d(' + -(index * this.width) + 'px,0,0)';
+      style.msTransform = style.OTransform = 'translateX(' + -(index * this.width) + 'px)';
+    }else{
       this.slides[this.index].style.visibility = 'hidden';
       this.slides[index].style.visibility = 'visible';
     }

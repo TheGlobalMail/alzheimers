@@ -368,8 +368,30 @@ h1,h2,h3,ul,li
         // Intro page
 
         &.intro {
-            background:black url(img/intro.jpg) center top no-repeat;
+            background:black none center top no-repeat;
             background-size: 100%;
+            position:relative;
+            width: 100%;
+
+            #backgrounds{
+              position:relative;
+
+              img.background{
+                position:absolute;
+                z-index: 1;
+                width: 100%;
+                left: 0;
+                top: 0;
+              }
+
+            }
+
+            #content
+            {
+
+            position: relative;
+            z-index: 20;
+
 
             h1
             {
@@ -512,7 +534,7 @@ h1,h2,h3,ul,li
                 border-style:solid none solid solid;
                 border-width:10px;
             }
-
+          }
         }
       }
     }

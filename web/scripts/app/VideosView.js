@@ -39,8 +39,4 @@
 
   app.views.videosView = new VideosView();
 
-  TGM.alzheimers.vent.on('models:loaded', function(){
-    app.views.videosView.render();
-  });
-
 })($, _, TGM.alzheimers);

@@ -4,11 +4,24 @@ TGM.alzheimers.vent = $({});
 TGM.alzheimers.views = {};
 
 $(document).ready(function() {
+
+  var app = TGM.alzheimers;
+
+  app.views.introView.render();
   
-  TGM.alzheimers.vent.on('slider:ready', function(){
+  app.vent.on('models:loaded', function(){
+
+    app.views.videosView.render();
+    app.views.clipsView.render();
+    app.views.storiesView.render();
+    app.views.sliderView.render();
+
+  });
+
+  app.vent.on('slider:ready', function(){
 
     // Load videos after the slider is ready
-    TGM.alzheimers.views.videosView.loadVideos();
+    app.views.videosView.loadVideos();
 
     // Trigger an initial hash change to check to see if we should slide to
     // a particular page
@@ -17,6 +30,6 @@ $(document).ready(function() {
   });
 
   // Load models and triggers 'models:loaded' on vent
-  TGM.alzheimers.models.load();
+  app.models.load();
 
 });
