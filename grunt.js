@@ -15,7 +15,13 @@ module.exports = function(grunt) {
         "web/scripts/vendor/sc-player.js",
         "web/scripts/vendor/jquery.leanModal.js",
         "web/scripts/vendor/swipe.js",
-        "web/scripts/app/app.js"
+        "web/scripts/app/app.js",
+        "web/scripts/app/Models.js",
+        "web/scripts/app/ViewHelper.js",
+        "web/scripts/app/VideosView.js",
+        "web/scripts/app/ClipsView.js",
+        "web/scripts/app/StoriesView.js",
+        "web/scripts/app/SliderView.js"
       ]
     },
 
