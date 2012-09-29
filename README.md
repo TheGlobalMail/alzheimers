@@ -17,14 +17,14 @@ done manually.
 
 The steps are:
 
-1) Build an optimised version of the site to the dist directory
-2) Retrieve all the latest data from the wordpress cms and store a data.json
+1. Build an optimised version of the site to the dist directory
+2. Retrieve all the latest data from the wordpress cms and store a data.json
 and the associated images in the dist directory
-3) Deploy to the acceptance environment at http://alzheimers-deliver.theglobalfail.com
-using heroku.
-4) Deploy to the staging environment at http://alzheimers-deliver.theglobalfail.com
+3. Deploy to the acceptance environment at http://alzheimers-deliver.theglobalfail.com
+using nodejitsu.
+4. Deploy to the staging environment at http://alzheimers-deliver.theglobalfail.com
 by syncing the files to rackspace cloudfiles
-5) Deploy to the production environment at http://alzheimers-deliver.theglobalfail.com
+5. Deploy to the production environment at http://alzheimers-deliver.theglobalfail.com
 by syncing the files to rackspace cloudfiles
 
 ### Building an optimised version of the site  ###
