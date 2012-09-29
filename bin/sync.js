@@ -3,7 +3,7 @@ var request = require('request');
 var fs = require('fs');
 var async = require('async');
 var colors = require('colors');
-var dataDir = 'web/data/';
+var dataDir = 'dist/data/';
 
 request('http://alzheimers-cms.theglobalfail.com/?feed=json', function (err, res, body) {
 

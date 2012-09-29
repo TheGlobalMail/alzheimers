@@ -1,4 +1,5 @@
-(function($, _, app){
+define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'], 
+  function($, _, vent, models, helper, Swipe){
 
   var SliderView = function(){};
 
@@ -9,7 +10,8 @@
     this.setupHashChange();
     this.setupModals();
     this.setupNav();
-    app.vent.trigger('slider:ready');
+    this.setupShareBox();
+    vent.trigger('slider:ready');
   };
 
   SliderView.prototype.setupSlider = function(){
@@ -63,7 +65,7 @@
     if ($(el).attr('id')){
       location.hash = '#!' + $(el).attr('id');
     }else{
-      app.views.helpers.removeHash();
+      helper.removeHash();
     }
   };
     
@@ -135,6 +137,26 @@
     $('ul[data-role="navigation"] li').show();
   };
 
-  app.views.sliderView = new SliderView();
+  SliderView.prototype.setupShareBox = function(){
 
-})($, _, TGM.alzheimers);
+    $('a.share').click(function(e){
+
+      var $shareBox = $('#share-box');
+      var close = function(){ $shareBox.fadeOut().removeClass('active'); };
+      e.preventDefault();
+      e.stopPropagation();
+      if ($shareBox.hasClass('active')){
+        close();
+      }else{
+        $shareBox.fadeIn().addClass('active');
+        $('html').one('click', function(){
+          close();
+        });
+      }
+    });
+  };
+
+
+  return new SliderView();
+
+});

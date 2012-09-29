@@ -1,4 +1,4 @@
-(function($, _, app){
+define(['jquery', 'lodash', 'Models', 'ViewHelper', 'scplayer'], function($, _, models, helper){
 
   var ClipsView = function(){};
 
@@ -7,11 +7,11 @@
     var $audioNav = $('#audio-nav-item');
     var $audioShare = $('#audio-share');
 
-    $audioNav.find('a').html(app.models.audioPage.title);
-    $('#audio-title').html(app.models.audioPage.title);
-    $('#audio-content').html(app.models.audioPage.excerpt)
+    $audioNav.find('a').html(models.audioPage.title);
+    $('#audio-title').html(models.audioPage.title);
+    $('#audio-content').html(models.audioPage.excerpt)
 
-    _.each(app.models.clips, function(clip, index){
+    _.each(models.clips, function(clip, index){
       $audioShare.before(
         '<li class="audio" style="background-image: url(' + clip.thumbnail + 
         ');"><h2><a href="' + clip.soundcloud + '" class="sc-player"></a></h2></li>'
@@ -23,10 +23,10 @@
       $('a.sc-player, div.sc-player').scPlayer();
     }
 
-    app.views.helpers.adjustGridHeights($('#own-words'));
+    helper.adjustGridHeights($('#own-words'));
 
   };
 
-  app.views.clipsView = new ClipsView();
+  return new ClipsView();
 
-})($, _, TGM.alzheimers);
+});

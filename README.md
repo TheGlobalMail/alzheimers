@@ -1,15 +1,43 @@
 # Alzheimers #
 
-Alzheimers microsite.
+Alzheimers microsite. The site is designed to function as a completely static
+site. All content is generated in separate wordpress cms and then copied to
+static files as part of the build process.
+
+## Development ##
+
+The projects uses the http://yeoman.io tool set.
+
+Install yeoman and then run `yeoman server` to run in development mode.
+NOTE: the less code is not automatically compiled at this point and must be
+done manually.
+
 
 ## Deployment ##
+
+The steps are:
+
+1) Build an optimised version of the site to the dist directory
+2) Retrieve all the latest data from the wordpress cms and store a data.json
+and the associated images in the dist directory
+3) Deploy to the acceptance environment at http://alzheimers-deliver.theglobalfail.com
+using heroku.
+4) Deploy to the staging environment at http://alzheimers-deliver.theglobalfail.com
+by syncing the files to rackspace cloudfiles
+5) Deploy to the production environment at http://alzheimers-deliver.theglobalfail.com
+by syncing the files to rackspace cloudfiles
+
+### Building an optimised version of the site  ###
+
+Run `yeoman build`. This should build an optimised version into the dist
+directory.
 
 ### Syncing the data with the cms  ###
 
 Data is retrieved from the cms at http://alzheimers-cms.theglobalfail.com and
 stored statically in the data directory.
 
-To sync the data run: `node bin/sync.js`.
+To sync the data run: `./bin/sync.js`.
 
 It's possible to force any environment to use the latest cms data by adding
 `?live=1` to the end of the url.

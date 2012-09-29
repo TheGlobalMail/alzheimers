@@ -1,4 +1,4 @@
-(function($, _, app){
+define(['jquery', 'lodash', 'Models', 'ViewHelper'], function($, _, models, helper) {
 
   var StoriesView = function(){};
 
@@ -8,7 +8,7 @@
 
     this.renderNav();
 
-    _.each(app.models.stories, function(story, index){
+    _.each(models.stories, function(story, index){
       $('#stories-share').before(
         '<li class="reader">' + 
         '<h2>' + story.title + '</h2>' + 
@@ -26,18 +26,18 @@
       );
     });
 
-    app.views.helpers.adjustGridHeights($('#stories'));
+    helper.adjustGridHeights($('#stories'));
 
   };
 
   StoriesView.prototype.renderNav = function(){
     var $storiesNav = $('#stories-nav-item')
-    var storiesPage = app.models.storiesPage;
+    var storiesPage = models.storiesPage;
     $storiesNav.find('a').html(storiesPage.title);
     $('#stories-title').html(storiesPage.title);
     $('#stories-content').html(storiesPage.excerpt);
   };
 
-  app.views.storiesView = new StoriesView();
+  return new StoriesView();
 
-})($, _, TGM.alzheimers);
+});

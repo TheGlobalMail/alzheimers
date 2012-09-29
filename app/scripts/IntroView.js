@@ -1,4 +1,4 @@
-(function($, _, app){
+define(['jquery', 'cycle'], function($){
 
   var IntroView = function(){};
 
@@ -9,6 +9,6 @@
 
   };
 
-  app.views.introView = new IntroView();
+  return new IntroView();
 
-})($, _, TGM.alzheimers);
+});

@@ -72,7 +72,7 @@ p {
   font-family: "Cambria", Georgia, "Times New Roman", Times, serif;
 }
 p.quote {
-  background: url(img/quote.png) 15px 0 no-repeat;
+  background: url(/img/quote.png) 15px 0 no-repeat;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 140%;
   font-weight: 700;
@@ -127,7 +127,7 @@ li {
   height: 44px;
   float: left;
   margin: 5px 0 0;
-  background: url(img/logo.svg) center top no-repeat;
+  background: url(/img/logo.svg) center top no-repeat;
   background-size: 44px;
   text-indent: -9999px;
 }
@@ -139,7 +139,7 @@ li {
   color: white;
   font-weight: bold;
   line-height: 1.0;
-  background: url(img/header-arrow.png) left top no-repeat;
+  background: url(/img/header-arrow.png) left top no-repeat;
   height: 45px;
   padding-left: 2.5%;
   font-size: 160%;
@@ -180,7 +180,7 @@ li {
 }
 #header #main .icons .share {
   padding-left: 22px;
-  background-image: url(img/ico-share.png);
+  background-image: url(/img/ico-share.png);
   background-position: left center;
   background-repeat: no-repeat;
 }
@@ -248,22 +248,22 @@ li {
   width: 29px;
   height: 26px;
   z-index: 20;
-  background: url(img/subnav-arrow.png) left 10px no-repeat;
+  background: url(/img/subnav-arrow.png) left 10px no-repeat;
 }
 #header #sub li.vid a {
-  background-image: url(img/vid.png);
+  background-image: url(/img/vid.png);
   background-position: 1px 10px;
   background-repeat: no-repeat;
   padding-left: 20px;
 }
 #header #sub li.aud a {
-  background-image: url(img/aud.png);
+  background-image: url(/img/aud.png);
   background-position: 0 9px;
   background-repeat: no-repeat;
   padding-left: 21px;
 }
 #header #sub li.com a {
-  background-image: url(img/com.png);
+  background-image: url(/img/com.png);
   background-position: 0 9px;
   background-repeat: no-repeat;
   padding-left: 19px;
@@ -372,7 +372,7 @@ li {
   height: 30px;
   width: 100%;
   margin: 2% 0;
-  background: url(img/divider.png) center top no-repeat;
+  background: url(/img/divider.png) center top no-repeat;
 }
 #container #sections .section.intro #content #overview {
   width: 50%;
@@ -452,13 +452,13 @@ li {
 #container .arrow.left {
   position: fixed;
   left: 0;
-  background: transparent url(img/arrow.png) 50% 50% no-repeat;
+  background: transparent url(/img/arrow.png) 50% 50% no-repeat;
 }
 #container .arrow.right {
   position: fixed;
   right: 0;
   left: initial;
-  background: transparent url(img/arrow-right.png) 50% 50% no-repeat;
+  background: transparent url(/img/arrow-right.png) 50% 50% no-repeat;
 }
 #container .arrow:hover,
 #container .arrow:active,
@@ -509,7 +509,7 @@ li {
   width: 50%;
 }
 #container .video-txt p.quote {
-  background: url(img/quote.png) 15px 0 no-repeat;
+  background: url(/img/quote.png) 15px 0 no-repeat;
   float: right;
   width: 35%;
   padding-left: 62px;
@@ -639,7 +639,7 @@ li {
   height: 40px;
   margin-top: 5%;
   margin-left: 10%;
-  background: url(img/btn-share.png) 0 0 no-repeat;
+  background: url(/img/btn-share.png) 0 0 no-repeat;
 }
 .modal {
   display: none;
@@ -663,7 +663,7 @@ li {
   font-size: 98%;
   margin-bottom: 2%;
   padding-bottom: 7%;
-  background: url(img/divider.png) center bottom no-repeat;
+  background: url(/img/divider.png) center bottom no-repeat;
 }
 .modal a[rel="close-modal"] {
   float: right;
@@ -1009,22 +1009,22 @@ li {
 /* controls */
 .sc-player .sc-controls a {
   color: transparent;
-  background: url('img/play.png');
+  background: url('/img/play.png');
 }
 .sc-player .sc-controls a:hover {
-  background: url('img/play-hover.png');
+  background: url('/img/play-hover.png');
 }
 .sc-player .sc-controls a.sc-pause {
-  background: url('img/play.png');
+  background: url('/img/play.png');
 }
 .sc-player .sc-controls a.sc-pause:hover {
-  background: url('img/play-hover.png');
+  background: url('/img/play-hover.png');
 }
 .sc-player.playing .sc-controls a.sc-pause {
-  background: url('img/pause.png');
+  background: url('/img/pause.png');
 }
 .sc-player.playing .sc-controls a.sc-pause:hover {
-  background: url('img/pause-hover.png');
+  background: url('/img/pause-hover.png');
 }
 .sc-scrubber .sc-time-indicators {
   background: transparent;

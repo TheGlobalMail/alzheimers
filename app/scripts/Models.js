@@ -1,4 +1,4 @@
-(function($, _, app){
+define(['jquery', 'lodash', 'Vent'], function($, _, vent){
 
   var Models = function(){
     this.usingLiveData = location.href.match(/live=1/i);
@@ -18,7 +18,7 @@
       dataType: this.usingLiveData ? 'jsonp' : 'json',
       success: function(posts){
         _this.loadFromJSON(posts);
-        app.vent.trigger('models:loaded');
+        vent.trigger('models:loaded');
       }
     });
   };
@@ -47,6 +47,6 @@
 
   };
 
-  app.models = new Models();
+  return new Models();
 
-})($, _, TGM.alzheimers);
+});

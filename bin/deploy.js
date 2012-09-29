@@ -22,7 +22,7 @@ if (env === 'staging'){
 console.error('syncing to ' + container + '...');
 
 mirror = CloudfilesMirror({
-  localPath: './web',
+  localPath: './dist',
   container: container,
   auth : { username: 'theglobalmail', apiKey: apiKey},
   cdnEnabled: true,

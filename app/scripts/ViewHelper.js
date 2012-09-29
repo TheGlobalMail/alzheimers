@@ -1,6 +1,6 @@
-(function($, _, app){
+define(['jquery'], function($) {
 
-  app.views.helpers = {
+  return {
 
     adjustGridHeights: function(el){
       // Adjust the column heights on the grid
@@ -24,5 +24,4 @@
 
   };
 
-
-})($, _, TGM.alzheimers);
+});

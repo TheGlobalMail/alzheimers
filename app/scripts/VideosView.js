@@ -1,4 +1,4 @@
-(function($, _, app){
+define(['jquery', 'lodash', 'Models'], function($, _, models) {
 
   var VideosView = function(){};
 
@@ -7,7 +7,7 @@
     var $audioNav = $('#audio-nav-item');
     var $sectionAfterVideos = $('#own-words');
 
-    _.each(app.models.videos, function(video, index){
+    _.each(models.videos, function(video, index){
 
       $audioNav.before('<li class="vid"><a data-page="' + (1 + index) + '">' + _.escape(video.title) + '</a></li>');
 
@@ -27,7 +27,7 @@
 
   VideosView.prototype.loadVideos = function(){
 
-    _.each(app.models.videos, function(video){
+    _.each(models.videos, function(video){
       $('.vimeo-player[data-vimeo-id=' + video.vimeo + ']').html(
         '<iframe class="player" src="http://player.vimeo.com/video/' + 
           video.vimeo + '?api=1&player_id=player-' + video.vimeo + 
@@ -37,6 +37,6 @@
 
   };
 
-  app.views.videosView = new VideosView();
+  return new VideosView();
 
-})($, _, TGM.alzheimers);
+});
