@@ -1,0 +1,91 @@
+// Larger screens
+
+@media only screen and (min-width : 1200px) {
+
+    body {
+        font-size: 125%;
+    }
+
+    #header {
+        height: 102px;
+        #main {
+            height: 65px;
+            .home {
+                width: 55px;
+                height: 55px;
+                background-size: 55px;
+            }
+            .brand {
+                height: 52px;
+                background-size: auto 65px;
+                padding-left: 35px;
+            }
+            .icons {
+                width: auto;
+            }
+        }
+
+        #sub {
+            height: 28px;
+            padding-left: 95px;
+
+            li {
+                font-size: 12px;
+
+                a {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+
+                &.active:after{
+                    top:18px;
+                }
+
+                &.vid a
+                {
+                    background-position:9px 10px;
+                    padding-left:30px;
+                }
+
+                &.aud a
+                {
+                    background-position:10px 10px;
+                    padding-left:31px;
+                }
+
+                &.com a
+                {
+                    background-position:10px 10px;
+                    padding-left:29px;
+                }
+
+            }
+        }
+    }
+
+    #container {
+        max-width:1800px;
+        &.intro p, &.intro h1, p, h1 {
+            max-width: 800px;
+        }
+        .video {
+            margin-top: 102px;
+        }
+        ul.grid {
+            width: 76%;
+            margin-top: 102px;
+            li.txt {
+                h1 {
+                }
+            }
+        }
+        .sc-player
+        {
+          display:none;
+
+          ol.sc-trackslist {
+            margin-top: 4px;
+          }
+        }
+    }
+}

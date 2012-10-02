@@ -1,0 +1,73 @@
+CACHE MANIFEST
+
+# Time: Tue Oct 02 2012 11:36:04 GMT+1000 (EST)
+# This manifest was created by confess.js, http://github.com/jamesgpearce/confess
+#
+# Retrieved URL: http://localhost:3501/
+# User-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#
+# Config:
+#  task: appcache
+#  userAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#  wait: 0
+#  consolePrefix: #
+#  verbose: true
+#  appcache:
+#   urlsFromDocument: true
+#   urlsFromRequests: false
+#   cacheFilter: .*
+#   networkFilter: null
+#  url: http://localhost:3501
+#  configFile: /Users/bjrossiter/git/yeoman/cli/lib/support/confess.json
+
+CACHE:
+/img/mail-icon.png
+http://apis.google.com/js/plusone.js
+http://connect.facebook.net/en_US/all.js
+http://ct5.addthis.com/static/r07/core041.js
+http://ct5.addthis.com/static/r07/widget095.css
+http://fonts.googleapis.com/css?family=Open+Sans:400,600
+http://localhost:3501/data/audio-pic1.jpg
+http://localhost:3501/img/arrow-right.png
+http://localhost:3501/img/arrow.png
+http://localhost:3501/img/aud.png
+http://localhost:3501/img/btn-play.png
+http://localhost:3501/img/btn-share.png
+http://localhost:3501/img/close.svg
+http://localhost:3501/img/com.png
+http://localhost:3501/img/divider.png
+http://localhost:3501/img/header-arrow.png
+http://localhost:3501/img/ico-share.png
+http://localhost:3501/img/logo.svg
+http://localhost:3501/img/pause-hover.png
+http://localhost:3501/img/pause.png
+http://localhost:3501/img/play-hover.png
+http://localhost:3501/img/quote.png
+http://localhost:3501/img/subnav-arrow.png
+http://localhost:3501/img/vid.png
+http://platform.twitter.com/widgets.js
+http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5004ac3e48e805cd
+http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png
+http://static.ak.fbcdn.net/rsrc.php/v2/yD/x/Cou7n-nqK52.gif
+http://static.ak.fbcdn.net/rsrc.php/v2/yH/x/eIpbnVKI9lR.png
+http://static.ak.fbcdn.net/rsrc.php/v2/yJ/x/jKEcVPZFk-2.gif
+http://static.ak.fbcdn.net/rsrc.php/v2/yL/x/i_oIVTKMYsL.png
+http://static.ak.fbcdn.net/rsrc.php/v2/yP/x/bSOHtKbCGYI.png
+http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png
+http://static.ak.fbcdn.net/rsrc.php/v2/yc/x/3rhSv5V8j3o.gif
+http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png
+http://use.typekit.net/c/d7e28a/ff-meta-serif-web-pro:n7.VbQ:F:2/d?3bb2a6e53c9684ffdc9a98f5135b2a62f4d9006602b746f92d210e6e05343e193e750388f300859e6c54b1ffbc870f35365a6395d1ac60b5912e0383e2b1c3545c229924c11b016423cc4fdad192f72ae9c27237c880a17e9a82d977a1e3a0c4da86020dbe4e325284f394023416823320236a7b50c86416f63f6313642a01835b72f262bb045be0a0e457f82821f0b10b190a5181810040d274906018fd6038e308f1de5b9fddd7854a7f2a0e3e3d46afb2753482ac7bcbaa552c7cdc036c56fdecee93ee6aa8743b73505e3727dff85cb5a95befc3b399261b50e2a23020193631f0c7ad9cd2bf9e2abe0f26fd85
+http://use.typekit.net/pyz3jsr.js
+http://w1.sndcdn.com/VScEzkMDoecm_m.png
+http://w1.sndcdn.com/y3DctOJOzJQV_m.png
+http://www.google-analytics.com/ga.js
+https://apis.google.com/_/apps-static/_/js/gapi/plusone/rt=j/ver=ClWEl1_ttZA.en_GB./sv=1/am=!sJNviPhShmXoUhhCKA/d=1/rs=AItRSTOXu9xE8n-B8b_OQleqYSnhgg-Vhw/cb=gapi.loaded_0
+img/intro-b.jpg
+img/intro-c.jpg
+img/intro.jpg
+scripts/96372c9c.amd-app.js
+styles/57a545dc.normalize.css
+styles/5db0508f.app.css
+
+NETWORK:
+*

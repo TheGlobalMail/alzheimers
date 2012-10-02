@@ -1,0 +1,264 @@
+// Header
+
+#header
+{
+    position:fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    min-width: 860px;
+    height:90px;
+    z-index:10;
+    -webkit-box-shadow:0 0 10px #000;
+    box-shadow:0 0 10px #000;
+    margin:0;
+    padding:0;
+
+    // Top level
+
+    #main
+    {
+        display:block;
+        width:100%;
+        height:55px;
+        background:rgb(27,27,27);
+        border-bottom: 1px solid #111;
+        -webkit-box-shadow:0 0 5px 5px black;
+        box-shadow:0 0 5px 5px black;
+        z-index:10;
+        margin:0;
+        padding: 0 0 0 1%;
+
+        img
+        {
+            float:right;
+            padding:10px 20px;
+        }
+
+        .home {
+            width: 44px;
+            height: 44px;
+            float: left;
+            margin: 5px 0 0;
+            background: url(img/logo.svg) center top no-repeat;
+            background-size: 44px;
+            text-indent: -9999px;
+            &:hover{
+                opacity: .6;
+            }
+        }
+        .brand {
+            margin-left: 5px;
+            color: white;
+            font-weight: bold;
+            line-height: 1.0;
+            background: url(img/header-arrow.png) left top no-repeat;
+            height: 45px;
+            padding-left: 2.5%;
+            font-size: 160%;
+            background-size: auto 55px;
+            padding-top: 14px;
+            display: inline-block;
+
+            span {
+                font-weight: normal;
+            }
+
+        }
+
+        .icons {
+            position: absolute;
+            top: 15px;
+            right: 2%;
+            border: 1px solid #343434;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            width: 190px;
+        }
+
+        .icons .about,
+        .icons .comments,
+        .icons .share,
+        .icons .readlater {
+            font-family: @sansFontFamily;
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: 11px;
+            padding: 7px 8px;
+            float: left;
+            color: white;
+            margin: 0;
+            line-height: 1.0;
+        }
+
+        .icons .about {
+            border-right: 1px solid #343434;
+            margin-right: 8px;
+        }
+
+        .icons .share {
+            padding-left: 22px;
+            background-image: url(img/ico-share.png);
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+
+        .icons .about:hover,
+        .icons .share:hover {
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+            filter: alpha(opacity=60);
+            -moz-opacity: 0.6;
+            -khtml-opacity: 0.6;
+            opacity: 0.6;
+            }
+
+    }
+
+    // Sub header
+
+    #sub
+    {
+        display:block;
+        width:100%;
+        height:26px;
+        background:rgb(27,27,27);
+        background:rgba(27,27,27,0.8);
+        border-bottom:1px solid rgba(255,255,255,0.1);
+        color:#FFF;
+        float:left;
+        z-index:9;
+        margin:0;
+        padding:8px 0 0 70px;
+
+        li
+        {
+            display:none;
+            list-style:none;
+            text-transform:uppercase;
+            font-size:11px;
+            float:left;
+            color: #6c6c6c;
+            color: rgba(255,255,255,0.6);
+            position:relative;
+            padding:0;
+            font-family:@sansFontFamily;
+
+            a
+            {
+                color: #6c6c6c;
+                color: rgba(255,255,255,0.6);
+                padding:9px 10px;
+            }
+
+            a:hover,a:active,a:focus
+            {
+                background-color: #2b2b2b;
+                background-color:rgba(255,255,255,0.1);
+            }
+
+            &.active a
+            {
+                border-bottom:3px solid #ff9b51;
+                color:#FFF;
+            }
+
+            &.active a:hover,
+            &.active a:active,
+            &.active a:focus
+            {
+                background-color:transparent;
+                cursor:pointer;
+            }
+
+            &.active:after
+            {
+                content:"";
+                position:absolute;
+                top:15px;
+                left:40%;
+                width:29px;
+                height:26px;
+                z-index:20;
+                background:url(img/subnav-arrow.png) left 10px no-repeat;
+            }
+
+            &.vid a
+            {
+                background-image:url(img/vid.png);
+                background-position:1px 10px;
+                background-repeat:no-repeat;
+                padding-left:20px;
+            }
+
+            &.aud a
+            {
+                background-image:url(img/aud.png);
+                background-position:0 9px;
+                background-repeat:no-repeat;
+                padding-left:21px;
+            }
+
+            &.com a
+            {
+                background-image:url(img/com.png);
+                background-position:0 9px;
+                background-repeat:no-repeat;
+                padding-left:19px;
+            }
+
+        }
+
+    }
+
+    #share-box
+    {
+        position: absolute;
+        right: 20px;
+        top: 60%;
+        height: 96px;
+        width: 250px;
+        background: #1B1B1B;
+        padding: 1%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 2px 5px black;
+        text-align: center;
+
+        .popover-inner {
+
+            .addthis_toolbox {
+
+            height: 77px;
+            margin-top: 5px;
+
+            a.addthis_button_email {
+                    display: inline-block;
+                    font-size: .95em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding: 6% 4%;
+                    line-height: 1;
+                    height: 30px;
+                    width: 40px;
+                    background: white;
+                    -webkit-border-radius: 4px;
+                    border-radius: 4px;
+                    border: 1px solid #999;
+                    font-family: @sansFontFamily;
+                    font-size: 12px;
+                    color: #333;
+                    }
+
+
+        a {
+            vertical-align: top;
+            display: inline-block;
+            margin: 0 2px;
+            }
+        }
+    }
+    }
+
+}
