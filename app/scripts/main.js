@@ -20,7 +20,7 @@ require.config({
 
   paths: {
     lodash: 'vendor/lodash',
-    jquery: 'vendor/jquery.min',
+    jquery: 'vendor/jquery-1.8.2',
     soundcloud: 'vendor/soundcloud.player.api',
     scplayer: 'vendor/sc-player',
     modal: 'vendor/jquery.leanModal',
