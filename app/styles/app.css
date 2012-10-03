@@ -324,7 +324,7 @@ li {
 }
 #container #sections .section.intro #content h1 {
   width: 45%;
-  margin: 1% 0;
+  margin: 1% 0 .5%;
   margin-left: 32%;
   padding-top: 1.5%;
   font-size: 260%;
