@@ -329,7 +329,7 @@ li {
   padding-top: 1.5%;
   font-size: 260%;
   font-weight: bold;
-  line-height: 1.1;
+  line-height: 1.05;
   clear: both;
 }
 #container #sections .section.intro #content h1 span {
@@ -404,7 +404,7 @@ li {
   left: -4px;
   z-index: 1;
   margin-left: 31.5%;
-  padding-top: 31%;
+  padding-top: 30%;
   clear: both;
 }
 #container #sections .section.intro #content .right-arrowhead-label .text {
@@ -450,7 +450,6 @@ li {
 #container .arrow:active,
 #container .arrow:focus {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   -webkit-transition: all 150ms ease-in-out;
   -moz-transition: all 150ms ease-in-out;
