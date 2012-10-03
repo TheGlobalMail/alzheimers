@@ -23,8 +23,6 @@ define(['jquery', 'lodash', 'Models', 'ViewHelper', 'scplayer'], function($, _, 
       $('a.sc-player, div.sc-player').scPlayer();
     }
 
-    helper.adjustGridHeights($('#own-words'));
-
   };
 
   return new ClipsView();
