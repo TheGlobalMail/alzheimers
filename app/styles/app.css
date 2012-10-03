@@ -236,16 +236,6 @@ li {
   background-color: transparent;
   cursor: pointer;
 }
-#header #sub li.active:after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 40%;
-  width: 29px;
-  height: 26px;
-  z-index: 20;
-  background: url(/img/subnav-arrow.png) left 10px no-repeat;
-}
 #header #sub li.vid a {
   background-image: url(/img/vid.png);
   background-position: 1px 10px;
@@ -332,11 +322,11 @@ li {
   z-index: 20;
 }
 #container #sections .section.intro #content h1 {
-  width: 50%;
+  width: 45%;
   margin: 1% 0;
-  margin-left: 30%;
+  margin-left: 32%;
   padding-top: 1.5%;
-  font-size: 280%;
+  font-size: 260%;
   line-height: 1.1;
   clear: both;
 }
@@ -349,8 +339,8 @@ li {
   padding-top: 1%;
 }
 #container #sections .section.intro #content p {
-  width: 50%;
-  margin-left: 30%;
+  width: 45%;
+  margin-left: 32%;
   margin-bottom: 2%;
 }
 #container #sections .section.intro #content p.author {
@@ -359,7 +349,7 @@ li {
   font-style: italic;
 }
 #container #sections .section.intro #content p.intro {
-  font-size: 130%;
+  font-size: 120%;
 }
 #container #sections .section.intro #content span.divider {
   display: block;
@@ -411,7 +401,7 @@ li {
   top: 10px;
   left: -4px;
   z-index: 1;
-  margin-left: 29.5%;
+  margin-left: 31.5%;
   padding-top: 31%;
   clear: both;
 }
