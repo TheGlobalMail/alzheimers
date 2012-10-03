@@ -28,6 +28,15 @@ define(['jquery', 'lodash', 'Models', 'ViewHelper'], function($, _, models, help
 
     helper.adjustGridHeights($('#stories'));
 
+    var timer;
+    $(window).resize(function(){
+      // A delay seems to help with waiting till rendering reflows
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(function(){
+        helper.adjustGridHeights($('#stories'));
+      }, 500);
+    });
+
   };
 
   StoriesView.prototype.renderNav = function(){

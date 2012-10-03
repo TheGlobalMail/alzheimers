@@ -4,9 +4,12 @@ define(['jquery', 'Vent', 'IntroView', 'ClipsView', 'StoriesView', 'SliderView',
   var app = {};
   app.vent = vent;
 
-  $(document).ready(function() {
-
+  // Intro view needs to wait until all images are preloaded
+  $(window).load(function() {
     introView.render();
+  });
+
+  $(document).ready(function() {
     
     vent.on('models:loaded', function(){
 

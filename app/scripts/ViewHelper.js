@@ -7,7 +7,7 @@ define(['jquery'], function($) {
     // NOTE: this must be done before swipe is initiated
     adjustGridHeights: function(el){
 
-      var maxHeight = 0, $cell1, $cell2, adjustedHeight;
+      var maxHeight = 0, $cell1, $cell2;
       var $column = el.find('ul.grid li');
       $column.each(function(index) {
         if (index % 2 === 0){
@@ -19,9 +19,8 @@ define(['jquery'], function($) {
           }else{
             maxHeight = $cell1.height();
           }
-          adjustedHeight = maxHeight + (maxHeight * .15);
-          $cell1.height(adjustedHeight);
-          $cell2.height(adjustedHeight);
+          $cell1.height(maxHeight);
+          $cell2.height(maxHeight);
         }
       });
 
