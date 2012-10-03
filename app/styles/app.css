@@ -559,8 +559,8 @@ li {
 #container ul.grid li.audio h2 {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   line-height: 1;
-  font-size: 140%;
-  margin: 85% 0 0;
+  font-size: 120%;
+  margin: 86% 0 0;
   padding: 2% 0 .5% 2.5%;
 }
 #container ul.grid li.reader {
