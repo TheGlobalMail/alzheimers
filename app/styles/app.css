@@ -335,7 +335,7 @@ li {
   width: 50%;
   margin: 1% 0;
   margin-left: 30%;
-  padding-top: 2%;
+  padding-top: 1.5%;
   font-size: 280%;
   line-height: 1.1;
   clear: both;
@@ -411,8 +411,8 @@ li {
   top: 10px;
   left: -4px;
   z-index: 1;
-  margin-left: 29%;
-  padding-top: 45%;
+  margin-left: 29.5%;
+  padding-top: 35%;
   clear: both;
 }
 #container #sections .section.intro #content .right-arrowhead-label .text {
