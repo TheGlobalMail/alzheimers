@@ -6,6 +6,7 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
   SliderView.prototype.render = function(){
     this.setupSlider();
     this.setupArrows();
+    this.setupMain();
     this.setupHotKeys();
     this.setupHashChange();
     this.setupModals();
@@ -69,6 +70,13 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
     }else{
       helper.removeHash();
     }
+  };
+
+  SliderView.prototype.setupMain = function(){
+    $('#main a.brand').click(function(e){
+      e.preventDefault();
+      slider.slide(0);
+    });
   };
     
   SliderView.prototype.setupArrows = function(){
