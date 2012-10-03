@@ -133,6 +133,7 @@ li {
   opacity: .6;
 }
 #header #main .brand {
+  font-family: "ff-meta-serif-web-pro", "Cambria", Georgia, "Times New Roman", Times, serif;
   margin-left: 5px;
   color: white;
   font-weight: bold;
@@ -140,9 +141,9 @@ li {
   background: url(/img/header-arrow.png) left top no-repeat;
   height: 45px;
   padding-left: 2.5%;
-  font-size: 160%;
+  font-size: 150%;
   background-size: auto 55px;
-  padding-top: 14px;
+  padding-top: 16px;
   display: inline-block;
 }
 #header #main .brand span {
@@ -327,11 +328,12 @@ li {
   margin-left: 32%;
   padding-top: 1.5%;
   font-size: 260%;
+  font-weight: bold;
   line-height: 1.1;
   clear: both;
 }
 #container #sections .section.intro #content h1 span {
-  font-weight: 400;
+  font-weight: normal;
 }
 #container #sections .section.intro #content img {
   width: 100%;
@@ -560,7 +562,7 @@ li {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   line-height: 1;
   font-size: 120%;
-  margin: 86% 0 0;
+  margin: 85% 0 0;
   padding: 2% 0 .5% 2.5%;
 }
 #container ul.grid li.reader {
