@@ -306,6 +306,9 @@ li {
   line-height: 1.4;
   margin: 0 auto;
 }
+#container #sections .section.loading {
+  visibility: hidden;
+}
 #container #sections .section.intro {
   background: #000000 none center top no-repeat;
   background-size: 100%;
@@ -328,12 +331,12 @@ li {
 }
 #container #sections .section.intro #content h1 {
   width: 45%;
-  margin: 1% 0;
+  margin: 1% 0 .5%;
   margin-left: 32%;
   padding-top: 1.5%;
   font-size: 260%;
   font-weight: bold;
-  line-height: 1.1;
+  line-height: 1.05;
   clear: both;
 }
 #container #sections .section.intro #content h1 span {
@@ -408,7 +411,7 @@ li {
   left: -4px;
   z-index: 1;
   margin-left: 31.5%;
-  padding-top: 31%;
+  padding-top: 30%;
   clear: both;
 }
 #container #sections .section.intro #content .right-arrowhead-label .text {
@@ -438,6 +441,7 @@ li {
   width: 12%;
   height: 100%;
   opacity: .6;
+  z-index: 30;
 }
 #container .arrow.left {
   position: fixed;
@@ -454,7 +458,6 @@ li {
 #container .arrow:active,
 #container .arrow:focus {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   -webkit-transition: all 150ms ease-in-out;
   -moz-transition: all 150ms ease-in-out;
@@ -564,6 +567,7 @@ li {
 }
 #container ul.grid li.audio h2 {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  height: 45px;
   line-height: 1;
   font-size: 120%;
   margin: 85% 0 0;

@@ -366,6 +366,10 @@ h1,h2,h3,ul,li
       .section
       {
 
+        &.loading {
+          visibility: hidden;
+        }
+
         // Intro page
 
         &.intro {
@@ -398,12 +402,12 @@ h1,h2,h3,ul,li
             {
                 width:45%;
                 //max-width:500px;
-                margin: 1% 0;
+                margin: 1% 0 .5%;
                 margin-left:32%;
                 padding-top:1.5%;
                 font-size:260%;
                 font-weight: bold;
-                line-height:1.1;
+                line-height:1.05;
                 clear: both;
 
                 span
@@ -510,7 +514,7 @@ h1,h2,h3,ul,li
                 left:-4px;
                 z-index:1;
                 margin-left:31.5%;
-                padding-top:31%;
+                padding-top:30%;
                 clear: both;
             }
 
@@ -575,7 +579,7 @@ h1,h2,h3,ul,li
     .arrow:focus
     {
         opacity:1;
-        background-color:rgba(0,0,0,.8);
+        //background-color:rgba(0,0,0,.8);
         cursor:pointer;
         -webkit-transition:all 150ms ease-in-out;
         -moz-transition:all 150ms ease-in-out;
@@ -728,6 +732,7 @@ h1,h2,h3,ul,li
                 h2
                 {
                     border-top:1px solid rgba(255,255,255,0.1);
+                    height: 45px;
                     line-height:1;
                     font-size:120%;
                     margin:85% 0 0;

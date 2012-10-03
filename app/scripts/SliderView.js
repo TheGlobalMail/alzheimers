@@ -30,6 +30,7 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
       { callback: _.bind(this.slideComplete, this) }
     );
 
+    $('#sections .section.loading').removeClass('loading');
   };
 
   SliderView.prototype.slideComplete = function(e, index, el){

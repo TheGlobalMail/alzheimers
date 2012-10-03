@@ -306,6 +306,9 @@ li {
   line-height: 1.4;
   margin: 0 auto;
 }
+#container #sections .section.loading {
+  visibility: hidden;
+}
 #container #sections .section.intro {
   background: #000000 none center top no-repeat;
   background-size: 100%;
@@ -438,6 +441,7 @@ li {
   width: 12%;
   height: 100%;
   opacity: .6;
+  z-index: 30;
 }
 #container .arrow.left {
   position: fixed;
