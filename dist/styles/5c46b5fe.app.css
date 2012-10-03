@@ -59,10 +59,8 @@ a.btn:hover,
 a.btn:active,
 a.btn:focus {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  filter: alpha(opacity=80);
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
-  opacity: 0.8;
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
@@ -186,9 +184,7 @@ li {
 }
 #header #main .icons .about:hover,
 #header #main .icons .share:hover {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-  -ms-filter: progid:dximagetransform.microsoft.alpha(Opacity=60);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
   -khtml-opacity: 0.6;
@@ -336,11 +332,10 @@ li {
   z-index: 20;
 }
 #container #sections .section.intro #content h1 {
-  width: 55%;
-  max-width: 500px;
+  width: 50%;
   margin: 1% 0;
   margin-left: 30%;
-  padding-top: 2%;
+  padding-top: 1.5%;
   font-size: 280%;
   line-height: 1.1;
   clear: both;
@@ -354,8 +349,7 @@ li {
   padding-top: 1%;
 }
 #container #sections .section.intro #content p {
-  width: 55%;
-  max-width: 500px;
+  width: 50%;
   margin-left: 30%;
   margin-bottom: 2%;
 }
@@ -417,8 +411,8 @@ li {
   top: 10px;
   left: -4px;
   z-index: 1;
-  margin-left: 29%;
-  padding-top: 45%;
+  margin-left: 29.5%;
+  padding-top: 35%;
   clear: both;
 }
 #container #sections .section.intro #content .right-arrowhead-label .text {
@@ -700,10 +694,8 @@ li {
 #at16lb {
   background-color: black;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  filter: alpha(opacity=50);
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
-  opacity: 0.5;
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
@@ -802,19 +794,15 @@ li {
   background: url(../img/close.svg) center top no-repeat;
   background-size: 15px;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  filter: alpha(opacity=40);
   -moz-opacity: 0.4;
   -khtml-opacity: 0.4;
-  opacity: 0.4;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 #at16pt a:hover {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  filter: alpha(opacity=100);
   -moz-opacity: 1;
   -khtml-opacity: 1;
-  opacity: 1;
   opacity: 1;
   filter: alpha(opacity=100);
 }

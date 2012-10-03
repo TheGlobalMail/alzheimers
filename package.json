@@ -1,6 +1,6 @@
 {
   "author": "B.J. Rossiter <bj.rossiter@theglboalmail.org>",
-  "version": "0.1.7-3",
+  "version": "0.1.7-4",
   "scripts": {
     "start": "node bin/server.js"
   },
