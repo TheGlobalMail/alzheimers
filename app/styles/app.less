@@ -732,7 +732,6 @@ h1,h2,h3,ul,li
                 p
                 {
                     font-size:120%;
-                    margin-left:10%;
                     width:80%;
                 }
 
@@ -765,23 +764,10 @@ h1,h2,h3,ul,li
                 &:nth-child(odd) {
                     border-left: none;
                 }
-                // &:last-child {
-                //     width: 100%;
-                //     h2 {
-                //         margin-top:5%;
-                //         margin-left: 5%;
-                //         width: 70%;
+                &[colspan="2"] {
+                    border-right: none;
+                }
 
-                //     }
-                //     a.btn {
-                //         width: 250px;
-                //         margin-top:2%;
-                //         margin-left: 5%;
-                //     }
-                // }
-                // &:nth-child(2) {
-                //     border-top: none;
-                // }
                 h2 {
                     width: 80%;
                     margin-top: 2.5%;

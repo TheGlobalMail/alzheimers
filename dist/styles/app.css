@@ -597,6 +597,7 @@ li {
 #container ul.grid td.txt p,
 #container table.grid td.txt p {
   font-size: 120%;
+  margin-left: 10%;
   width: 80%;
 }
 #container ul.grid li.audio,
@@ -631,12 +632,6 @@ li {
 #container ul.grid td.reader:nth-child(odd),
 #container table.grid td.reader:nth-child(odd) {
   border-left: none;
-}
-#container ul.grid li.reader[colspan="2"],
-#container table.grid li.reader[colspan="2"],
-#container ul.grid td.reader[colspan="2"],
-#container table.grid td.reader[colspan="2"] {
-  border-right: none;
 }
 #container ul.grid li.reader h2,
 #container table.grid li.reader h2,
