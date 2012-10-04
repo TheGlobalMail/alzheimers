@@ -98,7 +98,7 @@ li {
   width: 100%;
   min-width: 860px;
   height: 90px;
-  z-index: 30;
+  z-index: 50;
   -webkit-box-shadow: 0 0 10px #000;
   box-shadow: 0 0 10px #000;
   margin: 0;
@@ -508,7 +508,7 @@ li {
 #container table.grid {
   width: 76%;
   position: relative;
-  margin: 88px auto 0;
+  margin: 90px auto 0;
   padding: 0;
   border-collapse: collapse;
 }
@@ -573,7 +573,7 @@ li {
 #container table.grid td.txt h1 {
   font-size: 210%;
   line-height: 1.0;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-bottom: 1.5%;
   margin-bottom: 1.5%;
   margin-left: 10%;
@@ -597,8 +597,13 @@ li {
 #container ul.grid td.txt p,
 #container table.grid td.txt p {
   font-size: 120%;
-  margin-left: 10%;
   width: 80%;
+}
+#container ul.grid li.txt p#audio-content,
+#container table.grid li.txt p#audio-content,
+#container ul.grid td.txt p#audio-content,
+#container table.grid td.txt p#audio-content {
+  margin-left: 10%;
 }
 #container ul.grid li.audio,
 #container table.grid li.audio,
@@ -632,6 +637,12 @@ li {
 #container ul.grid td.reader:nth-child(odd),
 #container table.grid td.reader:nth-child(odd) {
   border-left: none;
+}
+#container ul.grid li.reader[colspan="2"],
+#container table.grid li.reader[colspan="2"],
+#container ul.grid td.reader[colspan="2"],
+#container table.grid td.reader[colspan="2"] {
+  border-right: none;
 }
 #container ul.grid li.reader h2,
 #container table.grid li.reader h2,
@@ -1051,13 +1062,13 @@ li {
 /* controls */
 .sc-player .sc-controls a {
   color: transparent;
-  background: url('/img/play.png');
+  background: url('/img/btn-play.png');
 }
 .sc-player .sc-controls a:hover {
   background: url('/img/play-hover.png');
 }
 .sc-player .sc-controls a.sc-pause {
-  background: url('/img/play.png');
+  background: url('/img/btn-play.png');
 }
 .sc-player .sc-controls a.sc-pause:hover {
   background: url('/img/play-hover.png');
@@ -1183,7 +1194,8 @@ li {
   #container .video {
     margin-top: 102px;
   }
-  #container ul.grid {
+  #container ul.grid,
+  #container table.grid {
     width: 76%;
     margin-top: 102px;
   }
