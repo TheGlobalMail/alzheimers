@@ -508,7 +508,7 @@ li {
 #container table.grid {
   width: 76%;
   position: relative;
-  margin: 88px auto 0;
+  margin: 90px auto 0;
   padding: 0;
   border-collapse: collapse;
 }
@@ -598,6 +598,12 @@ li {
 #container table.grid td.txt p {
   font-size: 120%;
   width: 80%;
+}
+#container ul.grid li.txt p#audio-content,
+#container table.grid li.txt p#audio-content,
+#container ul.grid td.txt p#audio-content,
+#container table.grid td.txt p#audio-content {
+  margin-left: 10%;
 }
 #container ul.grid li.audio,
 #container table.grid li.audio,
@@ -1188,7 +1194,8 @@ li {
   #container .video {
     margin-top: 102px;
   }
-  #container ul.grid {
+  #container ul.grid,
+  #container table.grid {
     width: 76%;
     margin-top: 102px;
   }
