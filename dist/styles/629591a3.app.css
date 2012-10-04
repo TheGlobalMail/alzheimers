@@ -306,9 +306,6 @@ li {
   line-height: 1.4;
   margin: 0 auto;
 }
-#container #sections .section {
-  overflow: hidden;
-}
 #container #sections .section.loading {
   visibility: hidden;
 }
@@ -647,6 +644,8 @@ li {
   background-color: black;
   margin: 0 auto;
   padding: 4% 5% 5%;
+  overflow-y: auto;
+  height: 60%;
   box-shadow: 0 5px 20px black;
 }
 .modal h2 {
