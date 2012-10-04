@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Thu Oct 04 2012 12:57:25 GMT+1000 (EST)
+# Time: Thu Oct 04 2012 15:39:23 GMT+1000 (EST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -22,7 +22,7 @@ CACHE MANIFEST
 
 CACHE:
 /img/mail-icon.png
-http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/extra-extra-stop-the-presses&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery18209671072184573859_1349319444023&_=1349319444064
+http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/extra-extra-stop-the-presses&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery18208448200719431043_1349329161123&_=1349329161159
 http://ct5.addthis.com/static/r07/core041.js
 http://ct5.addthis.com/static/r07/widget095.css
 http://fonts.googleapis.com/css?family=Open+Sans:400,600
@@ -51,9 +51,9 @@ http://w1.sndcdn.com/y3DctOJOzJQV_m.png
 http://www.google-analytics.com/ga.js
 img/intro_1.jpg
 img/intro_2.jpg
-scripts/1c63c8f7.amd-app.js
+scripts/d9b92f36.amd-app.js
 styles/57a545dc.normalize.css
-styles/629591a3.app.css
+styles/f6f6267e.app.css
 
 NETWORK:
 *
