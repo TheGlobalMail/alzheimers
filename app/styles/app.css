@@ -566,6 +566,7 @@ li {
 #container table.grid td.txt {
   background-image: none;
   position: relative;
+  background-color: black;
 }
 #container ul.grid li.txt h1,
 #container table.grid li.txt h1,
