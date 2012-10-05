@@ -545,50 +545,6 @@ h1,h2,h3,ul,li
       }
     }
 
-    // Next and prev arrows
-
-    .arrow
-    {
-        position:fixed;
-        float:left;
-        top:0;
-        display:block;
-        width:12%;
-        height:100%;
-        opacity:.6;
-        z-index: 30;
-    }
-
-    .arrow.left
-    {
-        position:fixed;
-        left:0;
-        background:transparent url(/img/arrow.png) 50% 50% no-repeat;
-    }
-
-    .arrow.right
-    {
-        position:fixed;
-        right:0;
-        left:initial;
-        background:transparent url(/img/arrow-right.png) 50% 50% no-repeat;
-    }
-
-    .arrow:hover,
-    .arrow:active,
-    .arrow:focus
-    {
-        opacity:1;
-        //background-color:rgba(0,0,0,.8);
-        cursor:pointer;
-        -webkit-transition:all 150ms ease-in-out;
-        -moz-transition:all 150ms ease-in-out;
-        -ms-transition:all 150ms ease-in-out;
-        -o-transition:all 150ms ease-in-out;
-        transition:all 150ms ease-in-out;
-    }
-
-
 
 
     // Video pages
@@ -705,6 +661,7 @@ h1,h2,h3,ul,li
             {
                 background-image:none;
                 position:relative;
+                background-color: black;
 
                 h1
                 {
@@ -747,12 +704,17 @@ h1,h2,h3,ul,li
 
                 h2
                 {
-                    border-top:1px solid rgba(255,255,255,0.1);
-                    height: 45px;
-                    line-height:1;
-                    font-size:120%;
-                    margin:85% 0 0;
-                    padding:2% 0 .5% 2.5%;
+                    border-top: 1px solid rgba(255, 255, 255, 0.1);
+                    height: auto;
+                    height: 53px;
+                    line-height: 1;
+                    font-size: 120%;
+                    margin: 85% 0 0;
+                    padding: 2% 0 .5% 2.5%;
+                    background: rgba(0, 0, 0, 0.1);
+                    border-collapse: collapse;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
 
                 }
             }
@@ -766,9 +728,6 @@ h1,h2,h3,ul,li
                 box-sizing: border-box;
                 &:nth-child(odd) {
                     border-left: none;
-                }
-                &[colspan="2"] {
-                    border-right: none;
                 }
 
                 h2 {
@@ -799,6 +758,12 @@ h1,h2,h3,ul,li
                     margin-top: 2%;
                     display: block;
                 }
+                &[colspan="2"] {
+                    border-right: none;
+                    h2, a {
+                        margin-left: 5%;
+                    }
+                }
 
             }
 
@@ -818,7 +783,52 @@ h1,h2,h3,ul,li
 
     }
 
+    // Next and prev arrows
+
+    .arrow
+    {
+        position:fixed;
+        float:left;
+        top:0;
+        display:block;
+        width:12%;
+        height:100%;
+        opacity:.6;
+        z-index: 30;
+    }
+
+    .arrow.left
+    {
+        position:fixed;
+        left:0;
+        background:transparent url(/img/arrow.png) 50% 50% no-repeat;
+    }
+
+    .arrow.right
+    {
+        position:fixed;
+        right:0;
+        left:initial;
+        background:transparent url(/img/arrow-right.png) 50% 50% no-repeat;
+    }
+
+    .arrow:hover,
+    .arrow:active,
+    .arrow:focus
+    {
+        opacity:1;
+        //background-color:rgba(0,0,0,.8);
+        cursor:pointer;
+        -webkit-transition:all 150ms ease-in-out;
+        -moz-transition:all 150ms ease-in-out;
+        -ms-transition:all 150ms ease-in-out;
+        -o-transition:all 150ms ease-in-out;
+        transition:all 150ms ease-in-out;
+    }
+
 }
+
+
 
 // Sc Player, modal and responsive css
 @import "modal.less";

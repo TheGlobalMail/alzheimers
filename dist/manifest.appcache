@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Thu Oct 04 2012 16:22:02 GMT+1000 (EST)
+# Time: Fri Oct 05 2012 11:54:01 GMT+1000 (EST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -22,6 +22,7 @@ CACHE MANIFEST
 
 CACHE:
 /img/mail-icon.png
+http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/extra-extra-stop-the-presses&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery18207201936838682741_1349402040231&_=1349402040274
 http://ct5.addthis.com/static/r07/core041.js
 http://ct5.addthis.com/static/r07/widget095.css
 http://fonts.googleapis.com/css?family=Open+Sans:400,600
@@ -43,7 +44,7 @@ http://localhost:3501/img/play-hover.png
 http://localhost:3501/img/quote.png
 http://localhost:3501/img/vid.png
 http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5004ac3e48e805cd
-http://use.typekit.net/c/d7e28a/ff-meta-serif-web-pro:n7.VbQ:F:2/d?3bb2a6e53c9684ffdc9a98f5135b2a62f4d9006602b746f92d210e6e05343e193e750388f300859e6c54b1ffbc870f35365a6395d1ac60b5912e0383e2b1c3545c229924c11b016423cc4fdad192f72ae9c27237c880a17e9a82d977a1e3a0c4da86020dbe4e325284f394023416823320236a7b50c86416f63f6313642a01835b72f262bb045be0a0e457f82821f0b10b190a5181810040d274906018fd6038e308f1de5b9fddd7854a7f2a0e3e3d46afb2753482ac7bcbaa552c7cdc036c56fdecee93ee6aa8743b73505e3727dff85cb5a95befc3b399261b50e2a23020193631f0c7ad9cd2bf9e2abe0f26fd85
+http://use.typekit.net/c/62a9dd/ff-meta-serif-web-pro:n5:n7:i7,open-sans:n7:i7:n8:i8:i4:n3:i3:n4:n6:i6.VbN:F:2,VbQ:F:2,VbR:F:2,Vv8:F:2,Vv9:F:2,VvB:F:2,VvC:F:2,VvD:F:2,VvF:F:2,VvG:F:2,VvH:F:2,VvJ:F:2,VvK:F:2/d?3bb2a6e53c9684ffdc9a98f5135b2a62f4d9006602b746f92d210e6e05343e193e750388f300859e6c54b1ffbc870f35365a6395d1ac60b5912e0383e2b1c3545c229924c11b016423cc4fdad192f72ae9c27237c880a17e9a82d977a1e3a0c4da86020dbe4e325284f394023416823320236a7b50c86416f63f6313642a01835b72f262bb045be0a0e457f82821f0b10b190a5181810040d274906018fd6038e308f1de5b9fddd7854a7f2a0e3e3d46afb2753482ac7bcbaa552c7cdc036c56fdecee93ee6aa8743b73505e3727dff85cb5a95befc3b399261b50e2a23020193631f0c7ad9cd2bf9e78bb0b2da180
 http://use.typekit.net/pyz3jsr.js
 http://w1.sndcdn.com/VScEzkMDoecm_m.png
 http://w1.sndcdn.com/y3DctOJOzJQV_m.png
@@ -51,8 +52,8 @@ http://www.google-analytics.com/ga.js
 img/intro_1.jpg
 img/intro_2.jpg
 scripts/d9b92f36.amd-app.js
+styles/11d28587.app.css
 styles/57a545dc.normalize.css
-styles/b7c702e7.app.css
 
 NETWORK:
 *
