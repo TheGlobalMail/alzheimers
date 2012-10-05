@@ -693,6 +693,8 @@ li {
   display: block;
   width: 12%;
   height: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
   opacity: .6;
   z-index: 30;
   background-color: black;
@@ -701,17 +703,13 @@ li {
 #container .arrow.left {
   position: fixed;
   left: 0;
-  background-image: url(/img/arrow.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background: transparent url(/img/arrow.png) 50% 50% no-repeat;
 }
 #container .arrow.right {
   position: fixed;
   right: 0;
   left: initial;
-  background-image: url(/img/arrow-right.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background: transparent url(/img/arrow-right.png) 50% 50% no-repeat;
 }
 #container .arrow:hover,
 #container .arrow:active,
