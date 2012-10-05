@@ -490,6 +490,7 @@ li {
 #container table.grid tr td {
   border-right: 1px solid #333333;
   border-top: 1px solid #333333;
+  vertical-align: top;
 }
 #container ul.grid tr td:nth-child(2),
 #container table.grid tr td:nth-child(2) {
@@ -1231,7 +1232,7 @@ li {
   }
   #container ul.grid li.audio h2,
   #container table.grid li.audio h2 {
-    height: 64px;
+    height: 62px;
   }
   #container .sc-player {
     display: none;
