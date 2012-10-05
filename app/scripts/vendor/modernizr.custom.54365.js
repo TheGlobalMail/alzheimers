@@ -1,5 +1,5 @@
 /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
- * Build: http://modernizr.com/download/#-csstransforms-csstransforms3d-csstransitions-shiv-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-load
+ * Build: http://modernizr.com/download/#-csstransforms-csstransforms3d-csstransitions-svg-shiv-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-load
  */
 ;
 
@@ -34,6 +34,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
     domPrefixes = omPrefixes.toLowerCase().split(' '),
 
+    ns = {'svg': 'http://www.w3.org/2000/svg'},
 
     tests = {},
     inputs = {},
@@ -210,7 +211,7 @@ window.Modernizr = (function( window, document, undefined ) {
                         if ( ret && 'webkitPerspective' in docElement.style ) {
 
                       injectElementWithStyles('@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}', function( node, rule ) {
-            ret = node.offsetLeft === 9 && node.offsetHeight >= 3; // so weird that I had to change this
+            ret = node.offsetLeft === 9 && node.offsetHeight === 3;
           });
         }
         return ret;
@@ -223,6 +224,9 @@ window.Modernizr = (function( window, document, undefined ) {
 
 
 
+    tests['svg'] = function() {
+        return !!document.createElementNS && !!document.createElementNS(ns.svg, 'svg').createSVGRect;
+    };
     for ( var feature in tests ) {
         if ( hasOwnProp(tests, feature) ) {
                                     featureName  = feature.toLowerCase();
