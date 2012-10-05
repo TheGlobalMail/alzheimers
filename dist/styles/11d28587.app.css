@@ -98,7 +98,7 @@ li {
   width: 100%;
   min-width: 860px;
   height: 90px;
-  z-index: 30;
+  z-index: 50;
   -webkit-box-shadow: 0 0 10px #000;
   box-shadow: 0 0 10px #000;
   margin: 0;
@@ -429,38 +429,6 @@ li {
   border-style: solid none solid solid;
   border-width: 10px;
 }
-#container .arrow {
-  position: fixed;
-  float: left;
-  top: 0;
-  display: block;
-  width: 12%;
-  height: 100%;
-  opacity: .6;
-  z-index: 30;
-}
-#container .arrow.left {
-  position: fixed;
-  left: 0;
-  background: transparent url(/img/arrow.png) 50% 50% no-repeat;
-}
-#container .arrow.right {
-  position: fixed;
-  right: 0;
-  left: initial;
-  background: transparent url(/img/arrow-right.png) 50% 50% no-repeat;
-}
-#container .arrow:hover,
-#container .arrow:active,
-#container .arrow:focus {
-  opacity: 1;
-  cursor: pointer;
-  -webkit-transition: all 150ms ease-in-out;
-  -moz-transition: all 150ms ease-in-out;
-  -ms-transition: all 150ms ease-in-out;
-  -o-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
-}
 #container .video {
   height: 0;
   padding-top: 0;
@@ -508,7 +476,7 @@ li {
 #container table.grid {
   width: 76%;
   position: relative;
-  margin: 88px auto 0;
+  margin: 90px auto 0;
   padding: 0;
   border-collapse: collapse;
 }
@@ -566,6 +534,7 @@ li {
 #container table.grid td.txt {
   background-image: none;
   position: relative;
+  background-color: black;
 }
 #container ul.grid li.txt h1,
 #container table.grid li.txt h1,
@@ -573,7 +542,7 @@ li {
 #container table.grid td.txt h1 {
   font-size: 210%;
   line-height: 1.0;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-bottom: 1.5%;
   margin-bottom: 1.5%;
   margin-left: 10%;
@@ -597,8 +566,13 @@ li {
 #container ul.grid td.txt p,
 #container table.grid td.txt p {
   font-size: 120%;
-  margin-left: 10%;
   width: 80%;
+}
+#container ul.grid li.txt p#audio-content,
+#container table.grid li.txt p#audio-content,
+#container ul.grid td.txt p#audio-content,
+#container table.grid td.txt p#audio-content {
+  margin-left: 10%;
 }
 #container ul.grid li.audio,
 #container table.grid li.audio,
@@ -612,11 +586,16 @@ li {
 #container ul.grid td.audio h2,
 #container table.grid td.audio h2 {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  height: 45px;
+  height: auto;
+  height: 53px;
   line-height: 1;
   font-size: 120%;
   margin: 85% 0 0;
   padding: 2% 0 .5% 2.5%;
+  background: rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 #container ul.grid li.reader,
 #container table.grid li.reader,
@@ -676,6 +655,22 @@ li {
   margin-top: 2%;
   display: block;
 }
+#container ul.grid li.reader[colspan="2"],
+#container table.grid li.reader[colspan="2"],
+#container ul.grid td.reader[colspan="2"],
+#container table.grid td.reader[colspan="2"] {
+  border-right: none;
+}
+#container ul.grid li.reader[colspan="2"] h2,
+#container table.grid li.reader[colspan="2"] h2,
+#container ul.grid td.reader[colspan="2"] h2,
+#container table.grid td.reader[colspan="2"] h2,
+#container ul.grid li.reader[colspan="2"] a,
+#container table.grid li.reader[colspan="2"] a,
+#container ul.grid td.reader[colspan="2"] a,
+#container table.grid td.reader[colspan="2"] a {
+  margin-left: 5%;
+}
 #container ul.grid li .btn,
 #container table.grid li .btn,
 #container ul.grid td .btn,
@@ -686,6 +681,38 @@ li {
   margin-top: 5%;
   margin-left: 10%;
   background: url(/img/btn-share.png) 0 0 no-repeat;
+}
+#container .arrow {
+  position: fixed;
+  float: left;
+  top: 0;
+  display: block;
+  width: 12%;
+  height: 100%;
+  opacity: .6;
+  z-index: 30;
+}
+#container .arrow.left {
+  position: fixed;
+  left: 0;
+  background: transparent url(/img/arrow.png) 50% 50% no-repeat;
+}
+#container .arrow.right {
+  position: fixed;
+  right: 0;
+  left: initial;
+  background: transparent url(/img/arrow-right.png) 50% 50% no-repeat;
+}
+#container .arrow:hover,
+#container .arrow:active,
+#container .arrow:focus {
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 .modal {
   display: none;
@@ -1051,13 +1078,13 @@ li {
 /* controls */
 .sc-player .sc-controls a {
   color: transparent;
-  background: url('/img/play.png');
+  background: url('/img/btn-play.png');
 }
 .sc-player .sc-controls a:hover {
   background: url('/img/play-hover.png');
 }
 .sc-player .sc-controls a.sc-pause {
-  background: url('/img/play.png');
+  background: url('/img/btn-play.png');
 }
 .sc-player .sc-controls a.sc-pause:hover {
   background: url('/img/play-hover.png');
@@ -1183,9 +1210,14 @@ li {
   #container .video {
     margin-top: 102px;
   }
-  #container ul.grid {
+  #container ul.grid,
+  #container table.grid {
     width: 76%;
     margin-top: 102px;
+  }
+  #container ul.grid li.audio h2,
+  #container table.grid li.audio h2 {
+    height: 64px;
   }
   #container .sc-player {
     display: none;
