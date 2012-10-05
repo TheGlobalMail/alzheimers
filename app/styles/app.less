@@ -768,9 +768,6 @@ h1,h2,h3,ul,li
                 &:nth-child(odd) {
                     border-left: none;
                 }
-                &[colspan="2"] {
-                    border-right: none;
-                }
 
                 h2 {
                     width: 80%;
@@ -799,6 +796,12 @@ h1,h2,h3,ul,li
                     margin-left:10%;
                     margin-top: 2%;
                     display: block;
+                }
+                &[colspan="2"] {
+                    border-right: none;
+                    h2, a {
+                        margin-left: 5%;
+                    }
                 }
 
             }

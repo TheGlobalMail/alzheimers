@@ -639,12 +639,6 @@ li {
 #container table.grid td.reader:nth-child(odd) {
   border-left: none;
 }
-#container ul.grid li.reader[colspan="2"],
-#container table.grid li.reader[colspan="2"],
-#container ul.grid td.reader[colspan="2"],
-#container table.grid td.reader[colspan="2"] {
-  border-right: none;
-}
 #container ul.grid li.reader h2,
 #container table.grid li.reader h2,
 #container ul.grid td.reader h2,
@@ -687,6 +681,22 @@ li {
   margin-left: 10%;
   margin-top: 2%;
   display: block;
+}
+#container ul.grid li.reader[colspan="2"],
+#container table.grid li.reader[colspan="2"],
+#container ul.grid td.reader[colspan="2"],
+#container table.grid td.reader[colspan="2"] {
+  border-right: none;
+}
+#container ul.grid li.reader[colspan="2"] h2,
+#container table.grid li.reader[colspan="2"] h2,
+#container ul.grid td.reader[colspan="2"] h2,
+#container table.grid td.reader[colspan="2"] h2,
+#container ul.grid li.reader[colspan="2"] a,
+#container table.grid li.reader[colspan="2"] a,
+#container ul.grid td.reader[colspan="2"] a,
+#container table.grid td.reader[colspan="2"] a {
+  margin-left: 5%;
 }
 #container ul.grid li .btn,
 #container table.grid li .btn,
