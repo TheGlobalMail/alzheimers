@@ -918,6 +918,7 @@ li {
   width: 90%;
   height: 47px;
   position: relative;
+  overflow: hidden;
 }
 .sc-player ol,
 .sc-player li {
