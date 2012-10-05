@@ -295,6 +295,9 @@ li {
   display: inline-block;
   margin: 0 2px;
 }
+.no-svg #header #main .home {
+  background-image: url(/img/logo.png);
+}
 #container {
   width: 100%;
   max-width: 1200px;
@@ -487,6 +490,7 @@ li {
 #container table.grid tr td {
   border-right: 1px solid #333333;
   border-top: 1px solid #333333;
+  vertical-align: top;
 }
 #container ul.grid tr td:nth-child(2),
 #container table.grid tr td:nth-child(2) {
@@ -693,8 +697,6 @@ li {
   display: block;
   width: 12%;
   height: 100%;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-  filter: alpha(opacity=60);
   opacity: .6;
   z-index: 30;
   background-color: black;
@@ -703,13 +705,17 @@ li {
 #container .arrow.left {
   position: fixed;
   left: 0;
-  background: transparent url(/img/arrow.png) 50% 50% no-repeat;
+  background-image: url(/img/arrow.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 #container .arrow.right {
   position: fixed;
   right: 0;
   left: initial;
-  background: transparent url(/img/arrow-right.png) 50% 50% no-repeat;
+  background-image: url(/img/arrow-right.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 #container .arrow:hover,
 #container .arrow:active,
@@ -880,7 +886,7 @@ li {
   text-indent: -9999px;
   width: 20px;
   height: 20px;
-  background: url(../img/close.svg) center top no-repeat;
+  background: url(../img/close.png) center top no-repeat;
   background-size: 15px;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   -moz-opacity: 0.4;
@@ -1225,7 +1231,7 @@ li {
   }
   #container ul.grid li.audio h2,
   #container table.grid li.audio h2 {
-    height: 64px;
+    height: 62px;
   }
   #container .sc-player {
     display: none;
