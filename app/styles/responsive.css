@@ -64,6 +64,10 @@
     width: 76%;
     margin-top: 102px;
   }
+  #container ul.grid li.audio h2,
+  #container table.grid li.audio h2 {
+    height: 64px;
+  }
   #container .sc-player {
     display: none;
   }

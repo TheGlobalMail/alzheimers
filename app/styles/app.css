@@ -586,11 +586,16 @@ li {
 #container ul.grid td.audio h2,
 #container table.grid td.audio h2 {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  height: 45px;
+  height: auto;
+  height: 53px;
   line-height: 1;
   font-size: 120%;
   margin: 85% 0 0;
   padding: 2% 0 .5% 2.5%;
+  background: rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 #container ul.grid li.reader,
 #container table.grid li.reader,
@@ -1209,6 +1214,10 @@ li {
   #container table.grid {
     width: 76%;
     margin-top: 102px;
+  }
+  #container ul.grid li.audio h2,
+  #container table.grid li.audio h2 {
+    height: 64px;
   }
   #container .sc-player {
     display: none;
