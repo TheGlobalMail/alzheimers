@@ -197,6 +197,7 @@ li {
   height: 26px;
   background: #1b1b1b;
   background: rgba(27, 27, 27, 0.8);
+  border-color: #2b2b2b;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: #FFF;
   float: left;
@@ -263,6 +264,7 @@ li {
   width: 250px;
   background: #1B1B1B;
   padding: 1%;
+  border-color: #2b2b2b;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 2px 5px black;
   text-align: center;
@@ -470,6 +472,7 @@ li {
   float: right;
   width: 35%;
   padding-left: 62px;
+  border-color: #2b2b2b;
   border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 #container ul.grid,
@@ -534,7 +537,6 @@ li {
 #container table.grid td.txt {
   background-image: none;
   position: relative;
-  background-color: black;
 }
 #container ul.grid li.txt h1,
 #container table.grid li.txt h1,
@@ -547,6 +549,7 @@ li {
   margin-bottom: 1.5%;
   margin-left: 10%;
   width: 80%;
+  border-color: #2b2b2b;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 #container ul.grid li.txt h2,
@@ -585,6 +588,7 @@ li {
 #container table.grid li.audio h2,
 #container ul.grid td.audio h2,
 #container table.grid td.audio h2 {
+  border-color: #666;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   height: auto;
   height: 53px;
@@ -689,8 +693,12 @@ li {
   display: block;
   width: 12%;
   height: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
   opacity: .6;
   z-index: 30;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
 }
 #container .arrow.left {
   position: fixed;
