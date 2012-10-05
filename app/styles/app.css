@@ -429,38 +429,6 @@ li {
   border-style: solid none solid solid;
   border-width: 10px;
 }
-#container .arrow {
-  position: fixed;
-  float: left;
-  top: 0;
-  display: block;
-  width: 12%;
-  height: 100%;
-  opacity: .6;
-  z-index: 30;
-}
-#container .arrow.left {
-  position: fixed;
-  left: 0;
-  background: transparent url(/img/arrow.png) 50% 50% no-repeat;
-}
-#container .arrow.right {
-  position: fixed;
-  right: 0;
-  left: initial;
-  background: transparent url(/img/arrow-right.png) 50% 50% no-repeat;
-}
-#container .arrow:hover,
-#container .arrow:active,
-#container .arrow:focus {
-  opacity: 1;
-  cursor: pointer;
-  -webkit-transition: all 150ms ease-in-out;
-  -moz-transition: all 150ms ease-in-out;
-  -ms-transition: all 150ms ease-in-out;
-  -o-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
-}
 #container .video {
   height: 0;
   padding-top: 0;
@@ -708,6 +676,38 @@ li {
   margin-top: 5%;
   margin-left: 10%;
   background: url(/img/btn-share.png) 0 0 no-repeat;
+}
+#container .arrow {
+  position: fixed;
+  float: left;
+  top: 0;
+  display: block;
+  width: 12%;
+  height: 100%;
+  opacity: .6;
+  z-index: 30;
+}
+#container .arrow.left {
+  position: fixed;
+  left: 0;
+  background: transparent url(/img/arrow.png) 50% 50% no-repeat;
+}
+#container .arrow.right {
+  position: fixed;
+  right: 0;
+  left: initial;
+  background: transparent url(/img/arrow-right.png) 50% 50% no-repeat;
+}
+#container .arrow:hover,
+#container .arrow:active,
+#container .arrow:focus {
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 .modal {
   display: none;

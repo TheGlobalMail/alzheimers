@@ -545,50 +545,6 @@ h1,h2,h3,ul,li
       }
     }
 
-    // Next and prev arrows
-
-    .arrow
-    {
-        position:fixed;
-        float:left;
-        top:0;
-        display:block;
-        width:12%;
-        height:100%;
-        opacity:.6;
-        z-index: 30;
-    }
-
-    .arrow.left
-    {
-        position:fixed;
-        left:0;
-        background:transparent url(/img/arrow.png) 50% 50% no-repeat;
-    }
-
-    .arrow.right
-    {
-        position:fixed;
-        right:0;
-        left:initial;
-        background:transparent url(/img/arrow-right.png) 50% 50% no-repeat;
-    }
-
-    .arrow:hover,
-    .arrow:active,
-    .arrow:focus
-    {
-        opacity:1;
-        //background-color:rgba(0,0,0,.8);
-        cursor:pointer;
-        -webkit-transition:all 150ms ease-in-out;
-        -moz-transition:all 150ms ease-in-out;
-        -ms-transition:all 150ms ease-in-out;
-        -o-transition:all 150ms ease-in-out;
-        transition:all 150ms ease-in-out;
-    }
-
-
 
 
     // Video pages
@@ -822,7 +778,52 @@ h1,h2,h3,ul,li
 
     }
 
+    // Next and prev arrows
+
+    .arrow
+    {
+        position:fixed;
+        float:left;
+        top:0;
+        display:block;
+        width:12%;
+        height:100%;
+        opacity:.6;
+        z-index: 30;
+    }
+
+    .arrow.left
+    {
+        position:fixed;
+        left:0;
+        background:transparent url(/img/arrow.png) 50% 50% no-repeat;
+    }
+
+    .arrow.right
+    {
+        position:fixed;
+        right:0;
+        left:initial;
+        background:transparent url(/img/arrow-right.png) 50% 50% no-repeat;
+    }
+
+    .arrow:hover,
+    .arrow:active,
+    .arrow:focus
+    {
+        opacity:1;
+        //background-color:rgba(0,0,0,.8);
+        cursor:pointer;
+        -webkit-transition:all 150ms ease-in-out;
+        -moz-transition:all 150ms ease-in-out;
+        -ms-transition:all 150ms ease-in-out;
+        -o-transition:all 150ms ease-in-out;
+        transition:all 150ms ease-in-out;
+    }
+
 }
+
+
 
 // Sc Player, modal and responsive css
 @import "modal.less";
