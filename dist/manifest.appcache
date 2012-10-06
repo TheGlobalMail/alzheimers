@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Fri Oct 05 2012 17:04:18 GMT+1000 (EST)
+# Time: Sat Oct 06 2012 21:02:53 GMT+1000 (EST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -45,7 +45,6 @@ http://localhost:3501/img/pause.png
 http://localhost:3501/img/play-hover.png
 http://localhost:3501/img/quote.png
 http://localhost:3501/img/vid.png
-http://platform.twitter.com/js/tfw/widget/hubclient.js
 http://platform.twitter.com/widgets.js
 http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5004ac3e48e805cd
 http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png
@@ -62,12 +61,12 @@ http://use.typekit.net/pyz3jsr.js
 http://w1.sndcdn.com/VScEzkMDoecm_m.png
 http://w1.sndcdn.com/y3DctOJOzJQV_m.png
 http://www.google-analytics.com/ga.js
-https://apis.google.com/_/apps-static/_/js/gapi/plusone/rt=j/ver=QhKeizeXVYo.en_GB./sv=1/am=!EQ7UcY4eiDKoFGgl6g/d=1/rs=AItRSTP-NzLPZKUuiitRBAUqJsosDL4zHQ/cb=gapi.loaded_0
+https://apis.google.com/_/apps-static/_/js/gapi/plusone/rt=j/ver=oT2aQgIBfQA.en_GB./sv=1/am=!8JP2wekq86iInuKCmg/d=1/rs=AItRSTMGXDxitwHMk6D2q6HKVV4ca4ro2w/cb=gapi.loaded_0
 img/intro_1.jpg
 img/intro_2.jpg
 scripts/c6d69dfd.amd-app.js
-styles/12919bf6.app.css
 styles/57a545dc.normalize.css
+styles/f1778ebe.app.css
 
 NETWORK:
 *
