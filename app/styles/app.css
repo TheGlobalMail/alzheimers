@@ -157,7 +157,6 @@ li {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  width: 190px;
 }
 #header #main .icons .about,
 #header #main .icons .comments,
@@ -349,17 +348,16 @@ li {
   padding-top: 1%;
 }
 #container #sections .section.intro #content p {
+  padding-top: 35%;
   width: 45%;
   margin-left: 32%;
   margin-bottom: 2%;
+  font-size: 140%;
 }
 #container #sections .section.intro #content p.author {
   margin-bottom: 2.5%;
   font-size: 130%;
   font-style: italic;
-}
-#container #sections .section.intro #content p.intro {
-  font-size: 120%;
 }
 #container #sections .section.intro #content span.divider {
   display: block;
@@ -548,7 +546,7 @@ li {
 #container table.grid td.txt h1 {
   font-size: 210%;
   line-height: 1.0;
-  padding-top: 10%;
+  padding-top: 15%;
   padding-bottom: 1.5%;
   margin-bottom: 1.5%;
   margin-left: 10%;
