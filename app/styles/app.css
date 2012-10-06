@@ -350,6 +350,7 @@ li {
 #container #sections .section.intro #content p {
   padding-top: 35%;
   width: 45%;
+  max-width: 600px;
   margin-left: 32%;
   margin-bottom: 2%;
   font-size: 140%;
@@ -551,8 +552,7 @@ li {
   margin-bottom: 1.5%;
   margin-left: 10%;
   width: 80%;
-  border-color: #2b2b2b;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #202020;
 }
 #container ul.grid li.txt h2,
 #container table.grid li.txt h2,
@@ -759,6 +759,20 @@ li {
 }
 .modal a[rel="close-modal"]:hover {
   cursor: pointer;
+}
+#support h3 {
+  border-top: 1px solid #202020;
+  padding-top: 2%;
+  margin-top: 2%;
+}
+#support p {
+  margin-bottom: 0;
+  font-size: 90%;
+}
+#support p a {
+  margin-bottom: 2%;
+  display: inline-block;
+  font-size: 90%;
 }
 .hide {
   display: none !important;
@@ -1180,6 +1194,7 @@ li {
     height: 52px;
     background-size: auto 65px;
     padding-left: 35px;
+    padding-top: 20px;
   }
   #header #main .icons {
     width: auto;
