@@ -348,12 +348,21 @@ li {
   padding-top: 1%;
 }
 #container #sections .section.intro #content p {
-  padding-top: 35%;
   width: 45%;
-  max-width: 600px;
+  max-width: 604px;
   margin-left: 32%;
-  margin-bottom: 2%;
+  margin-bottom: .5%;
   font-size: 140%;
+}
+#container #sections .section.intro #content p.intro {
+  padding-top: 33%;
+}
+#container #sections .section.intro #content p strong {
+  font-size: 120%;
+  line-height: 1.2;
+}
+#container #sections .section.intro #content p i {
+  font-style: normal;
 }
 #container #sections .section.intro #content p.author {
   margin-bottom: 2.5%;
