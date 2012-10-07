@@ -85,19 +85,19 @@ Swipe.prototype = {
     if (this.has3d){
       // dynamic css
       this.element.style.width = (this.slides.length * this.width) + 'px';
+      this.element.style.float = 'left';
       var index = this.slides.length;
       while (index--) {
         var el = this.slides[index];
         el.style.width = this.width + 'px';
-        el.style.display = 'table-cell';
-        el.style.verticalAlign = 'top';
+        el.style.float = 'left';
       }
     }else{
       var index = this.slides.length;
       // fallback to just hidden divs
       while (index--) {
         var el = this.slides[index];
-        el.style.visibility = 'hidden';
+        el.style.display = 'none';
         el.style.position = 'absolute';
         el.style.top = '0';
         el.style.left = '0';
@@ -129,8 +129,8 @@ Swipe.prototype = {
       style.MozTransform = style.webkitTransform = 'translate3d(' + -(index * this.width) + 'px,0,0)';
       style.msTransform = style.OTransform = 'translateX(' + -(index * this.width) + 'px)';
     }else{
-      this.slides[this.index].style.visibility = 'hidden';
-      this.slides[index].style.visibility = 'visible';
+      this.slides[this.index].style.display = 'none';
+      this.slides[index].style.display = 'block';
     }
 
     // set new index to allow for expression arguments
