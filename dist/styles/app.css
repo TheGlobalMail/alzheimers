@@ -494,8 +494,8 @@ li {
   padding: 0;
   border-collapse: collapse;
 }
-#container ul.grid tr td.reader,
-#container table.grid tr td.reader {
+#container ul.grid tr td,
+#container table.grid tr td {
   border-right: 1px solid #333333;
   border-top: 1px solid #333333;
   vertical-align: top;
@@ -582,42 +582,30 @@ li {
   font-size: 120%;
   width: 80%;
 }
+#container ul.grid li.txt p#audio-content,
+#container table.grid li.txt p#audio-content,
+#container ul.grid td.txt p#audio-content,
+#container table.grid td.txt p#audio-content {
+  margin-left: 10%;
+}
 #container ul.grid li.audio,
 #container table.grid li.audio,
 #container ul.grid td.audio,
 #container table.grid td.audio {
   background: #000000 none 0 0 no-repeat;
   background-size: 100%;
-  position: relative;
-  border: none;
-}
-#container ul.grid li.audio img.portrait,
-#container table.grid li.audio img.portrait,
-#container ul.grid td.audio img.portrait,
-#container table.grid td.audio img.portrait {
-  z-index: -1;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-#container ul.grid li.audio .txt,
-#container table.grid li.audio .txt,
-#container ul.grid td.audio .txt,
-#container table.grid td.audio .txt {
-  border: none;
 }
 #container ul.grid li.audio h2,
 #container table.grid li.audio h2,
 #container ul.grid td.audio h2,
 #container table.grid td.audio h2 {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
   border-color: #666;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   height: auto;
+  height: 53px;
   line-height: 1;
   font-size: 120%;
+  margin: 85% 0 0;
   padding: 2% 0 .5% 2.5%;
   background: rgba(0, 0, 0, 0.1);
   border-collapse: collapse;
