@@ -70,6 +70,10 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
     }else{
       helper.removeHash();
     }
+    console.log($('#sections').height());
+    console.log('2height adjust..' + $(el).height());
+    $('#sections').css('overflowY', 'hidden');
+    $('#sections').height($(el).height());
   };
 
   SliderView.prototype.setupMain = function(){

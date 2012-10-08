@@ -59,8 +59,10 @@ a.btn:hover,
 a.btn:active,
 a.btn:focus {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: alpha(opacity=80);
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
+  opacity: 0.8;
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
@@ -184,7 +186,9 @@ li {
 }
 #header #main .icons .about:hover,
 #header #main .icons .share:hover {
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -ms-filter: progid:dximagetransform.microsoft.alpha(Opacity=60);
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
   -khtml-opacity: 0.6;
@@ -494,8 +498,8 @@ li {
   padding: 0;
   border-collapse: collapse;
 }
-#container ul.grid tr td,
-#container table.grid tr td {
+#container ul.grid tr td.reader,
+#container table.grid tr td.reader {
   border-right: 1px solid #333333;
   border-top: 1px solid #333333;
   vertical-align: top;
@@ -594,18 +598,45 @@ li {
 #container table.grid td.audio {
   background: #000000 none 0 0 no-repeat;
   background-size: 100%;
+  position: relative;
+  border: none;
+}
+#container ul.grid li.audio img.portrait,
+#container table.grid li.audio img.portrait,
+#container ul.grid td.audio img.portrait,
+#container table.grid td.audio img.portrait {
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#container ul.grid li.audio .player,
+#container table.grid li.audio .player,
+#container ul.grid td.audio .player,
+#container table.grid td.audio .player {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#container ul.grid li.audio .txt,
+#container table.grid li.audio .txt,
+#container ul.grid td.audio .txt,
+#container table.grid td.audio .txt {
+  border: none;
 }
 #container ul.grid li.audio h2,
 #container table.grid li.audio h2,
 #container ul.grid td.audio h2,
 #container table.grid td.audio h2 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   border-color: #666;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   height: auto;
-  height: 53px;
   line-height: 1;
   font-size: 120%;
-  margin: 85% 0 0;
   padding: 2% 0 .5% 2.5%;
   background: rgba(0, 0, 0, 0.1);
   border-collapse: collapse;
@@ -810,8 +841,10 @@ li {
 #at16lb {
   background-color: black;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: alpha(opacity=50);
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
+  opacity: 0.5;
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
@@ -910,15 +943,19 @@ li {
   background: url(../img/close.png) center top no-repeat;
   background-size: 15px;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: alpha(opacity=40);
   -moz-opacity: 0.4;
   -khtml-opacity: 0.4;
+  opacity: 0.4;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 #at16pt a:hover {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: alpha(opacity=100);
   -moz-opacity: 1;
   -khtml-opacity: 1;
+  opacity: 1;
   opacity: 1;
   filter: alpha(opacity=100);
 }
