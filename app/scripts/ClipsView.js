@@ -20,8 +20,7 @@ define(['jquery', 'lodash', 'Models', 'ViewHelper', 'scplayer'], function($, _, 
       );
     });
 
-    grid.push('<h2>Would you like to share your experiences with Alzheimers, '+ 
-      'either via audio or words?</h2>' +
+    grid.push('<h2>Would you like to share your experiences with dementia, either via audio or words?</h2>' +
       '<a href="#share-your-story" rel="modal" class="btn"></a>'
     );
     $('#own-words table.grid').html(helper.renderTable(grid, 'audio'));
