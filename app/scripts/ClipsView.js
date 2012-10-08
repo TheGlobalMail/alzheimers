@@ -14,7 +14,9 @@ define(['jquery', 'lodash', 'Models', 'ViewHelper', 'scplayer'], function($, _, 
     _.each(models.clips, function(clip, index){
       grid.push(
         '<img class="portrait" src="' + clip.thumbnail + '" />' +
-        '<h2><a href="' + clip.soundcloud + '" class="sc-player"></a></h2>'
+        '<div class="player">' +
+        '<h2><a href="' + clip.soundcloud + '" class="sc-player"></a></h2>' +
+        '</div>'
       );
     });
 

@@ -1,6 +1,6 @@
 var express = require('express')
 var app = express();
-var web = 'dist';
+var web = process.argv[2] || 'dist';
 
 function authorize(username, password) {
   return 'tgm' === username && process.env.AUTHPASS === password;
