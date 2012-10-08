@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Mon Oct 08 2012 14:14:10 GMT+1100 (EST)
+# Time: Mon Oct 08 2012 14:24:14 GMT+1100 (EST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -23,7 +23,7 @@ CACHE MANIFEST
 CACHE:
 /img/mail-icon.png
 data/audio-pic1.jpg
-http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/extra-extra-stop-the-presses&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery18206055148274172097_1349666048637&_=1349666048679
+http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/cheeky-its-australian-for&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery18204513670189771801_1349666652532&_=1349666652574
 http://ct5.addthis.com/static/r07/core041.js
 http://ct5.addthis.com/static/r07/widget095.css
 http://fonts.googleapis.com/css?family=Open+Sans:400,600
@@ -47,7 +47,6 @@ http://localhost:3501/img/vid.png
 http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5004ac3e48e805cd
 http://use.typekit.net/c/e2ca56/ff-meta-serif-web-pro:n5:n7:i7,open-sans:n7:i4:n3:n4:n6.VbN:F:2,VbQ:F:2,VbR:F:2,Vv8:F:2,VvD:F:2,VvF:F:2,VvH:F:2,VvJ:F:2/d?3bb2a6e53c9684ffdc9a98f5135b2a62f4d9006602b746f92d210e6e05343e193e750388f300859e6c54b1ffbc870f35365a6395d1ac60b5912e0383e2b1c3545c229924c11b016423cc4fdad192f72ae9c27237c880a17e9a82d977a1e3a0c4da86020dbe4e325284f394023416823320236a7b50c86416f63f6313642a01835b72f262bb045be0a0e457f82821f0b10b190a5181810040d274906018fd6038e308f1de5b9fddd7854a7f2a0e3e3d46afb2753482ac7bcbaa552c7cdc036c56fdecee93ee6aa8743b73505e3727dff85cb5a95befc3b399261b50e2a23020193631f0c7ad9cd2bf9e2bbb0975f0d2
 http://use.typekit.net/pyz3jsr.js
-http://w1.sndcdn.com/VScEzkMDoecm_m.png
 http://w1.sndcdn.com/y3DctOJOzJQV_m.png
 http://www.google-analytics.com/ga.js
 img/intro_1.jpg
