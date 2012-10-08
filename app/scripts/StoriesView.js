@@ -4,21 +4,14 @@ define(['jquery', 'lodash', 'Models', 'ViewHelper'], function($, _, models, help
 
   StoriesView.prototype.renderIntro = function(){
     var storiesPage = models.storiesPage;
-    return '<td class="txt reader">' +
-      '<h1 id="stories-title">' + storiesPage.title + '</h1>' +
+    return '<h1 id="stories-title">' + storiesPage.title + '</h1>' +
       '<p id="stories-content">' + storiesPage.excerpt + '</p>' +
-      '<a href="#share-your-story" rel="modal" class="btn"></a>' +
-      '</td>'
+      '<a href="#share-your-story" rel="modal" class="btn"></a>';
   };
 
   StoriesView.prototype.renderShare = function(){
-    var html = '<h2>Would you like to share your experiences with Alzheimers, either via audio or words?</h2><a ' +
-         'href="#share-your-story" rel="modal" class="btn"></a></td></tr>';
-    if (models.stories.length % 2 === 1){
-      return '</tr><tr><td class="reader txt" colspan="2">' + html;
-    }else{
-      return '<td class="reader txt">' + html;
-    }
+    return '<h2>Would you like to share your experiences with Alzheimers, either via audio or words?</h2><a ' +
+      'href="#share-your-story" rel="modal" class="btn"></a>';
   };
 
   StoriesView.prototype.render = function(){
@@ -27,18 +20,14 @@ define(['jquery', 'lodash', 'Models', 'ViewHelper'], function($, _, models, help
 
     this.renderNav();
 
-    var grid = '<tr>' + this.renderIntro();
+    var grid = [this.renderIntro()]
 
     _.each(models.stories, function(story, index){
-      if (index % 2 === 1){
-        grid += '</tr><tr>';
-      }
-     grid +=  '<td class="reader">' + 
-        '<h2>' + story.title + '</h2>' + 
+      grid.push('<h2>' + story.title + '</h2>' + 
         '<p class="author">' + story.byline + '</p>' +
         '<p class="quote">' + story.excerpt + '</p>' + 
-        '<a href="#more-' + story.id + '" rel="modal">Read more</a>' +
-        '</td>';
+        '<a href="#more-' + story.id + '" rel="modal">Read more</a>'
+      );
       $modals.before(
         '<div class="modal" id="more-' + story.id + '">' +
         '<a rel="close-modal">&times;</a>' +
@@ -48,9 +37,9 @@ define(['jquery', 'lodash', 'Models', 'ViewHelper'], function($, _, models, help
       );
     });
 
-    grid += this.renderShare(); 
+    grid.push(this.renderShare()); 
 
-    $('#stories table.grid').html(grid);
+    $('#stories table.grid').html(helper.renderTable(grid, 'reader'));
   };
 
   StoriesView.prototype.renderNav = function(){

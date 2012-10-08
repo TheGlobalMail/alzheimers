@@ -2,35 +2,35 @@ define(['jquery'], function($) {
 
   return {
 
-    // Adjust the column heights on the grid so each cell in a row is the
-    // same height
-    // NOTE: this must be done before swipe is initiated
-    adjustGridHeights: function(el){
-
-      var maxHeight = 0, $cell1, $cell2;
-      var $column = el.find('ul.grid li');
-      $column.each(function(index) {
-        if (index % 2 === 0){
-          $cell1 = $(this);
-        }else{
-          $cell2 = $(this);
-          if ($cell2.height() > $cell1.height()) {
-            maxHeight = $cell2.height();
-          }else{
-            maxHeight = $cell1.height();
-          }
-          $cell1.height(maxHeight);
-          $cell2.height(maxHeight);
-        }
-      });
-
-    },
-
     removeHash: function(){ 
       var loc = window.location;
       if ("pushState" in history){
         history.pushState("", document.title, loc.pathname + loc.search);
       }
+    },
+
+    renderTable: function(cells, cssClass){
+      var html = '';
+      for (var index = 0; index < cells.length; index++) {
+        if (index % 2 === 0){
+          html += '<tr>';
+        }
+        html += '<td class="' + cssClass;
+        if (index === 0 || index === cells.length - 1){
+          html += ' txt';
+        }
+        html += '"';
+        if (index === cells.length - 1 && cells.length % 2 === 1){
+          html += ' colspan="2"';
+        }
+        html += '>';
+        html += cells[index];
+        html += '</td>';
+        if (index % 2 !== 0){
+          html += '</tr>';
+        }
+      }
+      return html;
     }
 
   };
