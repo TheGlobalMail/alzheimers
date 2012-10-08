@@ -360,6 +360,7 @@ li {
 }
 #container #sections .section.intro #content p.intro {
   padding-top: 35%;
+  font-family: "ff-meta-serif-web-pro", "Cambria", Georgia, "Times New Roman", Times, serif;
 }
 #container #sections .section.intro #content p strong {
   font-size: 120%;
