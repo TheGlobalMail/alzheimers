@@ -26,6 +26,7 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
 
     $('a.arrow.right').removeClass('hide');
 
+    $('#sections').height($('#sections .intro').height());
     window.slider = slider = new Swipe(
       document.getElementById('container'),
       { callback: _.bind(this.slideComplete, this) }
@@ -70,9 +71,6 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
     }else{
       helper.removeHash();
     }
-    console.log($('#sections').height());
-    console.log('2height adjust..' + $(el).height());
-    $('#sections').css('overflowY', 'hidden');
     $('#sections').height($(el).height());
   };
 

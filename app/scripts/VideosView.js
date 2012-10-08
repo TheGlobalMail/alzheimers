@@ -14,24 +14,15 @@ define(['jquery', 'lodash', 'Models'], function($, _, models) {
       $sectionAfterVideos.before(
         '<div class="section" id="' + video.slug + '-video">' + 
           '<div class="video vimeo-player" data-vimeo-id="' + video.vimeo + '" >' + 
+          '<iframe class="player" src="http://player.vimeo.com/video/' + 
+          video.vimeo + '?api=1&player_id=player-' + video.vimeo + 
+          '" frameborder="0"></iframe>' +
           '</div>' +
           '<div class="video-txt">' +
           '<p>' + video.excerpt + '</p>' + 
           '<p class="quote">' + video.pull + '</p>' +
           '</div>' + 
         '</div>'
-      );
-    });
-
-  };
-
-  VideosView.prototype.loadVideos = function(){
-
-    _.each(models.videos, function(video){
-      $('.vimeo-player[data-vimeo-id=' + video.vimeo + ']').html(
-        '<iframe class="player" src="http://player.vimeo.com/video/' + 
-          video.vimeo + '?api=1&player_id=player-' + video.vimeo + 
-          '" frameborder="0"></iframe>'
       );
     });
 

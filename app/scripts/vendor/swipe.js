@@ -85,12 +85,14 @@ Swipe.prototype = {
     if (this.has3d){
       // dynamic css
       this.element.style.width = (this.slides.length * this.width) + 'px';
-      this.element.style.float = 'left';
       var index = this.slides.length;
+      var left = this.slides.length * this.width;
       while (index--) {
         var el = this.slides[index];
         el.style.width = this.width + 'px';
-        el.style.float = 'left';
+        left = left - this.width;
+        el.style.left = left + 'px';
+        el.style.position = 'absolute';
       }
     }else{
       var index = this.slides.length;

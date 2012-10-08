@@ -15,7 +15,10 @@ define(['jquery'], function($) {
         if (index % 2 === 0){
           html += '<tr>';
         }
-        html += '<td class="' + cssClass;
+        html += '<td class="';
+        if (index !== cells.length - 1 || cssClass !== 'audio'){
+          html += cssClass;
+        }
         if (index === 0 || index === cells.length - 1){
           html += ' txt';
         }

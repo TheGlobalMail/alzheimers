@@ -22,9 +22,6 @@ define(['jquery', 'Vent', 'IntroView', 'ClipsView', 'StoriesView', 'SliderView',
 
     vent.on('slider:ready', function(){
 
-      // Load videos after the slider is ready
-      videosView.loadVideos();
-
       // Trigger an initial hash change to check to see if we should slide to
       // a particular page
       $(window).trigger('hashchange');
