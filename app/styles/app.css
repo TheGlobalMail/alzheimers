@@ -525,6 +525,12 @@ li {
   float: left;
   list-style: none;
 }
+#container ul.grid td.reader.txt,
+#container table.grid td.reader.txt,
+#container ul.grid td.audio.txt,
+#container table.grid td.audio.txt {
+  vertical-align: middle;
+}
 #container ul.grid li,
 #container table.grid li,
 #container ul.grid td,
@@ -567,7 +573,6 @@ li {
 #container table.grid td.txt h1 {
   font-size: 210%;
   line-height: 1.0;
-  padding-top: 5%;
   padding-bottom: 1.5%;
   margin-bottom: 1.5%;
   margin-left: 10%;
@@ -802,9 +807,14 @@ li {
   float: right;
   font-size: 300%;
   line-height: 0;
+  color: #666;
 }
 .modal a[rel="close-modal"]:hover {
   cursor: pointer;
+  color: white;
+}
+#support {
+  height: auto;
 }
 #support h3 {
   border-top: 1px solid #202020;
@@ -819,6 +829,10 @@ li {
   margin-bottom: 2%;
   display: inline-block;
   font-size: 90%;
+}
+#share-your-story {
+  width: 420px;
+  height: auto;
 }
 .hide {
   display: none !important;
