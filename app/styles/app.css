@@ -222,7 +222,7 @@ li {
 #header #sub li a {
   color: #6c6c6c;
   color: rgba(255, 255, 255, 0.6);
-  padding: 9px 20px;
+  padding: 9px 15px;
 }
 #header #sub li a:hover,
 #header #sub li a:active,
@@ -242,21 +242,21 @@ li {
 }
 #header #sub li.vid a {
   background-image: url(/img/vid.png);
-  background-position: 10px 10px;
+  background-position: 5px 10px;
   background-repeat: no-repeat;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 #header #sub li.aud a {
   background-image: url(/img/aud.png);
-  background-position: 9px 9px;
+  background-position: 4px 9px;
   background-repeat: no-repeat;
-  padding-left: 31px;
+  padding-left: 26px;
 }
 #header #sub li.com a {
   background-image: url(/img/com.png);
-  background-position: 9px 9px;
+  background-position: 4px 9px;
   background-repeat: no-repeat;
-  padding-left: 29px;
+  padding-left: 24px;
 }
 #header #share-box {
   position: absolute;
