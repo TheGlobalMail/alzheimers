@@ -137,7 +137,7 @@ li {
   margin-left: 5px;
   color: white;
   font-weight: bold;
-  line-height: 1.0;
+  line-height: .9;
   background: url(/img/header-arrow.png) left top no-repeat;
   height: 45px;
   padding-left: 2.5%;
