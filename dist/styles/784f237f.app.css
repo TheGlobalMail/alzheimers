@@ -59,10 +59,8 @@ a.btn:hover,
 a.btn:active,
 a.btn:focus {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  filter: alpha(opacity=80);
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
-  opacity: 0.8;
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
@@ -186,9 +184,7 @@ li {
 }
 #header #main .icons .about:hover,
 #header #main .icons .share:hover {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-  -ms-filter: progid:dximagetransform.microsoft.alpha(Opacity=60);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
   -khtml-opacity: 0.6;
@@ -302,6 +298,7 @@ li {
   background-image: url(/img/logo.png);
 }
 #container {
+  overflow: hidden;
   width: 100%;
   max-width: 1200px;
   min-width: 860px;
@@ -309,6 +306,9 @@ li {
   text-shadow: 0 -1px 0 #000000;
   line-height: 1.4;
   margin: 0 auto;
+}
+#container #sections {
+  overflow: hidden;
 }
 #container #sections .section.loading {
   visibility: hidden;
@@ -474,6 +474,7 @@ li {
   width: 76%;
   font-style: 110%;
   margin: -12% auto 0;
+  min-height: 200px;
 }
 #container .video-txt p {
   float: left;
@@ -841,10 +842,8 @@ li {
 #at16lb {
   background-color: black;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  filter: alpha(opacity=50);
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
-  opacity: 0.5;
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
@@ -943,19 +942,15 @@ li {
   background: url(../img/close.png) center top no-repeat;
   background-size: 15px;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  filter: alpha(opacity=40);
   -moz-opacity: 0.4;
   -khtml-opacity: 0.4;
-  opacity: 0.4;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 #at16pt a:hover {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  filter: alpha(opacity=100);
   -moz-opacity: 1;
   -khtml-opacity: 1;
-  opacity: 1;
   opacity: 1;
   filter: alpha(opacity=100);
 }
