@@ -10,7 +10,7 @@ define(['jquery', 'lodash', 'Models', 'ViewHelper'], function($, _, models, help
   };
 
   StoriesView.prototype.renderShare = function(){
-    return '<h2>Would you like to share your experiences with Alzheimers, either via audio or words?</h2><a ' +
+    return '<h2>Would you like to share your experiences with dementia, either via audio or words?</h2><a ' +
       'href="#share-your-story" rel="modal" class="btn"></a>';
   };
 

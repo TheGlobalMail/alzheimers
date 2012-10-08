@@ -239,7 +239,7 @@ h1,h2,h3,ul,li
             {
                 color: #6c6c6c;
                 color: rgba(255,255,255,0.6);
-                padding:9px 10px;
+                padding:9px 15px;
             }
 
             a:hover,a:active,a:focus
@@ -277,25 +277,25 @@ h1,h2,h3,ul,li
             &.vid a
             {
                 background-image:url(/img/vid.png);
-                background-position:1px 10px;
+                background-position:5px 10px;
                 background-repeat:no-repeat;
-                padding-left:20px;
+                padding-left:25px;
             }
 
             &.aud a
             {
                 background-image:url(/img/aud.png);
-                background-position:0 9px;
+                background-position:4px 9px;
                 background-repeat:no-repeat;
-                padding-left:21px;
+                padding-left:26px;
             }
 
             &.com a
             {
                 background-image:url(/img/com.png);
-                background-position:0 9px;
+                background-position:4px 9px;
                 background-repeat:no-repeat;
-                padding-left:19px;
+                padding-left:24px;
             }
 
         }
@@ -678,6 +678,11 @@ h1,h2,h3,ul,li
             list-style:none;
         }
 
+        td.reader.txt,
+        td.audio.txt {
+            vertical-align: middle;
+        }
+
         li, td
         {
             width:50%;
@@ -706,13 +711,11 @@ h1,h2,h3,ul,li
             {
                 background-image:none;
                 position:relative;
-                // background-color: black;
 
                 h1
                 {
                     font-size:210%;
                     line-height: 1.0;
-                    padding-top:15%;
                     padding-bottom:1.5%;
                     margin-bottom:1.5%;
                     margin-left:10%;
@@ -723,7 +726,6 @@ h1,h2,h3,ul,li
                 h2
                 {
                     padding:20% 0 0;
-                    margin-top:20%;
                     margin-left:10%;
                     width:80%;
                     border:none;
@@ -777,7 +779,6 @@ h1,h2,h3,ul,li
                     // height: 53px;
                     line-height: 1;
                     font-size: 120%;
-                    // margin: 85% 0 0;
                     padding: 2% 0 .5% 2.5%;
                     background: rgba(0, 0, 0, 0.1);
                     border-collapse: collapse;
@@ -823,7 +824,7 @@ h1,h2,h3,ul,li
                     font-family: @sansFontFamily;
                     font-weight: bold;
                     margin-left:10%;
-                    margin-top: 2%;
+                    margin-top: 3%;
                     display: block;
                 }
                 &[colspan="2"] {
