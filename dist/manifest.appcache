@@ -1,25 +1,6 @@
-TypeError: 'undefined' is not an object (evaluating 'd.style.style.visibility="hidden"')
-
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1 in y
-  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
 CACHE MANIFEST
 
-# Time: Tue Oct 09 2012 11:14:00 GMT+1100 (EST)
+# Time: Tue Oct 09 2012 11:37:30 GMT+1100 (EST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -42,6 +23,7 @@ CACHE MANIFEST
 CACHE:
 /img/mail-icon.png
 data/audio-pic1.jpg
+http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/extra-extra-stop-the-presses&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery18208430203523021191_1349743047698&_=1349743047739
 http://ct5.addthis.com/static/r07/core041.js
 http://ct5.addthis.com/static/r07/widget095.css
 http://fonts.googleapis.com/css?family=Open+Sans:400,600
@@ -71,7 +53,7 @@ http://www.google-analytics.com/ga.js
 img/intro_1.jpg
 img/intro_2.jpg
 img/intro_3.jpg
-scripts/03dc09d6.amd-app.js
+scripts/783e9c74.amd-app.js
 styles/3a990793.app.css
 styles/57a545dc.normalize.css
 
