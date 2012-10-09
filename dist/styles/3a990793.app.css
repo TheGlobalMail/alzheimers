@@ -75,7 +75,7 @@ p {
 p.quote {
   background: url(/img/quote.png) 15px 0 no-repeat;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 140%;
+  font-size: 130%;
   font-weight: 700;
   font-style: italic;
   line-height: 1.3;
@@ -484,7 +484,7 @@ li {
 }
 #container .video-txt p {
   float: left;
-  font-size: 110%;
+  font-size: 100%;
   padding-bottom: 5%;
   margin: 0;
   width: 50%;
@@ -496,6 +496,7 @@ li {
   padding-left: 62px;
   border-color: #2b2b2b;
   border-left: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 110%;
 }
 #container ul.grid,
 #container table.grid {
@@ -571,7 +572,7 @@ li {
 #container table.grid li.txt h1,
 #container ul.grid td.txt h1,
 #container table.grid td.txt h1 {
-  font-size: 210%;
+  font-size: 180%;
   line-height: 1.0;
   padding-bottom: 1.5%;
   margin-bottom: 1.5%;
@@ -588,13 +589,13 @@ li {
   width: 80%;
   border: none;
   line-height: 1.3;
-  font-size: 140%;
+  font-size: 130%;
 }
 #container ul.grid li.txt p,
 #container table.grid li.txt p,
 #container ul.grid td.txt p,
 #container table.grid td.txt p {
-  font-size: 120%;
+  font-size: 110%;
   width: 80%;
 }
 #container ul.grid li.txt p#audio-content,
@@ -1164,13 +1165,13 @@ li {
 /* controls */
 .sc-player .sc-controls a {
   color: transparent;
-  background: url('/img/play.png');
+  background: url('/img/btn-play.png');
 }
 .sc-player .sc-controls a:hover {
   background: url('/img/play-hover.png');
 }
 .sc-player .sc-controls a.sc-pause {
-  background: url('/img/play.png');
+  background: url('/img/btn-play.png');
 }
 .sc-player .sc-controls a.sc-pause:hover {
   background: url('/img/play-hover.png');
@@ -1237,7 +1238,7 @@ li {
 }
 @media only screen and (min-width: 1200px) {
   body {
-    font-size: 125%;
+    font-size: 120%;
   }
   #header {
     height: 102px;

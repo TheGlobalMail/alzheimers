@@ -99,7 +99,7 @@ Swipe.prototype = {
       // fallback to just hidden divs
       while (index--) {
         var el = this.slides[index];
-        el.style.display = 'none';
+        el.style.style.visibility = 'hidden';
         el.style.position = 'absolute';
         el.style.top = '0';
         el.style.left = '0';
@@ -131,8 +131,8 @@ Swipe.prototype = {
       style.MozTransform = style.webkitTransform = 'translate3d(' + -(index * this.width) + 'px,0,0)';
       style.msTransform = style.OTransform = 'translateX(' + -(index * this.width) + 'px)';
     }else{
-      this.slides[this.index].style.display = 'none';
-      this.slides[index].style.display = 'block';
+      this.slides[this.index].style.visibility = 'hidden';
+      this.slides[index].style.visibility = 'visible';
     }
 
     // set new index to allow for expression arguments

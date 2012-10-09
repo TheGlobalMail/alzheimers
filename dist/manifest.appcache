@@ -1,6 +1,25 @@
+TypeError: 'undefined' is not an object (evaluating 'd.style.style.visibility="hidden"')
+
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1 in y
+  http://localhost:3501/scripts/03dc09d6.amd-app.js:1
 CACHE MANIFEST
 
-# Time: Tue Oct 09 2012 10:32:25 GMT+1100 (EST)
+# Time: Tue Oct 09 2012 11:14:00 GMT+1100 (EST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -23,7 +42,6 @@ CACHE MANIFEST
 CACHE:
 /img/mail-icon.png
 data/audio-pic1.jpg
-http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/cheeky-its-australian-for&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery182007532512955367565_1349739143996&_=1349739144036
 http://ct5.addthis.com/static/r07/core041.js
 http://ct5.addthis.com/static/r07/widget095.css
 http://fonts.googleapis.com/css?family=Open+Sans:400,600
@@ -47,14 +65,15 @@ http://localhost:3501/img/vid.png
 http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5004ac3e48e805cd
 http://use.typekit.net/c/e2ca56/ff-meta-serif-web-pro:n5:n7:i7,open-sans:n7:i4:n3:n4:n6.VbN:F:2,VbQ:F:2,VbR:F:2,Vv8:F:2,VvD:F:2,VvF:F:2,VvH:F:2,VvJ:F:2/d?3bb2a6e53c9684ffdc9a98f51d5b2a628100d31f37d8cd0435cad674ea9d3562ebce5bd759c6694cc8d49ddd729b6a2812d92ba7914beeaabfeabd18697ab6eabfef972add7ac6bdf2128e0f0945a9a936436aece572e24fbce87d083805d2eaa7bcca622699c7ddcdb9d595ee24ba63c2d9ff4a322bb32cb7a86299206ccf976355244caeac27135625949fbada9466b0a430aea295acc8e0f216d769bd2cadd7b925bd3b730e0c97dd0704ff237661a40b8a9b633ad662de90216695613f24cf9d11e780e7300229c7db1357236983367eae225999b6e111b433e6736e078492b5210177049a79351e10ad9b
 http://use.typekit.net/pyz3jsr.js
+http://w1.sndcdn.com/VScEzkMDoecm_m.png
 http://w1.sndcdn.com/y3DctOJOzJQV_m.png
 http://www.google-analytics.com/ga.js
 img/intro_1.jpg
 img/intro_2.jpg
 img/intro_3.jpg
-scripts/18d7de26.amd-app.js
+scripts/03dc09d6.amd-app.js
+styles/3a990793.app.css
 styles/57a545dc.normalize.css
-styles/c3920b00.app.css
 
 NETWORK:
 *
