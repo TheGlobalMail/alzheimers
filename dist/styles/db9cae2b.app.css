@@ -59,8 +59,10 @@ a.btn:hover,
 a.btn:active,
 a.btn:focus {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: alpha(opacity=80);
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
+  opacity: 0.8;
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
@@ -187,7 +189,9 @@ li {
 }
 #header #main .icons .about:hover,
 #header #main .icons .share:hover {
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -ms-filter: progid:dximagetransform.microsoft.alpha(Opacity=60);
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
   -khtml-opacity: 0.6;
@@ -304,7 +308,7 @@ li {
   overflow: hidden;
   width: 100%;
   max-width: 1200px;
-  min-width: 860px;
+  min-width: 1000px;
   height: auto;
   text-shadow: 0 -1px 0 #000000;
   line-height: 1.4;
@@ -364,8 +368,6 @@ li {
 #container #sections .section.intro #content p.intro {
   padding-top: 35%;
   font-family: "ff-meta-serif-web-pro", "Cambria", Georgia, "Times New Roman", Times, serif;
-  padding-bottom: 0;
-  margin-bottom: .5%;
 }
 #container #sections .section.intro #content p strong {
   font-size: 120%;
@@ -862,8 +864,10 @@ li {
 #at16lb {
   background-color: black;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: alpha(opacity=50);
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
+  opacity: 0.5;
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
@@ -962,15 +966,19 @@ li {
   background: url(../img/close.png) center top no-repeat;
   background-size: 15px;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: alpha(opacity=40);
   -moz-opacity: 0.4;
   -khtml-opacity: 0.4;
+  opacity: 0.4;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 #at16pt a:hover {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: alpha(opacity=100);
   -moz-opacity: 1;
   -khtml-opacity: 1;
+  opacity: 1;
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -990,7 +998,7 @@ li {
 }
 .sc-player {
   width: 90%;
-  height: 47px;
+  height: 43px;
   position: relative;
 }
 .sc-player ol,
