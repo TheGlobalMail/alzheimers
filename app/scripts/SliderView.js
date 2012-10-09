@@ -38,6 +38,7 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
   SliderView.prototype.slideComplete = function(e, index, el){
 
     var child, $soundcloudPlayers, $video;
+    var $backgrounds = $('#backgrounds');
 
     child = index + 1;
     if (child === 1){
@@ -59,6 +60,14 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
       $soundcloudPlayers.show();
     }else{
       $('.sc-player').hide();
+    }
+
+    if ($backgrounds.cycle){
+      if ($(el).hasClass('intro')){
+        $backgrounds.cycle('resume');
+      }else{
+        $backgrounds.cycle('pause');
+      }
     }
 
     $('ul[data-role="navigation"] li:not(:nth-child(' + child + '))').removeClass('active');
