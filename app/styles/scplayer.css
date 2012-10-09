@@ -52,7 +52,7 @@
 .sc-scrubber {
   position: absolute;
   left: -9000px;
-  bottom: 10px;
+  bottom: 10%;
   height: 40px;
   width: 95.5%;
 }
