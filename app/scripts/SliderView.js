@@ -81,6 +81,8 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
       helper.removeHash();
     }
     $('#sections').height($(el).height());
+
+    helper.removeLoading();
   };
 
   SliderView.prototype.setupMain = function(){

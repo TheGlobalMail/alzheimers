@@ -844,7 +844,8 @@ li {
 .hide {
   display: none !important;
 }
-#lean_overlay {
+#lean_overlay,
+#loading_overlay {
   position: fixed;
   z-index: 100;
   top: 0px;
@@ -852,6 +853,20 @@ li {
   height: 100%;
   width: 100%;
   background: #000;
+}
+#loading_status {
+  display: block;
+  width: 160px;
+  height: 100px;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#loading_status img {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#lean_overlay {
   display: none;
 }
 #at16p {

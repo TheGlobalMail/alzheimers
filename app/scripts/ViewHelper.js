@@ -9,6 +9,10 @@ define(['jquery'], function($) {
       }
     },
 
+    removeLoading: function(){ 
+      $('#loading_overlay').hide();
+    },
+
     renderTable: function(cells, cssClass){
       var html = '';
       for (var index = 0; index < cells.length; index++) {

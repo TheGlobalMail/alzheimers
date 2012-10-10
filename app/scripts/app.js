@@ -1,5 +1,5 @@
-define(['jquery', 'Vent', 'IntroView', 'ClipsView', 'StoriesView', 'SliderView', 'VideosView', 'Models'], 
-  function($, vent, introView, clipsView, storiesView, sliderView, videosView, models) {
+define(['jquery', 'Vent', 'IntroView', 'ClipsView', 'StoriesView', 'SliderView', 'VideosView', 'ViewHelper', 'Models'], 
+  function($, vent, introView, clipsView, storiesView, sliderView, videosView, helper, models) {
 
   var app = {};
   app.vent = vent;
@@ -28,6 +28,10 @@ define(['jquery', 'Vent', 'IntroView', 'ClipsView', 'StoriesView', 'SliderView',
       // Trigger an initial hash change to check to see if we should slide to
       // a particular page
       $(window).trigger('hashchange');
+
+      if (!location.hash){
+        helper.removeLoading();
+      }
 
     });
 
