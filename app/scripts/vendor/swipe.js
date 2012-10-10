@@ -20,8 +20,8 @@ window.Swipe = function(element, options) {
   this.callback = this.options.callback || function() {};
   this.delay = this.options.auto || 0;
 
-  // test for 3d
-  this.has3d = Modernizr.csstransforms3d;
+  // test for 3d (but force 3d for chrome as there's a bug in the 3d detection)
+  this.has3d = navigator.userAgent.toLowerCase().indexOf('chrome') > -1 || Modernizr.csstransforms3d;
 
   // reference dom elements
   this.container = element;
