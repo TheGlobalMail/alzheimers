@@ -335,6 +335,7 @@ li {
 #container #sections .section.intro #content {
   position: relative;
   z-index: 20;
+  margin-bottom: 40px;
 }
 #container #sections .section.intro #content h1 {
   width: 45%;
