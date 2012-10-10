@@ -118,6 +118,7 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
   SliderView.prototype.setupHashChange = function(){
     $(window).bind('hashchange', function(){
       var hash = location.hash;
+      var validHash = (hash.indexOf('#!') === 0);
       var section = hash.replace( /^#!/, '' );
       var $section, index;
       if (!section){
@@ -126,16 +127,20 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
           slider.slide(0);
         }
       }else{
-        // If we've found a matching section for the hash, slide to it
-        $section = $('#' + section + '[data-section-index]');
-        if ($section.length){
-          // Don't bother sliding if we're already on the section. This
-          // will occur when the ui triggers a slide which then triggers
-          // a hash change when the slide is complete
-          index = parseInt($section.data('section-index'));
-          if (index !== slider.getPos()){
-            slider.slide($section.data('section-index'));
+        if (validHash){
+          // If we've found a matching section for the hash, slide to it
+          $section = $('#' + section + '[data-section-index]');
+          if ($section.length){
+            // Don't bother sliding if we're already on the section. This
+            // will occur when the ui triggers a slide which then triggers
+            // a hash change when the slide is complete
+            index = parseInt($section.data('section-index'));
+            if (index !== slider.getPos()){
+              slider.slide($section.data('section-index'));
+            }
           }
+        }else{
+          helper.removeLoading();
         }
       }
     });
