@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Wed Oct 10 2012 16:47:27 GMT+1100 (EST)
+# Time: Wed Oct 10 2012 17:02:03 GMT+1100 (EST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -24,7 +24,9 @@ CACHE:
 /img/loading.gif
 /img/mail-icon.png
 data/audio-pic1.jpg
-http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/cheeky-its-australian-for&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery182015840493189170957_1349848045877&_=1349848045918
+http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/cheeky-its-australian-for&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery182010425784578546882_1349848921412&_=1349848921454
+http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/extra-extra-stop-the-presses&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery182010425784578546882_1349848921410&_=1349848921451
+http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/extra-extra-stop-the-presses&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery182010425784578546882_1349848921413&_=1349848921455
 http://ct5.addthis.com/static/r07/core041.js
 http://ct5.addthis.com/static/r07/widget095.css
 http://fonts.googleapis.com/css?family=Open+Sans:400,600
@@ -55,8 +57,8 @@ img/intro_1.jpg
 img/intro_2.jpg
 img/intro_3.jpg
 scripts/9d616d62.amd-app.js
+styles/0e2e4491.app.css
 styles/57a545dc.normalize.css
-styles/9227db66.app.css
 
 NETWORK:
 *

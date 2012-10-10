@@ -15,6 +15,22 @@ done manually.
 
 ## Deployment ##
 
+### TL;DR ###
+
+Install yeoman, run `npm install` and setup jitsu with `theglobalmail` user.
+
+`git pull --rebase && yeoman build && ./bin/sync.js && jitsu deploy`
+
+Be sure to add any new files created in the dist directory with something like:
+`git add dist/styles/* dist/scripts/* && git status`
+
+And then to deploy to staging and production:
+
+`./bin/deploy.js staging RACKSPACE_API_KEY`
+`./bin/deploy.js production RACKSPACE_API_KEY`
+
+### Steps ###
+
 The steps are:
 
 1. Build an optimised version of the site to the dist directory
