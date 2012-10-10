@@ -169,7 +169,11 @@ define(['jquery', 'lodash', 'Vent', 'Models', 'ViewHelper', 'swipe', 'modal'],
       if ($shareBox.hasClass('active')){
         close();
       }else{
-        $shareBox.fadeIn().addClass('active');
+        if ($shareBox.hasClass('inactive')){
+          $shareBox.removeClass('inactive').addClass('active');
+        }else{
+          $shareBox.fadeIn().addClass('active');
+        }
         $('html').one('click', function(){
           close();
         });

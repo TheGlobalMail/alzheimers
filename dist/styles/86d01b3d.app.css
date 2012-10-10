@@ -275,6 +275,9 @@ li {
   box-shadow: 0 2px 5px black;
   text-align: center;
 }
+#header #share-box.inactive {
+  top: -1000px;
+}
 #header #share-box .popover-inner .addthis_toolbox {
   height: 77px;
   margin-top: 5px;
@@ -362,7 +365,7 @@ li {
   width: 45%;
   max-width: 604px;
   margin-left: 32%;
-  padding-bottom: 3.5%;
+  padding-bottom: 5px;
   font-size: 140%;
 }
 #container #sections .section.intro #content p.intro {
@@ -1050,7 +1053,7 @@ li {
 .sc-scrubber {
   position: absolute;
   left: -9000px;
-  bottom: 10px;
+  bottom: 10%;
   height: 40px;
   width: 95.5%;
 }
