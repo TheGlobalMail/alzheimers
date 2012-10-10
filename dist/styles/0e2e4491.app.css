@@ -848,8 +848,8 @@ li {
   left: 0px;
   height: 100%;
   width: 100%;
-  background: #000;
-  background: rgba(0, 0, 0, 0.9);
+  background: #1B1B1B;
+  background: rgba(27, 27, 27, 0.9);
 }
 #loading_status {
   display: block;
@@ -862,7 +862,9 @@ li {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #999;
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 #000000;
 }
 #loading_status img {
   clear: both;
