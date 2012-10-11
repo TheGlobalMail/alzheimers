@@ -99,6 +99,8 @@ Swipe.prototype = {
       // fallback to just hidden divs
       while (index--) {
         var el = this.slides[index];
+        el.style.width = '100%';
+        el.style.minHeight = this.width + 'px';
         el.style.visibility = 'hidden';
         el.style.position = 'absolute';
         el.style.top = '0';
