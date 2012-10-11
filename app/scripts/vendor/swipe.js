@@ -12,6 +12,8 @@ window.Swipe = function(element, options) {
   if (!element) return null;
 
   var _this = this;
+  var chromeish = navigator.userAgent.toLowerCase().indexOf('chrom') > -1;
+  var firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
   // retreive options
   this.options = options || {};
@@ -20,8 +22,9 @@ window.Swipe = function(element, options) {
   this.callback = this.options.callback || function() {};
   this.delay = this.options.auto || 0;
 
-  // test for 3d (but force 3d for chrome as there's a bug in the 3d detection)
-  this.has3d = navigator.userAgent.toLowerCase().indexOf('chrome') > -1 || Modernizr.csstransforms3d;
+  // test for 3d (but force 3d for chrome as there's a bug in the 3d detection.
+  // Also disable firefox as there is a flash vimeo bug).
+  this.has3d =  !firefox && (chromeish || Modernizr.csstransforms3d);
 
   // reference dom elements
   this.container = element;
