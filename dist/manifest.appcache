@@ -1,6 +1,7 @@
+# Given URL is not allowed by the Application configuration.: One or more of the given URLs is not allowed by the App's settings.  It must match the Website URL or Canvas URL, or the domain must be a subdomain of one of the App's domains. (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Thu Oct 11 2012 14:23:04 GMT+1100 (EST)
+# Time: Thu Oct 18 2012 09:13:16 GMT+1100 (EST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -24,12 +25,13 @@ CACHE:
 /img/loading.gif
 /img/mail-icon.png
 data/audio-pic1.jpg
-http://api.soundcloud.com/resolve?url=http://soundcloud.com/the-global-mail/extra-extra-stop-the-presses&format=json&consumer_key=htuiRd1JP11Ww0X72T1C3g&callback=jQuery182010511995130218565_1349925782282&_=1349925782320
-http://ct5.addthis.com/static/r07/core041.js
-http://ct5.addthis.com/static/r07/widget095.css
+http://apis.google.com/js/plusone.js
+http://connect.facebook.net/en_US/all.js
+http://ct5.addthis.com/static/r07/core042.js
+http://ct5.addthis.com/static/r07/widget096.css
 http://fonts.googleapis.com/css?family=Open+Sans:400,600
-http://i1.sndcdn.com/artworks-000031826679-i8igpi-t300x300.jpg?cc3c8fa
-http://i1.sndcdn.com/artworks-000031826734-l4jns0-t300x300.jpg?cc3c8fa
+http://i1.sndcdn.com/artworks-000031826679-i8igpi-t300x300.jpg?618a4b6
+http://i1.sndcdn.com/artworks-000031826734-l4jns0-t300x300.jpg?618a4b6
 http://localhost:3501/img/arrow-right.png
 http://localhost:3501/img/arrow.png
 http://localhost:3501/img/aud.png
@@ -47,12 +49,23 @@ http://localhost:3501/img/pause.png
 http://localhost:3501/img/play-hover.png
 http://localhost:3501/img/quote.png
 http://localhost:3501/img/vid.png
+http://platform.twitter.com/widgets.js
 http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5004ac3e48e805cd
+http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png
+http://static.ak.fbcdn.net/rsrc.php/v2/yD/x/Cou7n-nqK52.gif
+http://static.ak.fbcdn.net/rsrc.php/v2/yH/x/eIpbnVKI9lR.png
+http://static.ak.fbcdn.net/rsrc.php/v2/yJ/x/jKEcVPZFk-2.gif
+http://static.ak.fbcdn.net/rsrc.php/v2/yL/x/i_oIVTKMYsL.png
+http://static.ak.fbcdn.net/rsrc.php/v2/yP/x/bSOHtKbCGYI.png
+http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png
+http://static.ak.fbcdn.net/rsrc.php/v2/yc/x/3rhSv5V8j3o.gif
+http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png
 http://use.typekit.net/c/e2ca56/ff-meta-serif-web-pro:n5:n7:i7,open-sans:n7:i4:n3:n4:n6.VbN:F:2,VbQ:F:2,VbR:F:2,Vv8:F:2,VvD:F:2,VvF:F:2,VvH:F:2,VvJ:F:2/d?3bb2a6e53c9684ffdc9a98f01d5b2a62412f52920b8b49ef73ebac739adfb6cb990d8510a28914424014872909a76163fc46a590ae81a28b7e75433dc4a4ffc410e3bf2f3766eb35b3e7a935db3be67d8cff5924b3c378b20e369ebc5b2b5edd0a1f1a0a5e7261e3df1ea807b17347ea34f95839e91aacd919061719bdb8f4c3759c497f74e26f552a8e6eb533815ff6b18d96fa3682f7d1761da7104d7c7c7b3d5ed2a8e3186554599bd560b1cc18306d72549fdc44a13158301724e5c9cc9348ffeaa041f8d74d608056b4f14205b6b113a6e8d7df9200134baa3337ea6f87530a32277c5740c957d894235c4e8a9f3c00e7be1e280db23d3711356f1c1e414de4cf655c23781612229c
 http://use.typekit.net/pyz3jsr.js
 http://w1.sndcdn.com/VScEzkMDoecm_m.png
 http://w1.sndcdn.com/y3DctOJOzJQV_m.png
 http://www.google-analytics.com/ga.js
+https://apis.google.com/_/apps-static/_/js/gapi/plusone/rt=j/ver=6LfsB-Zxs3A.en_GB./sv=1/am=!2H2H8ZqGj6aIqyfgIg/d=1/rs=AItRSTMs-9C-W19m-Z5DJcNLgfSK5aeC7A/cb=gapi.loaded_0
 img/intro_1.jpg
 img/intro_2.jpg
 img/intro_3.jpg
