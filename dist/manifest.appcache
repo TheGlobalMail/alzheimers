@@ -1,7 +1,7 @@
 # Given URL is not allowed by the Application configuration.: One or more of the given URLs is not allowed by the App's settings.  It must match the Website URL or Canvas URL, or the domain must be a subdomain of one of the App's domains. (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Fri Oct 26 2012 16:15:05 GMT+1100 (EST)
+# Time: Wed Oct 31 2012 13:35:56 GMT+1100 (EST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -19,7 +19,7 @@ CACHE MANIFEST
 #   cacheFilter: .*
 #   networkFilter: null
 #  url: http://localhost:3501
-#  configFile: /usr/local/share/npm/lib/node_modules/yeoman/lib/support/confess.json
+#  configFile: /Users/bjrossiter/git/yeoman/cli/lib/support/confess.json
 
 CACHE:
 /img/loading.gif
@@ -27,11 +27,11 @@ CACHE:
 data/audio-pic1.jpg
 http://apis.google.com/js/plusone.js
 http://connect.facebook.net/en_US/all.js
-http://ct5.addthis.com/static/r07/core044.js
+http://ct5.addthis.com/static/r07/core045.js
 http://ct5.addthis.com/static/r07/widget096.css
 http://fonts.googleapis.com/css?family=Open+Sans:400,600
-http://i1.sndcdn.com/artworks-000031826679-i8igpi-t300x300.jpg?e2f8ae2
-http://i1.sndcdn.com/artworks-000031826734-l4jns0-t300x300.jpg?e2f8ae2
+http://i1.sndcdn.com/artworks-000031826679-i8igpi-t300x300.jpg?f6d22d0
+http://i1.sndcdn.com/artworks-000031826734-l4jns0-t300x300.jpg?f6d22d0
 http://localhost:3501/img/arrow-right.png
 http://localhost:3501/img/arrow.png
 http://localhost:3501/img/aud.png
@@ -65,7 +65,7 @@ http://use.typekit.net/pyz3jsr.js
 http://w1.sndcdn.com/VScEzkMDoecm_m.png
 http://w1.sndcdn.com/y3DctOJOzJQV_m.png
 http://www.google-analytics.com/ga.js
-https://apis.google.com/_/apps-static/_/js/gapi/plusone/rt=j/ver=Gb0Q3Iyli7w.en_GB./sv=1/am=!6rz0p3va2LWId_D6JA/d=1/rs=AItRSTNw4gaxunICoM0skPv7wSEW0ECwVg/cb=gapi.loaded_0
+https://apis.google.com/_/apps-static/_/js/gapi/plusone/rt=j/ver=TUAaMp59kbs.en_GB./sv=1/am=!-5iK5mLqTdGIwAcTTA/d=1/rs=AItRSTMRtHCMVl0aAmBTfSS86RZEO0_lJA/cb=gapi.loaded_0
 img/intro_1.jpg
 img/intro_2.jpg
 img/intro_3.jpg
